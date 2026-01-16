@@ -7,7 +7,6 @@ title: "Sri Lanka Dengue Atlas"
 #| message: false
 library(dplyr)
 library(sf)
-library(leaflet)
 library(lubridate)
 library(scales)
 library(denguedatahub)
@@ -80,45 +79,6 @@ make_map_data <- function(from_date, to_date) {
 ```
 
 
-```{r}
-
-plot_dengue_map <- function(map_data) {
-
-  pal <- colorBin(
-    palette = "YlOrRd",
-    domain  = map_data$cases,
-    bins    = c(0, 5, 20, 50, 100, 250, 500, Inf),
-    na.color = "#f0f0f0"
-  )
-
-  leaflet(map_data) %>%
-    addProviderTiles("CartoDB.Positron") %>%
-
-    addPolygons(
-      fillColor   = ~pal(cases),
-      weight      = 0.8,
-      color       = "#444444",
-      fillOpacity = 0.8,
-      label = ~paste0(
-        district, "<br>",
-        "Cases: ", comma(cases)
-      ) %>% lapply(htmltools::HTML),
-      highlightOptions = highlightOptions(
-        weight = 2,
-        color  = "#000000",
-        bringToFront = TRUE
-      )
-    ) %>%
-
-    addLegend(
-      pal = pal,
-      values = ~cases,
-      title = "Weekly dengue cases",
-      position = "bottomright"
-    )
-}
-
-```
 
 ```{r}
 map_data <- make_map_data(
@@ -126,6 +86,35 @@ map_data <- make_map_data(
   to_date   = as.Date("2019-12-31")
 )
 
-plot_dengue_map(map_data)
+map_data
+
+```
+
+```{r}
+library(ggplot2)
+
+ggplot(map_data) +
+  geom_sf(
+    aes(fill = cases),
+    color = "white",
+    linewidth = 0.2
+  ) +
+#  scale_fill_brewer(
+ #   palette = "YlOrRd",
+ #   na.value = "grey90",
+#    name = "Annual dengue cases"
+#  ) +
+  labs(
+    title = "Annual Dengue Cases by District",
+    subtitle = "Sri Lanka",
+    caption = "Source: Dengue surveillance data"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    panel.grid = element_blank(),
+    axis.text  = element_blank(),
+    axis.title = element_blank(),
+    legend.position = "right"
+  )
 
 ```
