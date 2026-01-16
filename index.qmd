@@ -1,0 +1,131 @@
+---
+title: "Sri Lanka Dengue Atlas"
+---
+
+```{r}
+#| warning: false
+#| message: false
+library(dplyr)
+library(sf)
+library(leaflet)
+library(lubridate)
+library(scales)
+library(denguedatahub)
+library(htmlwidgets)
+library(crosstalk)
+library(ceylon)
+```
+
+```{r}
+srilanka_weekly_data <- srilanka_weekly_data %>%
+  mutate(
+    start.date = as.Date(start.date, format = "%m/%d/%Y"),
+    end.date   = as.Date(end.date,   format = "%m/%d/%Y")
+  )
+```
+
+```{r}
+filter_by_date <- function(data, from_date, to_date) {
+  data %>%
+    filter(
+      start.date <= to_date,
+      end.date   >= from_date
+    )
+}
+
+```
+
+```{r}
+aggregate_district_cases <- function(data) {
+  data %>%
+    group_by(district) %>%
+    summarise(
+      cases = sum(cases, na.rm = TRUE),
+      .groups = "drop"
+    )
+}
+
+```
+
+
+```{r}
+data(district)
+sl_districts <-  district %>%
+  st_transform(4326) 
+```
+
+```{r}
+make_map_data <- function(from_date, to_date) {
+
+  dengue_filtered <- srilanka_weekly_data %>%
+    filter_by_date(from_date, to_date) %>%
+    aggregate_district_cases()
+
+ # sl_districts %>%
+ #   left_join(dengue_filtered, by = "district") %>%
+ #   mutate(cases = replace_na(cases, 0))
+  
+  dengue_filtered <- dengue_filtered %>%
+  mutate(district = toupper(district))
+
+  sl_districts <- sl_districts %>%
+  mutate(DISTRICT = toupper(DISTRICT))
+  
+  sl_map_data <- sl_districts %>%
+  left_join(dengue_filtered, by = c("DISTRICT" = "district")) #%>%
+#  mutate(cases = replace_na(cases, 0))
+
+}
+
+```
+
+
+```{r}
+
+plot_dengue_map <- function(map_data) {
+
+  pal <- colorBin(
+    palette = "YlOrRd",
+    domain  = map_data$cases,
+    bins    = c(0, 5, 20, 50, 100, 250, 500, Inf),
+    na.color = "#f0f0f0"
+  )
+
+  leaflet(map_data) %>%
+    addProviderTiles("CartoDB.Positron") %>%
+
+    addPolygons(
+      fillColor   = ~pal(cases),
+      weight      = 0.8,
+      color       = "#444444",
+      fillOpacity = 0.8,
+      label = ~paste0(
+        district, "<br>",
+        "Cases: ", comma(cases)
+      ) %>% lapply(htmltools::HTML),
+      highlightOptions = highlightOptions(
+        weight = 2,
+        color  = "#000000",
+        bringToFront = TRUE
+      )
+    ) %>%
+
+    addLegend(
+      pal = pal,
+      values = ~cases,
+      title = "Weekly dengue cases",
+      position = "bottomright"
+    )
+}
+
+```
+
+```{r}
+map_data <- make_map_data(
+  from_date = as.Date("2019-01-01"),
+  to_date   = as.Date("2019-12-31")
+)
+
+plot_dengue_map(map_data)
+
+```

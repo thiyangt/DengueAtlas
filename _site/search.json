@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sri Lanka Dengue Atlas",
+    "section": "",
+    "text": "library(dplyr)\nlibrary(sf)\nlibrary(leaflet)\nlibrary(lubridate)\nlibrary(scales)\nlibrary(denguedatahub)\nlibrary(htmlwidgets)\nlibrary(crosstalk)\nlibrary(ceylon)\n\n\nfilter_by_date &lt;- function(data, from_date, to_date) {\n  data %&gt;%\n    filter(\n      start.date &lt;= to_date,\n      end.date   &gt;= from_date\n    )\n}\n\n\naggregate_district_cases &lt;- function(data) {\n  data %&gt;%\n    group_by(district) %&gt;%\n    summarise(\n      cases = sum(cases, na.rm = TRUE),\n      .groups = \"drop\"\n    )\n}\n\n\ndata(district)\nsl_districts &lt;-  district %&gt;%\n  st_transform(4326) \n\n\nmake_map_data &lt;- function(from_date, to_date) {\n\n  dengue_filtered &lt;- dengue_weekly %&gt;%\n    filter_by_date(from_date, to_date) %&gt;%\n    aggregate_district_cases()\n\n  sl_districts %&gt;%\n    left_join(dengue_filtered, by = \"district\") %&gt;%\n    mutate(cases = replace_na(cases, 0))\n}\n\n\nplot_dengue_map &lt;- function(map_data) {\n\n  pal &lt;- colorBin(\n    palette = \"YlOrRd\",\n    domain  = map_data$cases,\n    bins    = c(0, 5, 20, 50, 100, 250, 500, Inf),\n    na.color = \"#f0f0f0\"\n  )\n\n  leaflet(map_data) %&gt;%\n    addProviderTiles(\"CartoDB.Positron\") %&gt;%\n\n    addPolygons(\n      fillColor   = ~pal(cases),\n      weight      = 0.8,\n      color       = \"#444444\",\n      fillOpacity = 0.8,\n      label = ~paste0(\n        district, \"&lt;br&gt;\",\n        \"Cases: \", comma(cases)\n      ) %&gt;% lapply(htmltools::HTML),\n      highlightOptions = highlightOptions(\n        weight = 2,\n        color  = \"#000000\",\n        bringToFront = TRUE\n      )\n    ) %&gt;%\n\n    addLegend(\n      pal = pal,\n      values = ~cases,\n      title = \"Weekly dengue cases\",\n      position = \"bottomright\"\n    )\n}"
+  }
+]
