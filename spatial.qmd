@@ -15,6 +15,8 @@ library(viridis)
 library(plotly)
 ```
 
+## Visuaizations
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 data(srilanka_weekly_data)
 annual_df <- srilanka_weekly_data %>%
@@ -124,6 +126,9 @@ p2 <- ggplot(annual_df) +
     name = "Annual Dengue Cases"
   ) +
   theme_minimal() +
+  scale_x_continuous(
+    breaks = unique(annual_df$year)  # every year tick
+  ) +
   labs(title = "Annual Dengue Cases by District (Tile Map)") +
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1),
@@ -134,3 +139,63 @@ ggplotly(p2, tooltip = "text")
 ```
 
 Note: 2025 results were reported only upto week 11 yet.
+
+## Useful information to interpret the plots
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+# Create dengue categorization dataframe
+dengue_years <- data.frame(
+  Year = 2007:2026,
+  Category = c(
+    "Endemic / lower intensity", # 2007
+    "Endemic / lower intensity", # 2008
+    "Elevated outbreak",         # 2009
+    "Endemic",                   # 2010
+    "Endemic",                   # 2011
+    "Endemic",                   # 2012
+    "Endemic",                   # 2013
+    "Endemic",                   # 2014
+    "Endemic",                   # 2015
+    "Endemic",                   # 2016
+    "Major epidemic",            # 2017
+    "Endemic",                   # 2018
+    "Elevated outbreak",         # 2019
+    "Endemic",                   # 2020
+    "Endemic",                   # 2021
+    "Endemic",                   # 2022
+    "Elevated outbreak",         # 2023
+    "Elevated transmission",     # 2024
+    "Elevated outbreak",         # 2025
+    "Elevated transmission"      # 2026
+  ),
+  Notes = c(
+    "Typical seasonality",                     # 2007
+    "Typical seasonality",                     # 2008
+    "High case counts compared to previous years", # 2009
+    "Moderate transmission",                   # 2010
+    "Moderate transmission",                   # 2011
+    "Moderate transmission",                   # 2012
+    "Moderate transmission",                   # 2013
+    "Moderate transmission",                   # 2014
+    "Moderate transmission",                   # 2015
+    "Moderate transmission",                   # 2016
+    "Record outbreak",       # 2017
+    "Lower than 2017 peak",                    # 2018
+    "Significant increase",  # 2019
+    "Lower post-epidemic",                     # 2020
+    "Moderate transmission",                   # 2021
+    "Moderate transmission",                   # 2022
+    "Higher than baseline",   # 2023
+    "Above normal seasonal levels",            # 2024
+    "Substantial increase, multiple provinces affected", # 2025
+    "High-risk early year transmission"     # 2026
+  )
+)
+
+# View dataframe
+dengue_years |> knitr::kable()
+
+```
