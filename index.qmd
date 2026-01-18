@@ -2,119 +2,72 @@
 title: "Sri Lanka Dengue Atlas"
 ---
 
-```{r}
-#| warning: false
-#| message: false
-library(dplyr)
+## History matters: **What was happening this time last year?**
+
+### **Sri Lanka Dengue \| Week 1–Week 8, 2025**
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(here)
+library(leaflet)
 library(sf)
-library(lubridate)
-library(scales)
-library(denguedatahub)
-library(htmlwidgets)
-library(crosstalk)
-library(ceylon)
-```
-
-```{r}
-srilanka_weekly_data <- srilanka_weekly_data %>%
-  mutate(
-    start.date = as.Date(start.date, format = "%m/%d/%Y"),
-    end.date   = as.Date(end.date,   format = "%m/%d/%Y")
-  )
-```
-
-```{r}
-filter_by_date <- function(data, from_date, to_date) {
-  data %>%
-    filter(
-      start.date <= to_date,
-      end.date   >= from_date
-    )
-}
+library(sp)
+library(readxl)
+library(readr)
+library(tidyverse)
+library(viridis)
+DengueAtlas1 <- read_excel("dataraw/DengueAtlas.xlsx", sheet=1)
+DengueAtlas2 <- read_excel("dataraw/DengueAtlas.xlsx", sheet=2)
+df <- read_csv("dataraw/df.csv")
 
 ```
 
-```{r}
-aggregate_district_cases <- function(data) {
-  data %>%
-    group_by(district) %>%
-    summarise(
-      cases = sum(cases, na.rm = TRUE),
-      .groups = "drop"
-    )
-}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+merged_df <- DengueAtlas1 |>
+  dplyr::left_join(df, by = "HighRiskMOHAreas")
 
+# View result
+#head(merged_df)
 ```
 
-
-```{r}
-data(district)
-sl_districts <-  district %>%
-  st_transform(4326) 
-```
-
-```{r}
-make_map_data <- function(from_date, to_date) {
-
-  dengue_filtered <- srilanka_weekly_data %>%
-    filter_by_date(from_date, to_date) %>%
-    aggregate_district_cases()
-
- # sl_districts %>%
- #   left_join(dengue_filtered, by = "district") %>%
- #   mutate(cases = replace_na(cases, 0))
-  
-  dengue_filtered <- dengue_filtered %>%
-  mutate(district = toupper(district))
-
-  sl_districts <- sl_districts %>%
-  mutate(DISTRICT = toupper(DISTRICT))
-  
-  sl_map_data <- sl_districts %>%
-  left_join(dengue_filtered, by = c("DISTRICT" = "district")) #%>%
-#  mutate(cases = replace_na(cases, 0))
-
-}
-
-```
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Figure 1: Aggregated dengue cases by MOH area in Sri Lanka for 2025: Week 1 to Week 8. Circle size represents the total number of cases in each area, and color indicates case intensity grouped into categories: 0–100, 101–200, 201–400, 401–600, 601–800, and 801–1000. Hover over each circle to view the exact count for the MOH area."}
+# Aggregate dengue counts by MOH area
+df_agg <- merged_df  |>
+  group_by(HighRiskMOHAreas, Longitude, Latitude)|>
+  summarise(TotalCases = sum(Cases), .groups = "drop")
+df_agg <- df_agg |>
+  mutate(Longitude = as.numeric(Longitude),
+         Latitude = as.numeric(Latitude))
 
 
-
-```{r}
-map_data <- make_map_data(
-  from_date = as.Date("2019-01-01"),
-  to_date   = as.Date("2019-12-31")
+# Define color palette based on cases
+# Define bins and color palette
+bins <- c(1, 100, 200, 400, 600, 800, 1000)  # your categories
+pal <- colorBin(
+  palette = viridis(6),  
+  domain = df_agg$TotalCases,
+  bins = bins,
+  na.color = "grey"
 )
 
-map_data
-
-```
-
-```{r}
-library(ggplot2)
-
-ggplot(map_data) +
-  geom_sf(
-    aes(fill = cases),
-    color = "white",
-    linewidth = 0.2
-  ) +
-#  scale_fill_brewer(
- #   palette = "YlOrRd",
- #   na.value = "grey90",
-#    name = "Annual dengue cases"
-#  ) +
-  labs(
-    title = "Annual Dengue Cases by District",
-    subtitle = "Sri Lanka",
-    caption = "Source: Dengue surveillance data"
-  ) +
-  theme_minimal(base_size = 12) +
-  theme(
-    panel.grid = element_blank(),
-    axis.text  = element_blank(),
-    axis.title = element_blank(),
-    legend.position = "right"
+# Leaflet map
+leaflet(df_agg) %>%
+  addTiles() %>%
+  addCircleMarkers(
+    ~Longitude, ~Latitude,
+    radius = ~sqrt(TotalCases),  # size proportional to cases
+    color = ~pal(TotalCases),
+    stroke = TRUE,
+    fillOpacity = 0.7,
+    label = ~paste0(HighRiskMOHAreas, ": ", TotalCases, " cases")
+  ) %>%
+  addLegend(
+    "bottomright",
+    pal = pal,
+    values = ~TotalCases,
+    title = "Dengue Cases",
+    opacity = 1,
+    labFormat = labelFormat(suffix = " cases")
   )
-
 ```
+
+
