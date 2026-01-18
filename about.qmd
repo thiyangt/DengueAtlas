@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-About this site
+Created by:
 
-```{r}
-1 + 1
-```
+(Dr Thiyanga S. Talagala, Senior Lecturer, Department of Statistics, University of Sri Jayewardenepra, Sri Lanka)(https://thiyanga.netlify.app/)

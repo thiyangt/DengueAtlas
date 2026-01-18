@@ -7,6 +7,7 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - spatial.qmd
       - about.qmd
 
 format:
@@ -15,6 +16,8 @@ format:
       - cosmo
       - brand
     css: styles.css
+    number-sections: true
+    fig-caption: true
     toc: true
 
 editor: visual

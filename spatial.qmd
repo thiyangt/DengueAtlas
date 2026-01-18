@@ -1,0 +1,136 @@
+---
+title: "Spatial Distribution of Annual Dengue Cases by Districts"
+toc: false
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr)
+library(denguedatahub)
+library(ceylon)
+library(dplyr)
+library(sf)
+library(stringdist)  # for fuzzy matching
+library(ggplot2)
+library(viridis)
+library(plotly)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+data(srilanka_weekly_data)
+annual_df <- srilanka_weekly_data %>%
+  group_by(year, district) %>%        # group by year and district
+  summarise(annual_cases = sum(cases), .groups = "drop")  # sum weekly cases
+
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+data(district)
+annual_df <- annual_df %>%
+  mutate(district_clean = toupper(trimws(district)))
+
+district_sf <- district %>%
+  mutate(DISTRICT_clean = toupper(trimws(DISTRICT)))
+# Match annual_df districts to sf districts
+annual_df <- annual_df %>%
+  rowwise() %>%
+  mutate(
+    DISTRICT_match = district_sf$DISTRICT_clean[
+      amatch(district_clean, district_sf$DISTRICT_clean, maxDist = 3)
+    ]
+  ) %>%
+  ungroup()
+annual_sf <- district_sf %>%
+  left_join(annual_df, by = c("DISTRICT_clean" = "DISTRICT_match"))
+annual_sf <- annual_sf |> filter(year > 2006)
+```
+
+
+
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Figure 2: Tile map of annual dengue cases by districts"}
+#| fig-width: 10
+#| fig-height: 5
+#| out-width: "100%"
+annual_sf <- annual_sf %>%
+  mutate(
+    cases_cat = cut(
+      annual_cases,
+      breaks = c(0, 2500, 5000, 10000, 15000, 20000, 25000, 30000, Inf),
+      labels = c("1-2500","2501-5000", "5001-10000", "10001-15000", "15001-20000",
+                 "20001-25000", "25001-30000", "Above 30000"),
+      include.lowest = TRUE,
+      right = TRUE
+    )
+  )
+
+
+p1 <- ggplot(annual_sf) +
+  geom_sf(aes(fill = cases_cat), color = "grey50", lwd = 0.2) +
+  scale_fill_viridis_d(    # discrete viridis for categories
+    option = "viridis",
+    direction = -1,
+    na.value = "white",
+    name = "Annual Dengue Cases"
+  ) +
+  facet_wrap(~year, ncol=10) +
+  theme_minimal() +
+  labs(
+ #   title = "Annual Dengue Cases by District",
+ #   subtitle = "Sri Lanka",
+     caption = "Source: Epidemiology Unit, Ministry of Health Sri Lanka (via denguedatahub package in R)"
+  )  +
+  theme(
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    panel.grid = element_blank(),
+      plot.margin = margin(0,0,0,0)
+  )
+p1
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Figure 3: Tile Map of Annual Dengue Cases by Districts"}
+library(dplyr)
+library(ggplot2)
+library(plotly)
+library(viridis)
+
+annual_df <- annual_df %>%
+  filter(year > 2006) %>%
+  mutate(
+    district = factor(district, levels = unique(district)),  # keep district order
+    cases_cat = cut(
+      annual_cases,
+      breaks = c(0, 2500, 5000, 10000, 15000, 20000, 25000, 30000, Inf),
+      labels = c("1-2500","2501-5000", "5001-10000", "10001-15000", "15001-20000",
+                 "20001-25000", "25001-30000", "Above 30000"),
+      include.lowest = TRUE
+    )
+  )
+p2 <- ggplot(annual_df) +
+  geom_tile(aes(
+    x = year, 
+    y = district, 
+    fill = cases_cat,
+    text = paste0("District: ", district,
+                  "<br>Year: ", year,
+                  "<br>Annual Cases: ", annual_cases)
+  ), color = "white") +
+  scale_fill_viridis_d(
+    option = "viridis",  # visually distinct categorical palette
+    direction = -1,
+    na.value = "grey90",
+    name = "Annual Dengue Cases"
+  ) +
+  theme_minimal() +
+  labs(title = "Annual Dengue Cases by District (Tile Map)") +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    axis.text.y = element_text(size = 8)
+  )
+ggplotly(p2, tooltip = "text")
+
+```
+
+Note: 2025 results were reported only upto week 11 yet.
