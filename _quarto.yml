@@ -10,6 +10,7 @@ website:
         text: Home
       - spatial.qmd
       - time.qmd
+      - seasonal.qmd
       - about.qmd
 
 format:

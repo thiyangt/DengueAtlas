@@ -1,0 +1,67 @@
+---
+title: "Seasonal Time Series Visualizations"
+toc: false
+---
+
+## Seasonal Time Series Plots: Weekly Dengue Cases by District
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+library(plotly)
+library(viridis)
+library(denguedatahub)
+library(tidyverse)
+```
+
+```{r, fig.cap="Figure 5: Seasonal time series plots of weekly dengue cases by districts"}
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-width: 15
+#| fig-height: 20
+#| out-width: "100%"
+library(ggplot2)
+library(dplyr)
+
+# Convert year + week to a date (ISOweek: first day of the week)
+library(ISOweek)
+
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+
+# Create a date corresponding to the Monday of each year-week
+srilanka_weekly_data <- srilanka_weekly_data %>%
+  mutate(
+    year_week = paste0(year, "-W", sprintf("%02d", week)),  # e.g., "2006-W52"
+    week_start = ISOweek2date(paste0(year_week, "-1"))       # Monday of that week
+  )
+
+# Extract week of the year
+srilanka_weekly_data <- srilanka_weekly_data %>%
+  mutate(week_of_year = isoweek(week_start))  # ISO week (1-52)
+
+# Seasonal plot
+p_seasonal <- ggplot(srilanka_weekly_data, 
+                     aes(x = week_of_year, y = cases, group = year, color = factor(year))) +
+  geom_line() +
+  facet_wrap(vars(district), scales = "free_y", ncol = 5) +
+  scale_x_continuous(breaks = seq(1, 52, by = 4)) +  # show every 4 weeks
+  labs(
+    x = "Week of Year",
+    y = "Weekly Dengue Cases",
+    color = "Year",
+    title = "Seasonal Dengue Patterns by District in Sri Lanka"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 0.5),
+    strip.text = element_text(size = 10)
+  )
+
+p_seasonal
+
+```
+

@@ -18,7 +18,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Created by:\n(Dr Thiyanga S. Talagala, Senior Lecturer, Department of Statistics, University of Sri Jayewardenepra, Sri Lanka)(https://thiyanga.netlify.app/)"
+    "text": "Created by:\nDr Thiyanga S. Talagala, Senior Lecturer, Department of Statistics, University of Sri Jayewardenepra, Sri Lanka"
   },
   {
     "objectID": "index.html",
@@ -54,5 +54,26 @@
     "title": "Spatial Distribution of Annual Dengue Cases by Districts",
     "section": "2 Useful information to interpret the plots",
     "text": "2 Useful information to interpret the plots\n\n\n\n\n\n\n\n\n\n\nYear\nCategory\nNotes\n\n\n\n\n2007\nEndemic / lower intensity\nTypical seasonality\n\n\n2008\nEndemic / lower intensity\nTypical seasonality\n\n\n2009\nElevated outbreak\nHigh case counts compared to previous years\n\n\n2010\nEndemic\nModerate transmission\n\n\n2011\nEndemic\nModerate transmission\n\n\n2012\nEndemic\nModerate transmission\n\n\n2013\nEndemic\nModerate transmission\n\n\n2014\nEndemic\nModerate transmission\n\n\n2015\nEndemic\nModerate transmission\n\n\n2016\nEndemic\nModerate transmission\n\n\n2017\nMajor epidemic\nRecord outbreak\n\n\n2018\nEndemic\nLower than 2017 peak\n\n\n2019\nElevated outbreak\nSignificant increase\n\n\n2020\nEndemic\nLower post-epidemic\n\n\n2021\nEndemic\nModerate transmission\n\n\n2022\nEndemic\nModerate transmission\n\n\n2023\nElevated outbreak\nHigher than baseline\n\n\n2024\nElevated transmission\nAbove normal seasonal levels\n\n\n2025\nElevated outbreak\nSubstantial increase, multiple provinces affected\n\n\n2026\nElevated transmission\nHigh-risk early year transmission"
+  },
+  {
+    "objectID": "seasonal.html",
+    "href": "seasonal.html",
+    "title": "Seasonal Time Series Visualizations",
+    "section": "",
+    "text": "Figure 4: Time series plots of weekly dengue cases by districts"
+  },
+  {
+    "objectID": "seasonal.html#weekly-dengue-cases-by-district",
+    "href": "seasonal.html#weekly-dengue-cases-by-district",
+    "title": "Time Series Visualizations",
+    "section": "",
+    "text": "Figure 4: Time series plots of weekly dengue cases by districts"
+  },
+  {
+    "objectID": "seasonal.html#seasonal-time-series-plots-weekly-dengue-cases-by-district",
+    "href": "seasonal.html#seasonal-time-series-plots-weekly-dengue-cases-by-district",
+    "title": "Seasonal Time Series Visualizations",
+    "section": "",
+    "text": "Figure 4: Time series plots of weekly dengue cases by districts"
   }
 ]
