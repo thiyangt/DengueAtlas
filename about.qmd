@@ -4,4 +4,4 @@ title: "About"
 
 Created by:
 
-(Dr Thiyanga S. Talagala, Senior Lecturer, Department of Statistics, University of Sri Jayewardenepra, Sri Lanka)(https://thiyanga.netlify.app/)
+[Dr Thiyanga S. Talagala, Senior Lecturer, Department of Statistics, University of Sri Jayewardenepra, Sri Lanka](https://thiyanga.netlify.app/)
