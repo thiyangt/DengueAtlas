@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "spatial.html",
-    "href": "spatial.html",
-    "title": "Spatial Distribution of Annual Dengue Cases by Districts",
+    "objectID": "time.html",
+    "href": "time.html",
+    "title": "Time Series Visualizations",
     "section": "",
-    "text": "Figure 2: Tile map of annual dengue cases by districts\n\n\n\n\n\n\n\n\nFigure 3: Tile Map of Annual Dengue Cases by Districts\n\n\nNote: 2025 results were reported only upto week 11 yet."
+    "text": "Figure 4: Time series plots of weekly dengue cases by districts"
+  },
+  {
+    "objectID": "time.html#weekly-dengue-cases-by-district",
+    "href": "time.html#weekly-dengue-cases-by-district",
+    "title": "Time Series Visualizations",
+    "section": "",
+    "text": "Figure 4: Time series plots of weekly dengue cases by districts"
   },
   {
     "objectID": "about.html",
@@ -26,6 +33,13 @@
     "title": "Sri Lanka Dengue Atlas",
     "section": "",
     "text": "Figure 1: Aggregated dengue cases by MOH area in Sri Lanka for 2025: Week 1 to Week 8. Circle size represents the total number of cases in each area, and color indicates case intensity grouped into categories: 0–100, 101–200, 201–400, 401–600, 601–800, and 801–1000. Hover over each circle to view the exact count for the MOH area."
+  },
+  {
+    "objectID": "spatial.html",
+    "href": "spatial.html",
+    "title": "Spatial Distribution of Annual Dengue Cases by Districts",
+    "section": "",
+    "text": "Figure 2: Tile map of annual dengue cases by districts\n\n\n\n\n\n\n\n\nFigure 3: Tile Map of Annual Dengue Cases by Districts\n\n\nNote: 2025 results were reported only upto week 11 yet."
   },
   {
     "objectID": "spatial.html#visuaizations",

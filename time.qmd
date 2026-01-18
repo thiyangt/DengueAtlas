@@ -1,0 +1,55 @@
+---
+title: "Time Series Visualizations"
+toc: false
+---
+
+## Weekly Dengue Cases by District
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+library(plotly)
+library(viridis)
+library(denguedatahub)
+library(tidyverse)
+```
+
+```{r, fig.cap="Figure 4: Time series plots of weekly dengue cases by districts"}
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-width: 15
+#| fig-height: 20
+#| out-width: "100%"
+library(ggplot2)
+library(dplyr)
+
+# Convert year + week to a date (ISOweek: first day of the week)
+library(ISOweek)
+
+# Create a date corresponding to the Monday of each year-week
+srilanka_weekly_data <- srilanka_weekly_data %>%
+  mutate(
+    year_week = paste0(year, "-W", sprintf("%02d", week)),  # e.g., "2006-W52"
+    week_start = ISOweek2date(paste0(year_week, "-1"))       # Monday of that week
+  )
+
+# Plot weekly dengue cases for each district
+p4 <- ggplot(srilanka_weekly_data, aes(x = week_start, y = cases)) +
+  geom_line(color = "darkred") +
+  facet_wrap(vars(district), scales = "free_y", ncol = 5) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  labs(
+    x = "Year",
+    y = "Weekly dengue cases",
+#    title = "Weekly Dengue Cases by District in Sri Lanka"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+    strip.text = element_text(size = 10)
+  )
+p4
+```
+
