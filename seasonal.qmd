@@ -64,4 +64,3 @@ p_seasonal <- ggplot(srilanka_weekly_data,
 p_seasonal
 
 ```
-
