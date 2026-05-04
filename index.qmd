@@ -96,7 +96,7 @@ leaflet(data = annual_sf) %>%
 
 
 
-## High Risk MOH Areas
+## High Risk MOH Areas: 2025
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(here)
