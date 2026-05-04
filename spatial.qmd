@@ -46,10 +46,6 @@ annual_sf <- district_sf %>%
 annual_sf <- annual_sf |> filter(year > 2006)
 ```
 
-
-
-
-
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Figure 2: Tile map of annual dengue cases by districts"}
 #| fig-width: 10
 #| fig-height: 5
@@ -90,7 +86,6 @@ p1 <- ggplot(annual_sf) +
   )
 p1
 ```
-
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Figure 3: Tile Map of Annual Dengue Cases by Districts"}
 library(dplyr)

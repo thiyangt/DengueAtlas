@@ -6,6 +6,96 @@ title: "Sri Lanka Dengue Atlas"
 
 ## District-wise Dengue: 2025
 
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr)
+library(sf)
+library(leaflet)
+library(fuzzyjoin)
+library(denguedatahub)
+library(ceylon)
+library(stringdist)  # for fuzzy matching
+library(ggplot2)
+library(viridis)
+library(plotly)
+
+
+
+# Aggregate annual data
+data(srilanka_weekly_data)
+
+annual_df <- srilanka_weekly_data %>%
+  group_by(year, district) %>%
+  summarise(
+    annual_cases = sum(cases, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  filter(year == 2025)
+
+# Load Sri Lanka district polygons
+data(district)
+
+# Clean names
+annual_df <- annual_df %>%
+  mutate(district_clean = toupper(trimws(district)))
+
+district_sf <- district %>%
+  mutate(DISTRICT_clean = toupper(trimws(DISTRICT)))
+
+# Fuzzy match
+annual_df <- annual_df %>%
+  rowwise() %>%
+  mutate(
+    DISTRICT_match = district_sf$DISTRICT_clean[
+      amatch(district_clean, district_sf$DISTRICT_clean, maxDist = 3)
+    ]
+  ) %>%
+  ungroup()
+
+# Join
+annual_sf <- district_sf %>%
+  left_join(
+    annual_df,
+    by = c("DISTRICT_clean" = "DISTRICT_match")
+  )
+
+# IMPORTANT: Convert to longitude/latitude
+annual_sf <- st_transform(annual_sf, 4326)
+
+# Palette
+pal <- colorNumeric(
+  palette = "YlOrRd",
+  domain = annual_sf$annual_cases,
+  na.color = "white"
+)
+
+# Map center for Sri Lanka
+leaflet(data = annual_sf) %>%
+  addTiles() %>%
+  addPolygons(
+    fillColor = ~pal(annual_cases),
+    fillOpacity = 0.8,
+    color = "black",
+    weight = 1,
+    popup = ~paste0(
+      "<b>", DISTRICT, "</b><br>",
+      "Cases: ", annual_cases
+    )
+  ) %>%
+  addLegend(
+    pal = pal,
+    values = ~annual_cases,
+    title = "Dengue Cases (2025)"
+  ) %>%
+  setView(
+    lng = 80.7, 
+    lat = 7.8, 
+    zoom = 7
+  )
+```
+
+
+
 ## High Risk MOH Areas
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
