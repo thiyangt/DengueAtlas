@@ -89,7 +89,7 @@ p1 <- ggplot(annual_sf) +
     panel.grid = element_blank(),
       plot.margin = margin(0,0,0,0)
   )
-p1
+ggplotly(p1)
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Figure 3: Tile Map of Annual Dengue Cases by Districts"}
@@ -199,3 +199,4 @@ dengue_years <- data.frame(
 dengue_years |> knitr::kable()
 
 ```
+
