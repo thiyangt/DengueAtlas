@@ -1,11 +1,11 @@
 ---
 title: "Sri Lanka Dengue Atlas"
+editor: "source"
 ---
 
-# History matters: **Sri Lanka Dengue 2025**
+# **Sri Lanka Dengue 2025**
 
 ## District-wise Dengue: 2025
-
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(dplyr)
@@ -94,8 +94,6 @@ leaflet(data = annual_sf) %>%
   )
 ```
 
-
-
 ## High Risk MOH Areas: 2025
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -148,7 +146,7 @@ leaflet(df_agg) %>%
   addTiles() %>%
   addCircleMarkers(
     ~Longitude, ~Latitude,
-    radius = ~sqrt(TotalCases),  # size proportional to cases
+   # radius = ~sqrt(TotalCases),  # size proportional to cases
     color = ~pal(TotalCases),
     stroke = TRUE,
     fillOpacity = 0.7,
@@ -163,5 +161,3 @@ leaflet(df_agg) %>%
     labFormat = labelFormat(suffix = " cases")
   )
 ```
-
-

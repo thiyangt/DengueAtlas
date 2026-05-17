@@ -1,1 +1,11 @@
 /* css styles */
+
+/* Increase overall page width */
+main.content {
+  max-width: 1400px;
+}
+
+/* Optional: make it full width */
+.quarto-container {
+  max-width: 100%;
+}
