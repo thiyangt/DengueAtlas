@@ -1,9 +1,9 @@
 project:
   type: website
+  title: "Sri Lanka Dengue Atlas"
   output-dir: docs
 
 website:
-  title: "Sri Lanka Dengue Atlas"
   navbar:
     left:
       - href: index.qmd
@@ -11,7 +11,13 @@ website:
       - spatial.qmd
       - time.qmd
       - seasonal.qmd
+      - population.qmd
       - about.qmd
+    right: 
+      - icon: github
+        href: https://github.com/thiyangt/DengueAtlas
+      - icon: twitter
+        href: https://twitter.com/thiyangt
 
 format:
   html:

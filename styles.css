@@ -1,11 +1,9 @@
-/* css styles */
 
-/* Increase overall page width */
-main.content {
-  max-width: 2000px;
+/* styles.css */
+
+/* Left sidebar width */
+.sidebar {
+  width: 400px;   /* increase or decrease */
 }
 
-/* Optional: make it full width */
-.quarto-container {
-  max-width: 100%;
-}
+/* Main content adjusts automatically in most themes */

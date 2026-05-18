@@ -2,35 +2,42 @@
   {
     "objectID": "spatial.html",
     "href": "spatial.html",
-    "title": "Spatial Distribution of Annual Dengue Cases by Districts",
+    "title": "Spatial Distribution of Annual Dengue Cases by Districts and Year",
     "section": "",
     "text": "Figure 3: Maps of annual dengue cases by districts"
   },
   {
     "objectID": "spatial.html#map-visuaizations",
     "href": "spatial.html#map-visuaizations",
-    "title": "Spatial Distribution of Annual Dengue Cases by Districts",
+    "title": "Spatial Distribution of Annual Dengue Cases by Districts and Year",
     "section": "",
     "text": "Figure 3: Maps of annual dengue cases by districts"
   },
   {
+    "objectID": "spatial.html#tile-map-visualisation-of-district-counts",
+    "href": "spatial.html#tile-map-visualisation-of-district-counts",
+    "title": "Spatial Distribution of Annual Dengue Cases by Districts and Year",
+    "section": "2 Tile-Map Visualisation of District Counts",
+    "text": "2 Tile-Map Visualisation of District Counts"
+  },
+  {
     "objectID": "spatial.html#useful-information-to-interpret-the-plots",
     "href": "spatial.html#useful-information-to-interpret-the-plots",
-    "title": "Spatial Distribution of Annual Dengue Cases by Districts",
-    "section": "2 Useful information to interpret the plots",
-    "text": "2 Useful information to interpret the plots\n\n\n\n\n\n\n\n\n\n\nYear\nCategory\nNotes\n\n\n\n\n2007\nEndemic / lower intensity\nTypical seasonality\n\n\n2008\nEndemic / lower intensity\nTypical seasonality\n\n\n2009\nElevated outbreak\nHigh case counts compared to previous years\n\n\n2010\nEndemic\nModerate transmission\n\n\n2011\nEndemic\nModerate transmission\n\n\n2012\nEndemic\nModerate transmission\n\n\n2013\nEndemic\nModerate transmission\n\n\n2014\nEndemic\nModerate transmission\n\n\n2015\nEndemic\nModerate transmission\n\n\n2016\nEndemic\nModerate transmission\n\n\n2017\nMajor epidemic\nRecord outbreak\n\n\n2018\nEndemic\nLower than 2017 peak\n\n\n2019\nElevated outbreak\nSignificant increase\n\n\n2020\nEndemic\nLower post-epidemic\n\n\n2021\nEndemic\nModerate transmission\n\n\n2022\nEndemic\nModerate transmission\n\n\n2023\nElevated outbreak\nHigher than baseline\n\n\n2024\nElevated transmission\nAbove normal seasonal levels\n\n\n2025\nElevated outbreak\nSubstantial increase, multiple provinces affected\n\n\n2026\nElevated transmission\nHigh-risk early year transmission"
+    "title": "Spatial Distribution of Annual Dengue Cases by Districts and Year",
+    "section": "3 Useful information to interpret the plots",
+    "text": "3 Useful information to interpret the plots\n\n\n\n\n\n\n\n\n\n\nYear\nCategory\nNotes\n\n\n\n\n2007\nEndemic / lower intensity\nTypical seasonality\n\n\n2008\nEndemic / lower intensity\nTypical seasonality\n\n\n2009\nElevated outbreak\nHigh case counts compared to previous years\n\n\n2010\nEndemic\nModerate transmission\n\n\n2011\nEndemic\nModerate transmission\n\n\n2012\nEndemic\nModerate transmission\n\n\n2013\nEndemic\nModerate transmission\n\n\n2014\nEndemic\nModerate transmission\n\n\n2015\nEndemic\nModerate transmission\n\n\n2016\nEndemic\nModerate transmission\n\n\n2017\nMajor epidemic\nRecord outbreak\n\n\n2018\nEndemic\nLower than 2017 peak\n\n\n2019\nElevated outbreak\nSignificant increase\n\n\n2020\nEndemic\nLower post-epidemic\n\n\n2021\nEndemic\nModerate transmission\n\n\n2022\nEndemic\nModerate transmission\n\n\n2023\nElevated outbreak\nHigher than baseline\n\n\n2024\nElevated transmission\nAbove normal seasonal levels\n\n\n2025\nElevated outbreak\nSubstantial increase, multiple provinces affected\n\n\n2026\nElevated transmission\nHigh-risk early year transmission"
   },
   {
     "objectID": "time.html",
     "href": "time.html",
-    "title": "Time Series Visualizations",
+    "title": "Time Series Visualizations by District and Year",
     "section": "",
     "text": "Figure 4: Time series plots of weekly dengue cases by districts"
   },
   {
     "objectID": "time.html#weekly-dengue-cases-by-district",
     "href": "time.html#weekly-dengue-cases-by-district",
-    "title": "Time Series Visualizations",
+    "title": "Time Series Visualizations by District and Year",
     "section": "",
     "text": "Figure 4: Time series plots of weekly dengue cases by districts"
   },

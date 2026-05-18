@@ -1,5 +1,5 @@
 ---
-title: "Spatial Distribution of Annual Dengue Cases by Districts"
+title: "Spatial Distribution of Annual Dengue Cases by Districts and Year"
 toc: false
 editor: "source"
 ---
@@ -18,15 +18,17 @@ library(plotly)
 
 ## Map Visuaizations
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Figure 3: Maps of annual dengue cases by districts"
+#| fig-width: 10
+#| fig-height: 20
 data(srilanka_weekly_data)
 annual_df <- srilanka_weekly_data %>%
   group_by(year, district) %>%        # group by year and district
   summarise(annual_cases = sum(cases), .groups = "drop")  # sum weekly cases
-
-```
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
 data(district)
 annual_df <- annual_df %>%
   mutate(district_clean = toupper(trimws(district)))
@@ -45,15 +47,6 @@ annual_df <- annual_df %>%
 annual_sf <- district_sf %>%
   left_join(annual_df, by = c("DISTRICT_clean" = "DISTRICT_match"))
 annual_sf <- annual_sf |> filter(year > 2006)
-```
-
-```{r}
-#| echo: false
-#| message: false
-#| warning: false
-#| fig-cap: "Figure 3: Maps of annual dengue cases by districts"
-#| fig-width: 10
-#| fig-height: 20
 annual_sf <- annual_sf %>%
   mutate(
     cases_cat = cut(
@@ -78,19 +71,17 @@ p1 <- ggplot(annual_sf) +
   facet_wrap(~year, ncol=5
              ) +
   theme_minimal() +
-  labs(
- #   title = "Annual Dengue Cases by District",
- #   subtitle = "Sri Lanka",
-#     caption = "Source: Epidemiology Unit, Ministry of Health Sri Lanka (via denguedatahub package in R)"
-  )  +
+  coord_sf() +
   theme(
     axis.text = element_blank(),
     axis.ticks = element_blank(),
     panel.grid = element_blank(),
-      plot.margin = margin(0,0,0,0)
+    plot.margin = margin(0, 0, 0, 0)
   )
 p1
 ```
+
+## Tile-Map Visualisation of District Counts
 
 ```{r}
 #| echo: false

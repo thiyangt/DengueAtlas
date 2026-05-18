@@ -1,5 +1,5 @@
 ---
-title: "Time Series Visualizations"
+title: "Time Series Visualizations by District and Year"
 toc: false
 ---
 
