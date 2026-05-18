@@ -23,6 +23,7 @@ library(plotly)
 #| message: false
 #| warning: false
 #| fig-cap: "Figure 3: Maps of annual dengue cases by districts"
+#| fig-height: 15
 data(srilanka_weekly_data)
 annual_df <- srilanka_weekly_data %>%
   group_by(year, district) %>%        # group by year and district
@@ -66,7 +67,7 @@ p1 <- ggplot(annual_sf) +
     na.value = "white",
     name = "Annual Dengue Cases"
   ) +
-  facet_wrap(~year, ncol=5
+  facet_wrap(~year, ncol=10
              ) +
   theme_minimal() +
   coord_sf() +

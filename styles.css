@@ -7,3 +7,9 @@
 }
 
 /* Main content adjusts automatically in most themes */
+
+.navbar.navbar-expand-lg {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}

@@ -5,6 +5,14 @@ toc: false
 
 ## Weekly Dengue Cases by District
 
+::: callout-note
+## Explore Interactive Dashboard
+
+To zoom into district charts and statistics:
+
+[Open Dashboard](https://denguedatahub.shinyapps.io/index/){.btn .btn-primary target="_blank"}
+:::
+
 ```{r}
 #| echo: false
 #| warning: false
