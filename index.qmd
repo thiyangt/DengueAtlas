@@ -3,9 +3,7 @@ title: "Sri Lanka Dengue Atlas"
 editor: "source"
 ---
 
-# **Sri Lanka Dengue 2025**
-
-## District-wise Dengue: 2025
+# District-wise Dengue: 2025
 
 ```{r}
 #| echo: false
@@ -100,7 +98,7 @@ leaflet(data = annual_sf) %>%
   )
 ```
 
-## High Risk MOH Areas: 2025
+# High Risk MOH Areas: 2025
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(here)

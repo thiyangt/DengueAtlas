@@ -1,0 +1,39 @@
+---
+title: "Summary of District-wise Dengue Cases by Year"
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-width: 10
+#| fig-height: 20
+library(dplyr)
+library(ggplot2)
+library(denguedatahub)
+
+data(srilanka_weekly_data)
+
+annual_df <- srilanka_weekly_data %>%
+  group_by(year, district) %>%
+  summarise(
+    annual_cases = sum(cases, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+ggplot(annual_df, aes(y = factor(year), x = annual_cases)) +
+  geom_col(fill = "#d73027") +
+  facet_wrap(~ district, ncol = 6, scales = "free_x") +
+  labs(
+    x = "Year",
+    y = "Dengue Cases",
+    title = "Year-wise Dengue Cases by District"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.minor = element_blank(),
+    strip.text = element_text(size = 7),
+    plot.margin = margin(5, 5, 5, 5)
+  )
+```
