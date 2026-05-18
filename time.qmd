@@ -37,7 +37,7 @@ srilanka_weekly_data <- srilanka_weekly_data %>%
 
 # Plot weekly dengue cases for each district
 p4 <- ggplot(srilanka_weekly_data, aes(x = week_start, y = cases)) +
-  geom_line(color = "darkred", linewidth = 3) +
+  geom_line(color = "darkred", linewidth = 1) +
   facet_wrap(vars(district), scales = "free_y", ncol = 5) +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
   labs(

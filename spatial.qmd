@@ -51,7 +51,7 @@ annual_sf <- annual_sf |> filter(year > 2006)
 #| echo: false
 #| message: false
 #| warning: false
-#| fit.cap: "Figure 3: Maps of annual dengue cases by districts"
+#| fig-cap: "Figure 3: Maps of annual dengue cases by districts"
 #| fig-width: 10
 #| fig-height: 20
 annual_sf <- annual_sf %>%
@@ -81,7 +81,7 @@ p1 <- ggplot(annual_sf) +
   labs(
  #   title = "Annual Dengue Cases by District",
  #   subtitle = "Sri Lanka",
-     caption = "Source: Epidemiology Unit, Ministry of Health Sri Lanka (via denguedatahub package in R)"
+#     caption = "Source: Epidemiology Unit, Ministry of Health Sri Lanka (via denguedatahub package in R)"
   )  +
   theme(
     axis.text = element_blank(),
@@ -96,7 +96,7 @@ p1
 #| echo: false
 #| message: false
 #| warning: false
-#| fit.cap: "Figure 3: Tile map of annual dengue cases by districts"
+#| fit-cap: "Figure 3: Tile map of annual dengue cases by districts"
 #| fig-width: 10
 #| fig-height: 20
 library(dplyr)

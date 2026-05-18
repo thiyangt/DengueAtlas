@@ -27,7 +27,7 @@ library(dplyr)
 
 # Convert year + week to a date (ISOweek: first day of the week)
 library(ISOweek)
-
+library(viridis)
 library(dplyr)
 library(ggplot2)
 library(lubridate)
@@ -37,7 +37,8 @@ srilanka_weekly_data <- srilanka_weekly_data %>%
   mutate(
     year_week = paste0(year, "-W", sprintf("%02d", week)),  # e.g., "2006-W52"
     week_start = ISOweek2date(paste0(year_week, "-1"))       # Monday of that week
-  )
+  ) |>
+  filter(year_week > 2019)
 
 # Extract week of the year
 srilanka_weekly_data <- srilanka_weekly_data %>%
@@ -53,13 +54,13 @@ p_seasonal <- ggplot(srilanka_weekly_data,
     x = "Week of Year",
     y = "Weekly Dengue Cases",
     color = "Year",
-    title = "Seasonal Dengue Patterns by District in Sri Lanka"
+  #  title = "Seasonal Dengue Patterns by District in Sri Lanka"
   ) +
   theme_minimal() +
   theme(
     axis.text.x = element_text(angle = 0, vjust = 0.5, hjust = 0.5),
     strip.text = element_text(size = 10)
-  )
+  ) + scale_color_viridis_d(option = "magma")
 
 p_seasonal
 
