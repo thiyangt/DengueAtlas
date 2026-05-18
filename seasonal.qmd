@@ -38,7 +38,7 @@ srilanka_weekly_data <- srilanka_weekly_data %>%
     year_week = paste0(year, "-W", sprintf("%02d", week)),  # e.g., "2006-W52"
     week_start = ISOweek2date(paste0(year_week, "-1"))       # Monday of that week
   ) |>
-  filter(year_week > 2019)
+  filter(year_week >= 2020)
 
 # Extract week of the year
 srilanka_weekly_data <- srilanka_weekly_data %>%
@@ -62,6 +62,6 @@ p_seasonal <- ggplot(srilanka_weekly_data,
     strip.text = element_text(size = 10)
   ) + scale_color_viridis_d(option = "magma")
 
-p_seasonal
+ggplotly(p_seasonal)
 
 ```

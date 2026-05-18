@@ -35,6 +35,13 @@
     "text": "Figure 4: Time series plots of weekly dengue cases by districts"
   },
   {
+    "objectID": "population.html",
+    "href": "population.html",
+    "title": "Population",
+    "section": "",
+    "text": "1 District-wise Population in Sri Lanka\n\n\n\n\n\nFigure 6: District-wise Population based on 2024 Census"
+  },
+  {
     "objectID": "seasonal.html",
     "href": "seasonal.html",
     "title": "Seasonal Time Series Visualizations",
@@ -74,6 +81,20 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Created by:\nDr Thiyanga S. Talagala, Senior Lecturer, Department of Statistics, University of Sri Jayewardenepra, Sri Lanka"
+    "text": "Dr Thiyanga S. Talagala, Senior Lecturer, Department of Statistics, University of Sri Jayewardenepra, Sri Lanka"
+  },
+  {
+    "objectID": "about.html#created-by",
+    "href": "about.html#created-by",
+    "title": "About",
+    "section": "",
+    "text": "Dr Thiyanga S. Talagala, Senior Lecturer, Department of Statistics, University of Sri Jayewardenepra, Sri Lanka"
+  },
+  {
+    "objectID": "about.html#data-description",
+    "href": "about.html#data-description",
+    "title": "About",
+    "section": "2 Data description:",
+    "text": "2 Data description:\n\n2.1 Dengue-related data\nDengue-related data were obtained from the Weekly Epidemiological Reports published by the Ministry of Health, Sri Lanka. These data are available in a tidy format through the [denguedatahub](https://denguedatahub.netlify.app) package. In addition, Ministry of Health (MOH) area related data were sourced from the National Dengue Control Unit. \n\n\n2.2 Population data\nPopulation data were obtained from the Department of Census and Statistics, based on the 2024 Census."
   }
 ]
