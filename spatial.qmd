@@ -23,7 +23,6 @@ library(plotly)
 #| message: false
 #| warning: false
 #| fig-cap: "Figure 3: Maps of annual dengue cases by districts"
-#| fig-height: 10
 data(srilanka_weekly_data)
 annual_df <- srilanka_weekly_data %>%
   group_by(year, district) %>%        # group by year and district
