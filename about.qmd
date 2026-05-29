@@ -6,11 +6,11 @@ title: "About"
 
 [Dr Thiyanga S. Talagala, Senior Lecturer, Department of Statistics, University of Sri Jayewardenepra, Sri Lanka](https://thiyanga.netlify.app/)
 
-## Data description: 
+## Data description:
 
 ### Dengue-related data
 
-Dengue-related data were obtained from the Weekly Epidemiological Reports published by the Ministry of Health, Sri Lanka. These data are available in a tidy format through the \[**denguedatahub\](**<https://denguedatahub.netlify.app>**)** package. In addition, Ministry of Health (MOH) area related data were sourced from the National Dengue Control Unit. 
+Dengue-related data were obtained from the Weekly Epidemiological Reports published by the Ministry of Health, Sri Lanka. These data are available in a tidy format through the [denguedatahub](https://thiyangt.github.io/denguedatahubweb/) ~~https://denguedatahub.netlify.app~~ package. In addition, Ministry of Health (MOH) area related data were sourced from the National Dengue Control Unit.
 
 ### Population data
 
