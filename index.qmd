@@ -125,7 +125,7 @@ merged_df <- DengueAtlas1 |>
 #head(merged_df)
 ```
 
-```{r}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 #| echo: false
 #| message: false
 #| warning: false
@@ -135,7 +135,7 @@ merged_df <- DengueAtlas1 |>
 # Aggregate dengue counts by MOH area
 merged_df$Cases <- as.integer(merged_df$Cases)
 df_agg <- merged_df  |>
-  group_by(HighRiskMOHAreas, longitude, latitude)|>
+  group_by(HighRiskMOHAreas, longitude, latitude, District)|>
   summarise(TotalCases = sum(Cases), .groups = "drop")
 df_agg <- df_agg |>
   mutate(Longitude = as.numeric(longitude),
@@ -175,28 +175,101 @@ map2
 ```
 
 
-```{r}
-htmltools::div(
-  style = "
-    display: flex;
-    gap: 15px;
-    width: 100%;
-  ",
+```{r, echo=FALSE, message=FALSE, warning=FALSE}}
+library(sf)
+library(dplyr)
+library(leaflet)
+library(leafsync)
+library(htmltools)
 
-  htmltools::div(
-    style = "
-      flex: 1;
-      min-width: 0;
-    ",
-    map1
-  ),
+# --------------------------------------------------
+# 1. District-wise map
+# --------------------------------------------------
 
-  htmltools::div(
-    style = "
-      flex: 1;
-      min-width: 0;
-    ",
-    map2
-  )
+district_sf <- annual_sf %>%
+  filter(!is.na(annual_cases))
+
+district_pal <- colorNumeric(
+  palette = "YlOrRd",
+  domain = district_sf$annual_cases
 )
+
+map1 <- leaflet(district_sf) %>%
+ # addProviderTiles(providers$CartoDB.Positron) %>%
+  addTiles() %>%
+  addPolygons(
+    fillColor = ~district_pal(annual_cases),
+    fillOpacity = 0.7,
+    color = "white",
+    weight = 1,
+    popup = ~paste0(
+      "<b>District:</b> ", district,
+      "<br><b>Annual cases:</b> ",
+      format(annual_cases, big.mark = ",")
+    ),
+    group = "Districts"
+  ) %>%
+  addLegend(
+    position = "bottomright",
+    pal = district_pal,
+    values = ~annual_cases,
+    title = "Annual cases"
+  )
+
+# --------------------------------------------------
+# 2. MOH-area map
+# --------------------------------------------------
+
+moh_df <- merged_df %>%
+  filter(
+    !is.na(longitude),
+    !is.na(latitude),
+    is.finite(longitude),
+    is.finite(latitude),
+    !is.na(Cases)
+  )
+
+moh_pal <- colorNumeric(
+  palette = "RdPu",
+  domain = moh_df$Cases
+)
+
+map2 <- leaflet(moh_df) %>%
+  #addProviderTiles(providers$CartoDB.Positron) %>%
+  addTiles() %>%
+  addCircleMarkers(
+    lng = ~longitude,
+    lat = ~latitude,
+    radius = ~pmax(4, sqrt(Cases) * 1.2),
+    color = "white",
+    weight = 1,
+    fillColor = ~moh_pal(Cases),
+    fillOpacity = 0.85,
+    popup = ~paste0(
+      "<b>District:</b> ", District,
+      "<br><b>MOH area:</b> ", HighRiskMOHAreas,
+      "<br><b>Year:</b> ", Year,
+      "<br><b>Week:</b> ", Week,
+      "<br><b>Cases:</b> ", Cases
+    )
+  ) %>%
+  addLegend(
+    position = "bottomright",
+    pal = moh_pal,
+    values = ~Cases,
+    title = "MOH-area cases"
+  )
+
+# --------------------------------------------------
+# 3. Display side-by-side and synchronize
+# --------------------------------------------------
+
+leafsync::sync(
+  map1,
+  map2,
+  ncol = 2
+)
+
+
+
 ```
