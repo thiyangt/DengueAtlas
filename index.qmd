@@ -175,7 +175,7 @@ map2
 ```
 
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(sf)
 library(dplyr)
 library(leaflet)
