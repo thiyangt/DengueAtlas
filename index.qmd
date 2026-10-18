@@ -74,7 +74,7 @@ pal <- colorNumeric(
 )
 
 # Map center for Sri Lanka
-leaflet(data = annual_sf) %>%
+map1 <- leaflet(data = annual_sf) %>%
   addTiles() %>%
   addPolygons(
     fillColor = ~pal(annual_cases),
@@ -96,6 +96,7 @@ leaflet(data = annual_sf) %>%
     lat = 7.8, 
     zoom = 7
   )
+map1
 ```
 
 # High Risk MOH Areas: 2025
@@ -152,7 +153,7 @@ pal <- colorBin(
 )
 
 # Leaflet map
-leaflet(df_agg) %>%
+map2 <- leaflet(df_agg) %>%
   addTiles() %>%
   addCircleMarkers(
     ~Longitude, ~Latitude,
@@ -170,4 +171,32 @@ leaflet(df_agg) %>%
     opacity = 1,
     labFormat = labelFormat(suffix = " cases")
   )
+map2
+```
+
+
+```{r}
+htmltools::div(
+  style = "
+    display: flex;
+    gap: 15px;
+    width: 100%;
+  ",
+
+  htmltools::div(
+    style = "
+      flex: 1;
+      min-width: 0;
+    ",
+    map1
+  ),
+
+  htmltools::div(
+    style = "
+      flex: 1;
+      min-width: 0;
+    ",
+    map2
+  )
+)
 ```

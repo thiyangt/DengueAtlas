@@ -1,0 +1,628 @@
+---
+title: "Untitled"
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(dplyr)
+library(sf)
+library(leaflet)
+library(denguedatahub)
+library(ceylon)
+library(stringdist)
+library(readxl)
+library(readr)
+library(viridis)
+library(htmltools)
+library(htmlwidgets)
+
+
+# =========================================================
+# 1. DISTRICT-WISE DENGUE DATA
+# =========================================================
+
+data(srilanka_weekly_data)
+data(district)
+
+# Aggregate weekly data to annual district totals
+annual_df <- srilanka_weekly_data %>%
+  group_by(year, district) %>%
+  summarise(
+    annual_cases = sum(cases, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  filter(year == 2025) %>%
+  mutate(
+    district_clean = toupper(trimws(district))
+  )
+
+
+# ---------------------------------------------------------
+# Load district polygons
+# ---------------------------------------------------------
+
+district_sf <- district %>%
+  mutate(
+    DISTRICT_clean = toupper(trimws(DISTRICT))
+  )
+
+
+# ---------------------------------------------------------
+# Fuzzy matching of district names
+# ---------------------------------------------------------
+
+annual_df <- annual_df %>%
+  rowwise() %>%
+  mutate(
+    DISTRICT_match = district_sf$DISTRICT_clean[
+      stringdist::amatch(
+        district_clean,
+        district_sf$DISTRICT_clean,
+        maxDist = 3
+      )
+    ]
+  ) %>%
+  ungroup()
+
+
+# ---------------------------------------------------------
+# Join annual dengue data to district polygons
+# ---------------------------------------------------------
+
+annual_sf <- district_sf %>%
+  left_join(
+    annual_df,
+    by = c("DISTRICT_clean" = "DISTRICT_match")
+  ) %>%
+  st_transform(4326)
+
+
+# =========================================================
+# 2. MOH AREA DATA
+# =========================================================
+
+DengueAtlas1 <- read_excel(
+  "dataraw/DengueAtlas.xlsx",
+  sheet = 1
+)
+
+df_coordinates <- read_csv(
+  "dataraw/sri_lanka_areas_coordinates.csv",
+  show_col_types = FALSE
+) %>%
+  rename(
+    HighRiskMOHAreas = area
+  )
+
+
+# ---------------------------------------------------------
+# Join MOH dengue data with coordinates
+# ---------------------------------------------------------
+
+merged_df <- DengueAtlas1 %>%
+  left_join(
+    df_coordinates,
+    by = "HighRiskMOHAreas"
+  )
+
+
+# Make sure Cases is numeric
+merged_df <- merged_df %>%
+  mutate(
+    Cases = as.numeric(Cases)
+  )
+
+
+# ---------------------------------------------------------
+# Aggregate dengue cases by MOH area
+# ---------------------------------------------------------
+
+df_agg <- merged_df %>%
+  group_by(
+    HighRiskMOHAreas,
+    longitude,
+    latitude
+  ) %>%
+  summarise(
+    TotalCases = sum(Cases, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    Longitude = as.numeric(
+      trimws(as.character(longitude))
+    ),
+    Latitude = as.numeric(
+      trimws(as.character(latitude))
+    )
+  )
+
+
+# =========================================================
+# 3. CLEAN MOH COORDINATES
+# =========================================================
+
+# Keep only valid longitude/latitude values
+moh_df <- df_agg %>%
+  filter(
+    is.finite(Longitude),
+    is.finite(Latitude)
+  )
+
+
+# Optional: inspect MOH areas that have no coordinates
+# df_agg %>%
+#   filter(
+#     !is.finite(Longitude) |
+#     !is.finite(Latitude)
+#   )
+
+
+# =========================================================
+# 4. CONVERT MOH LOCATIONS TO SF
+# =========================================================
+
+moh_sf <- st_as_sf(
+  moh_df,
+  coords = c(
+    "Longitude",
+    "Latitude"
+  ),
+  crs = 4326,
+  remove = FALSE
+)
+
+
+# =========================================================
+# 5. ASSIGN EACH MOH AREA TO A DISTRICT
+# =========================================================
+
+moh_sf <- st_join(
+  moh_sf,
+  district_sf %>%
+    select(
+      DISTRICT,
+      DISTRICT_clean
+    ),
+  join = st_within,
+  left = TRUE
+)
+
+
+# ---------------------------------------------------------
+# Check MOH areas that could not be assigned
+# ---------------------------------------------------------
+
+# moh_sf %>%
+#   filter(is.na(DISTRICT)) %>%
+#   st_drop_geometry() %>%
+#   select(
+#     HighRiskMOHAreas,
+#     Longitude,
+#     Latitude
+#   )
+
+
+# Convert back to regular data frame
+moh_df <- moh_sf %>%
+  st_drop_geometry() %>%
+  mutate(
+    district_clean = DISTRICT_clean
+  )
+
+
+# =========================================================
+# 6. COLOUR PALETTES
+# =========================================================
+
+district_pal <- colorNumeric(
+  palette = "YlOrRd",
+  domain = annual_sf$annual_cases,
+  na.color = "white"
+)
+
+
+moh_pal <- colorBin(
+  palette = viridis(7),
+  domain = moh_df$TotalCases,
+  bins = c(
+    1,
+    30,
+    60,
+    100,
+    150,
+    250,
+    500,
+    1000,
+    2000
+  ),
+  na.color = "grey"
+)
+
+
+# =========================================================
+# 7. DISTRICT MAP
+# =========================================================
+
+district_map <- leaflet(
+  annual_sf,
+  elementId = "district_map"
+) %>%
+
+  addTiles() %>%
+
+  addPolygons(
+    fillColor = ~district_pal(annual_cases),
+    fillOpacity = 0.8,
+
+    color = "black",
+    weight = 1,
+
+    # This is used to identify the district
+    layerId = ~DISTRICT_clean,
+
+    highlightOptions = highlightOptions(
+      weight = 3,
+      bringToFront = TRUE
+    ),
+
+    label = ~paste0(
+      DISTRICT,
+      ": ",
+      format(
+        annual_cases,
+        big.mark = ","
+      ),
+      " cases"
+    ),
+
+    popup = ~paste0(
+      "<b>",
+      DISTRICT,
+      "</b><br>",
+      "Dengue cases: ",
+      format(
+        annual_cases,
+        big.mark = ","
+      ),
+      "<br><br>",
+      "<i>Click the district to see its MOH areas.</i>"
+    )
+  ) %>%
+
+  addLegend(
+    position = "bottomright",
+    pal = district_pal,
+    values = ~annual_cases,
+    title = "Dengue Cases<br>(2025)",
+    opacity = 1
+  ) %>%
+
+  setView(
+    lng = 80.7,
+    lat = 7.8,
+    zoom = 7
+  )
+
+
+# =========================================================
+# 8. MOH MAP
+# =========================================================
+
+moh_map <- leaflet(
+  moh_df,
+  elementId = "moh_map"
+) %>%
+
+  addTiles() %>%
+
+  addCircleMarkers(
+
+    lng = ~Longitude,
+    lat = ~Latitude,
+
+    # Encode district in layer ID
+    layerId = ~paste0(
+      "moh__",
+      district_clean,
+      "__",
+      HighRiskMOHAreas
+    ),
+
+    radius = 7,
+
+    color = ~moh_pal(TotalCases),
+
+    stroke = TRUE,
+
+    fillOpacity = 0.75,
+
+    label = ~paste0(
+      HighRiskMOHAreas,
+      ": ",
+      format(
+        TotalCases,
+        big.mark = ","
+      ),
+      " cases"
+    ),
+
+    popup = ~paste0(
+      "<b>",
+      HighRiskMOHAreas,
+      "</b><br>",
+      "District: ",
+      DISTRICT,
+      "<br>",
+      "Dengue cases: ",
+      format(
+        TotalCases,
+        big.mark = ","
+      )
+    )
+  ) %>%
+
+  addLegend(
+    position = "bottomright",
+    pal = moh_pal,
+    values = ~TotalCases,
+    title = "Dengue Cases",
+    opacity = 1,
+    labFormat = labelFormat(
+      suffix = " cases"
+    )
+  ) %>%
+
+  setView(
+    lng = 80.7,
+    lat = 7.8,
+    zoom = 7
+  )
+
+
+# =========================================================
+# 9. ADD RESET BUTTON TO MOH MAP
+# =========================================================
+
+moh_map <- moh_map %>%
+
+  addEasyButton(
+    easyButton(
+      icon = "fa-globe",
+      title = "Show all MOH areas",
+
+      onClick = JS(
+        "
+        function(btn, map) {
+
+          map.eachLayer(function(layer) {
+
+            var id = layer.options.layerId;
+
+            if (
+              id &&
+              id.toString().startsWith('moh__')
+            ) {
+
+              layer.setStyle({
+                opacity: 1,
+                fillOpacity: 0.75
+              });
+
+            }
+
+          });
+
+        }
+        "
+      )
+    )
+  )
+
+
+# =========================================================
+# 10. CONNECT DISTRICT MAP TO MOH MAP
+# =========================================================
+
+district_map <- district_map %>%
+
+  onRender(
+    "
+    function(el, x) {
+
+      var districtMap = this;
+
+      districtMap.on(
+        'click',
+        function(e) {
+
+          var districtLayer = e.layer;
+
+          if (
+            !districtLayer ||
+            !districtLayer.options.layerId
+          ) {
+            return;
+          }
+
+          var selectedDistrict =
+            districtLayer.options.layerId;
+
+          /*
+           * Find the MOH leaflet widget
+           */
+          var mohWidget =
+            HTMLWidgets.find('#moh_map');
+
+          if (!mohWidget) {
+            return;
+          }
+
+          var mohMap =
+            mohWidget.getMap();
+
+
+          /*
+           * Hide/show MOH areas
+           */
+          mohMap.eachLayer(
+            function(layer) {
+
+              var id =
+                layer.options.layerId;
+
+              if (
+                !id ||
+                !id.toString()
+                  .startsWith('moh__')
+              ) {
+                return;
+              }
+
+
+              var parts =
+                id.toString().split('__');
+
+
+              if (parts.length < 3) {
+                return;
+              }
+
+
+              var mohDistrict =
+                parts[1];
+
+
+              /*
+               * Show selected district
+               */
+              if (
+                mohDistrict ===
+                selectedDistrict
+              ) {
+
+                layer.setStyle({
+                  opacity: 1,
+                  fillOpacity: 0.8
+                });
+
+              }
+
+              /*
+               * Hide other districts
+               */
+              else {
+
+                layer.setStyle({
+                  opacity: 0,
+                  fillOpacity: 0
+                });
+
+              }
+
+            }
+          );
+
+
+          /*
+           * Zoom the MOH map to
+           * the selected district
+           */
+          var bounds =
+            districtLayer.getBounds();
+
+          mohMap.fitBounds(
+            bounds,
+            {
+              padding: [20, 20]
+            }
+          );
+
+        }
+
+      );
+
+    }
+    "
+  )
+
+
+# =========================================================
+# 11. SIDE-BY-SIDE LAYOUT
+# =========================================================
+
+htmltools::div(
+
+  style = "
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+  ",
+
+  # -------------------------------------------------------
+  # LEFT: DISTRICT MAP
+  # -------------------------------------------------------
+
+  htmltools::div(
+
+    style = "
+      flex: 1 1 48%;
+      min-width: 450px;
+    ",
+
+    tags$h4(
+      "District-wise Dengue Cases, 2025",
+      style = "
+        text-align: center;
+        margin-bottom: 5px;
+      "
+    ),
+
+    tags$p(
+      "Click a district to display its MOH areas.",
+      style = "
+        text-align: center;
+        color: #666;
+        margin-top: 0;
+      "
+    ),
+
+    district_map
+  ),
+
+
+  # -------------------------------------------------------
+  # RIGHT: MOH MAP
+  # -------------------------------------------------------
+
+  htmltools::div(
+
+    style = "
+      flex: 1 1 48%;
+      min-width: 450px;
+    ",
+
+    tags$h4(
+      "High-Risk MOH Areas, 2025",
+      style = "
+        text-align: center;
+        margin-bottom: 5px;
+      "
+    ),
+
+    tags$p(
+      "Select a district on the left to filter the MOH areas.",
+      style = "
+        text-align: center;
+        color: #666;
+        margin-top: 0;
+      "
+    ),
+
+    moh_map
+  )
+)
+```
