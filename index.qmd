@@ -3,14 +3,17 @@ title: "Sri Lanka Dengue Atlas"
 editor: "source"
 ---
 
+## Sri Lanka Dengue Situation in 2026 (up to October 2026)
 
+
+## Sri Lanka Dengue Situation in 2025
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 #| echo: false
 #| message: false
 #| warning: false
 #| out-width: 100%
-#| out-height: 900px
+#| out-height: 1500px
 
 # ============================================================
 # LIBRARIES
@@ -197,7 +200,7 @@ map1 <- leaflet(
 
     lat = 7.8,
 
-    zoom = 7
+    zoom = 10
 
   )
 
@@ -212,7 +215,8 @@ map1 <- leaflet(
 # ------------------------------------------------------------
 
 
-DengueAtlas1 <- read_excel("dataraw/DengueAtlas.xlsx", sheet=1)
+#DengueAtlas1 <- read_excel("dataraw/DengueAtlas.xlsx", sheet=1)
+DengueAtlas1 <- read_csv("dataraw/2026_11_1.csv")
 DengueAtlas2 <- read_excel("dataraw/DengueAtlas.xlsx", sheet=2)
 df <- read_csv("dataraw/sri_lanka_areas_coordinates.csv")
 
@@ -336,7 +340,9 @@ print(unmatched_districts)
 
 moh_pal <- colorNumeric(
 
-  palette = "RdPu",
+ # palette = "RdPu",
+  
+  palette = "YlGnBu",
 
   domain = moh_df$Cases,
 
@@ -361,8 +367,8 @@ map2 <- leaflet(
     lat = ~latitude,
 
     radius = ~pmax(
-      5,
-      sqrt(Cases) * 1.2
+     5,
+     sqrt(Cases) * 1.2
     ),
 
     color = "white",
@@ -832,15 +838,32 @@ map2 <- htmlwidgets::onRender(
 # PART 4: DISPLAY SIDE-BY-SIDE
 # ============================================================
 
-leafsync::sync(
-
-  map1,
-
-  map2,
-
-  ncol = 2
-
+htmltools::tagList(
+  htmltools::tags$div(
+    style = "display: grid; grid-template-columns: 1fr 1fr; gap: 10px;",
+    htmltools::tags$div(
+      htmltools::tags$h4("(a)"),
+      map1
+    ),
+    htmltools::tags$div(
+      htmltools::tags$h4("(b)"),
+      map2
+    )
+  )
 )
+
+#leafsync::sync(
+
+#  map1,
+
+#  map2,
+
+#  ncol = 2
+
+#)
 
 
 ```
+
+Note: For MOH area data  week 5, week 11, week 18, weeks 26 to week 52 reports were missing. Hence, those week counts were not included in the map.
+

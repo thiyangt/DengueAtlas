@@ -53,7 +53,7 @@
     "href": "index.html",
     "title": "Sri Lanka Dengue Atlas",
     "section": "",
-    "text": "[1] \"RATHNAPURA\""
+    "text": "character(0)\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote: For MOH area data week 5, week 11, week 18, weeks 26 to week 52 reports were missing. Hence, those week counts were not included in the map."
   },
   {
     "objectID": "seasonal.html",
@@ -68,5 +68,12 @@
     "title": "Seasonal Time Series Visualizations",
     "section": "",
     "text": "Figure 5: Seasonal time series plots of weekly dengue cases by districts"
+  },
+  {
+    "objectID": "index.html#sri-lanka-dengue-situation-in-2025",
+    "href": "index.html#sri-lanka-dengue-situation-in-2025",
+    "title": "Sri Lanka Dengue Atlas",
+    "section": "2 Sri Lanka Dengue Situation in 2025",
+    "text": "2 Sri Lanka Dengue Situation in 2025\n\n\ncharacter(0)\n\n\n\n\n(a)\n\n\n\n\n(b)\n\n\n\n\n\n\nNote: For MOH area data week 5, week 11, week 18, weeks 26 to week 52 reports were missing. Hence, those week counts were not included in the map."
   }
 ]
