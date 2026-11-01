@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sri Lanka Dengue Atlas",
+    "section": "",
+    "text": "character(0)"
+  },
+  {
+    "objectID": "index.html#sri-lanka-dengue-situation-in-2026-up-to-week-43-2026",
+    "href": "index.html#sri-lanka-dengue-situation-in-2026-up-to-week-43-2026",
+    "title": "Sri Lanka Dengue Atlas",
+    "section": "",
+    "text": "character(0)"
+  },
+  {
+    "objectID": "index.html#sri-lanka-dengue-situation-in-2025",
+    "href": "index.html#sri-lanka-dengue-situation-in-2025",
+    "title": "Sri Lanka Dengue Atlas",
+    "section": "2 Sri Lanka Dengue Situation in 2025",
+    "text": "2 Sri Lanka Dengue Situation in 2025\n\n\ncharacter(0)\n\n\n\n\n(a)\n\n\n\n\n(b)\n\n\n\n\n\n\nNote: For MOH area data week 5, week 11, week 18, weeks 26 to week 52 reports were missing. Hence, those week counts were not included in the map."
+  },
+  {
     "objectID": "time.html",
     "href": "time.html",
     "title": "Time Series Visualizations by District and Year",
@@ -49,11 +70,25 @@
     "text": "1 District-wise Population in Sri Lanka\n\n\n\n\n\nFigure 6: District-wise Population based on 2024 Census"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Sri Lanka Dengue Atlas",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "character(0)\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote: For MOH area data week 5, week 11, week 18, weeks 26 to week 52 reports were missing. Hence, those week counts were not included in the map."
+    "text": "Dr Thiyanga S. Talagala, Senior Lecturer, Department of Statistics, University of Sri Jayewardenepra, Sri Lanka"
+  },
+  {
+    "objectID": "about.html#created-by",
+    "href": "about.html#created-by",
+    "title": "About",
+    "section": "",
+    "text": "Dr Thiyanga S. Talagala, Senior Lecturer, Department of Statistics, University of Sri Jayewardenepra, Sri Lanka"
+  },
+  {
+    "objectID": "about.html#data-description",
+    "href": "about.html#data-description",
+    "title": "About",
+    "section": "2 Data description:",
+    "text": "2 Data description:\n\n2.1 Dengue-related data\nDengue-related data were obtained from the Weekly Epidemiological Reports published by the Ministry of Health, Sri Lanka. These data are available in a tidy format through the denguedatahub https://denguedatahub.netlify.app package. In addition, Ministry of Health (MOH) area related data were sourced from the National Dengue Control Unit.\n\n\n2.2 Population data\nPopulation data were obtained from the Department of Census and Statistics, based on the 2024 Census."
   },
   {
     "objectID": "seasonal.html",
@@ -68,12 +103,5 @@
     "title": "Seasonal Time Series Visualizations",
     "section": "",
     "text": "Figure 5: Seasonal time series plots of weekly dengue cases by districts"
-  },
-  {
-    "objectID": "index.html#sri-lanka-dengue-situation-in-2025",
-    "href": "index.html#sri-lanka-dengue-situation-in-2025",
-    "title": "Sri Lanka Dengue Atlas",
-    "section": "2 Sri Lanka Dengue Situation in 2025",
-    "text": "2 Sri Lanka Dengue Situation in 2025\n\n\ncharacter(0)\n\n\n\n\n(a)\n\n\n\n\n(b)\n\n\n\n\n\n\nNote: For MOH area data week 5, week 11, week 18, weeks 26 to week 52 reports were missing. Hence, those week counts were not included in the map."
   }
 ]
