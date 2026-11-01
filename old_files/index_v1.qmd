@@ -1,0 +1,274 @@
+---
+title: "Sri Lanka Dengue Atlas"
+editor: "source"
+---
+
+# District-wise Dengue: 2025
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Figure 1: District-wise Dengue Cases for the Year 2025"
+#| out-width: 100%
+#| out-height: 1000px
+library(dplyr)
+library(sf)
+library(leaflet)
+library(fuzzyjoin)
+library(denguedatahub)
+library(ceylon)
+library(stringdist)  # for fuzzy matching
+library(ggplot2)
+library(viridis)
+library(plotly)
+
+
+
+# Aggregate annual data
+data(srilanka_weekly_data)
+
+annual_df <- srilanka_weekly_data %>%
+  group_by(year, district) %>%
+  summarise(
+    annual_cases = sum(cases, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  filter(year == 2025)
+
+# Load Sri Lanka district polygons
+data(district)
+
+# Clean names
+annual_df <- annual_df %>%
+  mutate(district_clean = toupper(trimws(district)))
+
+district_sf <- district %>%
+  mutate(DISTRICT_clean = toupper(trimws(DISTRICT)))
+
+# Fuzzy match
+annual_df <- annual_df %>%
+  rowwise() %>%
+  mutate(
+    DISTRICT_match = district_sf$DISTRICT_clean[
+      amatch(district_clean, district_sf$DISTRICT_clean, maxDist = 3)
+    ]
+  ) %>%
+  ungroup()
+
+# Join
+annual_sf <- district_sf %>%
+  left_join(
+    annual_df,
+    by = c("DISTRICT_clean" = "DISTRICT_match")
+  )
+
+# IMPORTANT: Convert to longitude/latitude
+annual_sf <- st_transform(annual_sf, 4326)
+
+# Palette
+pal <- colorNumeric(
+  palette = "YlOrRd",
+  domain = annual_sf$annual_cases,
+  na.color = "white"
+)
+
+# Map center for Sri Lanka
+map1 <- leaflet(data = annual_sf) %>%
+  addTiles() %>%
+  addPolygons(
+    fillColor = ~pal(annual_cases),
+    fillOpacity = 0.8,
+    color = "black",
+    weight = 1,
+    popup = ~paste0(
+      "<b>", DISTRICT, "</b><br>",
+      "Cases: ", annual_cases
+    )
+  ) %>%
+  addLegend(
+    pal = pal,
+    values = ~annual_cases,
+    title = "Dengue Cases (2025)"
+  ) %>%
+  setView(
+    lng = 80.7, 
+    lat = 7.8, 
+    zoom = 7
+  )
+map1
+```
+
+# High Risk MOH Areas: 2025
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(here)
+library(leaflet)
+library(sf)
+library(sp)
+library(readxl)
+library(readr)
+library(tidyverse)
+library(viridis)
+DengueAtlas1 <- read_excel("dataraw/DengueAtlas.xlsx", sheet=1)
+DengueAtlas2 <- read_excel("dataraw/DengueAtlas.xlsx", sheet=2)
+df <- read_csv("dataraw/sri_lanka_areas_coordinates.csv")
+df <- df |>
+  rename(HighRiskMOHAreas = area)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+merged_df <- DengueAtlas1 |>
+  dplyr::left_join(df, by = "HighRiskMOHAreas")
+
+# View result
+#head(merged_df)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Figure 2: Aggregated dengue cases by MOH area in Sri Lanka for 2025. Hover over each circle to view the exact count for the MOH area."
+#| out-width: 100%
+#| out-height: 1000px
+# Aggregate dengue counts by MOH area
+merged_df$Cases <- as.integer(merged_df$Cases)
+df_agg <- merged_df  |>
+  group_by(HighRiskMOHAreas, longitude, latitude, District)|>
+  summarise(TotalCases = sum(Cases), .groups = "drop")
+df_agg <- df_agg |>
+  mutate(Longitude = as.numeric(longitude),
+         Latitude = as.numeric(latitude))
+
+
+# Define color palette based on cases
+# Define bins and color palette
+bins <- c(1, 30, 60, 100, 150, 250, 500, 1000, 2000)  # your categories
+pal <- colorBin(
+  palette = viridis(7),  
+  domain = df_agg$TotalCases,
+  bins = bins,
+  na.color = "grey"
+)
+
+# Leaflet map
+map2 <- leaflet(df_agg) %>%
+  addTiles() %>%
+  addCircleMarkers(
+    ~Longitude, ~Latitude,
+   # radius = ~sqrt(TotalCases),  # size proportional to cases
+    color = ~pal(TotalCases),
+    stroke = TRUE,
+    fillOpacity = 0.7,
+    label = ~paste0(HighRiskMOHAreas, ": ", TotalCases, " cases")
+  ) %>%
+  addLegend(
+    "bottomright",
+    pal = pal,
+    values = ~TotalCases,
+    title = "Dengue Cases",
+    opacity = 1,
+    labFormat = labelFormat(suffix = " cases")
+  )
+map2
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(sf)
+library(dplyr)
+library(leaflet)
+library(leafsync)
+library(htmltools)
+
+# --------------------------------------------------
+# 1. District-wise map
+# --------------------------------------------------
+
+district_sf <- annual_sf %>%
+  filter(!is.na(annual_cases))
+
+district_pal <- colorNumeric(
+  palette = "YlOrRd",
+  domain = district_sf$annual_cases
+)
+
+map1 <- leaflet(district_sf) %>%
+ # addProviderTiles(providers$CartoDB.Positron) %>%
+  addTiles() %>%
+  addPolygons(
+    fillColor = ~district_pal(annual_cases),
+    fillOpacity = 0.7,
+    color = "white",
+    weight = 1,
+    popup = ~paste0(
+      "<b>District:</b> ", district,
+      "<br><b>Annual cases:</b> ",
+      format(annual_cases, big.mark = ",")
+    ),
+    group = "Districts"
+  ) %>%
+  addLegend(
+    position = "bottomright",
+    pal = district_pal,
+    values = ~annual_cases,
+    title = "Annual cases"
+  )
+
+# --------------------------------------------------
+# 2. MOH-area map
+# --------------------------------------------------
+
+moh_df <- merged_df %>%
+  filter(
+    !is.na(longitude),
+    !is.na(latitude),
+    is.finite(longitude),
+    is.finite(latitude),
+    !is.na(Cases)
+  )
+
+moh_pal <- colorNumeric(
+  palette = "RdPu",
+  domain = moh_df$Cases
+)
+
+map2 <- leaflet(moh_df) %>%
+  #addProviderTiles(providers$CartoDB.Positron) %>%
+  addTiles() %>%
+  addCircleMarkers(
+    lng = ~longitude,
+    lat = ~latitude,
+    radius = ~pmax(4, sqrt(Cases) * 1.2),
+    color = "white",
+    weight = 1,
+    fillColor = ~moh_pal(Cases),
+    fillOpacity = 0.85,
+    popup = ~paste0(
+      "<b>District:</b> ", District,
+      "<br><b>MOH area:</b> ", HighRiskMOHAreas,
+      "<br><b>Year:</b> ", Year,
+      "<br><b>Week:</b> ", Week,
+      "<br><b>Cases:</b> ", Cases
+    )
+  ) %>%
+  addLegend(
+    position = "bottomright",
+    pal = moh_pal,
+    values = ~Cases,
+    title = "MOH-area cases"
+  )
+
+# --------------------------------------------------
+# 3. Display side-by-side and synchronize
+# --------------------------------------------------
+
+leafsync::sync(
+  map1,
+  map2,
+  ncol = 2
+)
+
+
+
+```
