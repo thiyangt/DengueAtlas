@@ -1,0 +1,1148 @@
+week,area,c1,c2
+1,WESTERN,NA,NA
+1,Dehiwala,26,36
+1,Gampaha,27,48
+1,Egodauyana,11,25
+1,Ja,NA,NA
+1,Gothatuwa,54,82
+1,Katana,12,NA
+1,Hanwella,4,16
+1,Homagama,30,37
+1,Kaduwela,37,58
+1,Ambalantota,6,11
+1,Kahatuduwa,13,19
+1,Kolonnawa,19,24
+1,Dickwella,24,27
+1,Maharagama,25,41
+1,Moratuwa,23,39
+1,Nugegoda,14,36
+1,Padukka,9,12
+1,Piliyandala,14,41
+1,Bandaragama,15,23
+1,CMC,NA,NA
+1,Horana,5,10
+1,Medadumbara,7,26
+1,Wadduwa,9,24
+1,Walallawita,6,13
+2,Boralesgamuwa,22,17
+2,Gothatuwa,82,66
+2,Hanwella,16,14
+2,Kaduwela,58,46
+2,Kelaniya,44,36
+2,Kolonnawa,24,20
+2,Maharagama,41,28
+2,Moratuwa,39,33
+2,Pugoda,14,12
+2,Nugegoda,36,39
+2,Piliyandala,41,19
+2,Rathmalana,46,35
+2,Medadumbara,26,16
+2,Wadduwa,24,18
+3,WESTERN,NA,NA
+3,Dehiwala,35,31
+3,Attanagalla,15,11
+3,Gothatuwa,66,76
+3,Biyagama,29,31
+3,Divulapitiya,6,10
+3,Kaduwela,46,41
+3,Ja,NA,NA
+3,Katana,11,11
+3,Maharagama,28,38
+3,Embilipitiya,9,18
+3,Moratuwa,33,26
+3,Rathnapura,NA,NA
+3,Nugegoda,39,19
+3,Rathmalana,35,37
+4,Battaramulla,53,29
+4,Egodauyana,11,15
+4,Gothatuwa,79,51
+4,Kaduwela,40,41
+4,Kahathuduwa,15,10
+4,Kolonnawa,19,17
+4,Maharagama,39,35
+4,Katana,12,19
+4,Moratuwa,28,22
+4,Kelaniya,24,34
+4,Nugegoda,15,19
+4,Tangalle,46,29
+5,Battaramulla,26,15
+5,Dehiwala,23,15
+5,Gothatuwa,49,36
+5,Hanwella,13,10
+5,Kalmunai,NA,NA
+5,Homagama,23,12
+5,Kahathuduwa,10,10
+5,Matara,NA,NA
+5,Maharagama,24,28
+5,Moratuwa,22,10
+5,Nugegoda,20,26
+5,Sevanagala,5,10
+5,Piliyandala,19,18
+6,Battaramulla,15,31
+6,Boralesgamuwa,6,13
+6,Dehiwala,16,24
+6,Gothatuwa,36,28
+6,Kaduwela,30,40
+6,Moratuwa,9,16
+6,Nugegoda,25,13
+6,Piliyandala,16,16
+7,Boralesgamuwa,15,11
+7,Embilipitiya,8,20
+7,Ja,NA,NA
+7,Maharagama,20,42
+7,Moratuwa,17,14
+7,Nugegoda,13,19
+7,Padukka,6,11
+7,Minuwangoda,9,18
+8,WESTERN,NA,NA
+8,Boralesgamuwa,11,16
+8,Dehiwala,16,25
+8,Hanwella,11,11
+8,Gampaha,29,22
+8,Katana,14,12
+8,Kolonnawa,7,11
+8,Maharagama,38,35
+8,Mahara,25,22
+8,Nugegoda,19,18
+8,CMC,NA,NA
+8,Ragama,7,14
+9,WESTERN,NA,NA
+9,Dehiwala,20,11
+9,Hanwella,8,11
+9,Kolonnawa,11,12
+9,Embilipitiya,12,20
+9,Mahara,22,18
+9,Piliyandala,7,12
+9,Rathmalana,27,15
+10,WESTERN,NA,NA
+10,Boralesgamuwa,19,13
+10,Kaduwela,38,44
+10,Maharagama,41,51
+10,Katana,7,13
+10,Moratuwa,9,11
+10,Rathmalana,17,21
+10,CMC,NA,NA
+11,Madampe,9,14
+11,Gothatuwa,18,21
+11,Ja,NA,NA
+11,Katana,13,14
+11,Kahathuduwa,8,10
+11,Maharagama,43,23
+11,Moratuwa,11,12
+11,Piliyandala,24,14
+11,Batticaloa,19,17
+11,Rathmalana,24,14
+12,WESTERN,NA,NA
+12,Boralesgamuwa,9,10
+12,Wattala,10,14
+12,Gothatuwa,22,20
+12,Maharagama,25,48
+12,Kelaniya,24,37
+12,Moratuwa,11,11
+12,Piliyandala,14,18
+13,Badulla,3,11
+13,Dehiwala,13,14
+13,Egodauyana,14,12
+13,Kelaniya,39,30
+13,Hanwella,10,10
+13,Kaduwela,84,56
+13,Seeduwa,16,11
+13,Trincomalee,2,13
+13,Panadura,21,22
+14,WESTERN,NA,NA
+14,Dehiwala,14,12
+14,Homagama,18,13
+14,Kaduwela,55,56
+14,Matara,NA,NA
+14,Maharagama,35,48
+14,Weligama,11,12
+14,Padukka,12,11
+14,Piliyandala,24,15
+14,Pitakotte,11,11
+15,Battaramulla,25,25
+15,Kaduwela,54,33
+15,Maharagama,49,43
+15,Padukka,11,11
+15,Mahara,25,35
+15,Piliyandala,15,22
+16,Battaramulla,24,18
+16,Biyagama,56,51
+16,Homagama,6,11
+16,Gampaha,11,13
+16,Kaduwela,32,45
+16,Maharagama,45,34
+16,Piliyandala,22,14
+16,Rathmalana,10,10
+17,WESTERN,NA,NA
+17,Point,NA,NA
+17,Homagama,12,12
+17,Kaduwela,39,45
+17,Ja-Ela,16,16
+17,Kahathuduwa,14,12
+17,Matara,NA,NA
+17,Kesbewa,5,11
+17,Weligama,10,11
+17,Piliyandala,10,23
+18,Battaramulla,25,19
+18,Gothatuwa,27,27
+18,Hanwella,18,23
+18,Kaduwela,45,41
+18,Ja-Ela,17,14
+18,Kahathuduwa,12,14
+18,Padukka,12,15
+18,Pitakotte,17,14
+18,Rathmalana,12,15
+19,Boralesgamuwa,14,16
+19,Embilipitiya,15,10
+19,Katuwana,4,11
+19,Hanwella,23,29
+19,Kaduwela,42,37
+19,Mahara,24,29
+19,Kahathuduwa,17,10
+19,Minuwangoda,24,23
+19,Seeduwa,13,17
+19,Padukka,14,17
+19,Wattala,14,17
+19,Rathmalana,17,15
+19,Horana,23,21
+19,Ingiriya,25,28
+20,WESTERN,NA,NA
+20,Battaramulla,13,15
+20,Embilipitiya,9,15
+20,Hanwella,29,33
+20,MC,NA,NA
+20,Homagama,9,22
+20,Kaduwela,40,49
+20,Negombo,7,13
+20,Kahathuduwa,14,18
+20,Maharagama,56,50
+20,Moratuwa,7,14
+20,Piliyandala,16,17
+20,Pitakotte,9,14
+20,CMC,NA,NA
+20,Yatinuwara,16,27
+20,Horana,22,26
+20,Ingiriya,28,18
+20,Panadura,20,16
+21,WESTERN,NA,NA
+21,Boralesgamuwa,11,17
+21,Wennappuwa,2,15
+21,Dehiwala,7,16
+21,Egodauyana,8,10
+21,Hanwella,34,30
+21,Kaduwela,49,50
+21,Wattala,17,25
+21,Kahathuduwa,19,17
+21,Kesbewa,13,13
+21,Bandaragama,8,19
+21,Maharagama,51,77
+21,Moratuwa,14,19
+21,Padukka,8,38
+21,Piliyandala,10,16
+21,Pelmadulla,14,24
+21,Pitakotte,14,17
+21,Rathmalana,4,13
+21,Wadduwa,4,12
+21,Akuressa,2,10
+21,Matara,NA,NA
+21,Aththanagalla,13,11
+24,WESTERN,NA,NA
+24,Rathnapura,NA,NA
+24,Elpitiya,8,12
+24,Battaramulla,30,54
+24,Habaraduwa,4,12
+24,Boralesgamuwa,31,55
+24,Egodauyana,23,34
+24,Gothatuwa,47,86
+24,Seeduwa,56,96
+24,Hanwella,40,33
+24,Homagama,41,99
+24,Bandaragama,54,75
+24,Kahathuduwa,19,35
+24,Bulathsinhala,13,12
+24,Kesbewa,28,19
+24,Walasmulla,9,16
+24,Mathugama,6,15
+24,Moratuwa,32,48
+24,Nugegoda,31,66
+24,Panadura,45,113
+24,Wadduwa,24,32
+24,Menikhinna,13,14
+24,Piliyandala,20,66
+24,Rathmalana,24,50
+24,SOUTHERN,NA,NA
+24,Akuressa,12,39
+24,Kamburupitiya,2,23
+24,Malimbada,6,15
+24,Aththanagalla,23,33
+24,Matara,NA,NA
+24,Biyagama,132,233
+24,Gampaha,27,34
+24,Pasgoda,2,12
+24,Ja-Ela,52,80
+24,Weligama,26,69
+24,Katana,25,49
+24,Welipitiya,4,14
+24,Kelaniya,84,119
+25,WESTERN,NA,NA
+25,Bope,NA,NA
+25,Battaramulla,54,54
+25,Elpitiya,12,15
+25,Boralesgamuwa,56,57
+25,Dehiwala,55,66
+25,Seeduwa,97,103
+25,Egodauyana,34,33
+25,Wattala,77,117
+25,Hanwella,34,63
+25,Homagama,103,78
+25,Yakkalamulla,8,20
+25,Kahathuduwa,35,38
+25,Kesbewa,20,23
+25,Kolonnawa,12,15
+25,Maharagama,200,192
+25,Moratuwa,52,44
+25,Piliyandala,65,85
+25,Kalutara,28,37
+25,Payagala,23,21
+25,Devinuwara,26,14
+25,Dickwella,12,18
+25,Hakmana,8,11
+25,Udunuwara,26,25
+25,Biyagama,236,244
+25,Werellagama,21,35
+25,Divulapitiya,20,16
+25,Morawaka,22,16
+25,Mulatiyana,13,11
+25,Katana,49,46
+25,Weligama,67,42
+25,Kelaniya,131,193
+25,Welipitiya,17,16
+25,Meerigama,31,32
+26,Bulathsinhala,17,10
+26,Boralesgamuwa,58,55
+26,Dehiwala,67,49
+26,Egodauyana,33,28
+26,Ingiriya,34,24
+26,Hanwella,69,46
+26,Millaniya,16,15
+26,Homagama,80,87
+26,Kaduwela,120,152
+26,Gangawata,NA,NA
+26,Kahathuduwa,35,34
+26,Kandy,NA,NA
+26,Moratuwa,51,26
+26,Nugegoda,50,47
+26,SOUTHERN,NA,NA
+26,Padukka,37,21
+26,Piliyandala,85,77
+26,Akuressa,25,31
+26,Pitakotte,27,22
+26,Athuraliya,12,11
+26,Rathmalana,22,20
+26,Devinuwara,14,14
+26,Dickwella,18,28
+26,Aththanagalla,44,59
+26,Divulapitiya,16,45
+26,Balapitiya,13,19
+26,Ja-Ela,111,155
+26,Pelmadulla,21,22
+26,Katana,44,83
+26,Rathnapura,NA,NA
+26,Kelaniya,196,217
+26,Mahara,111,149
+26,Hikkaduwa,7,14
+26,Meerigama,31,29
+26,Karandeniya,9,19
+26,Minuwangoda,66,89
+26,MC-Galle,46,38
+26,Negombo,55,173
+26,Thawalama,17,13
+26,Seeduwa,103,156
+26,Angunukolapelassa,14,11
+26,Wattala,113,142
+26,Beliatta,13,16
+27,WESTERN,NA,NA
+27,Wadduwa,42,61
+27,Battaramulla,56,84
+27,Walallawita,15,11
+27,Boralesgamuwa,59,88
+27,Dehiwala,51,48
+27,Kalutara,43,57
+27,Egodauyana,28,51
+27,Gothatuwa,120,120
+27,SOUTHERN,NA,NA
+27,Hanwella,46,43
+27,Homagama,90,106
+27,Kaduwela,156,140
+27,Athuraliya,19,28
+27,Kahathuduwa,37,65
+27,Kesbewa,36,37
+27,Dickwella,28,42
+27,Maharagama,173,251
+27,Malimbada,15,24
+27,Moratuwa,30,64
+27,Matara,NA,NA
+27,Nugegoda,41,77
+27,Matara,NA,NA
+27,Pitakotte,21,38
+27,Rathmalana,17,47
+27,CMC,NA,NA
+27,Akmeemana,6,21
+27,Ambalangoda,11,17
+27,Balapitiya,19,30
+27,Bope,NA,NA
+27,Elpitiya,18,32
+27,Aththanagalla,53,62
+27,Biyagama,259,303
+27,Hikkaduwa,14,15
+27,Divulapitiya,51,39
+27,Imaduwa,18,21
+27,Gampaha,57,102
+27,Induruwa,8,13
+27,Ja-Ela,160,176
+27,Karandeniya,19,19
+27,Katana,95,76
+27,MC-Galle,38,72
+27,Kelaniya,220,229
+27,Rathgama,6,16
+27,Mahara,160,165
+27,Thawalama,13,11
+27,Meerigama,29,39
+27,Minuwangoda,90,103
+27,Badulla,30,29
+27,Hali,NA,NA
+27,Ragama,48,80
+27,Mahiyanganaya,7,13
+27,Seeduwa,163,119
+27,Rideemaliyadda,5,11
+27,Wattala,139,189
+27,Mawanella,48,26
+27,Bandaragama,52,91
+27,Tangalle,49,69
+27,Dodangoda,NA,NA
+27,Horana,70,90
+27,Mathugama,7,25
+27,Dehiattakandiya,8,13
+28,WESTERN,NA,NA
+28,Millaniya,18,19
+28,Boralesgamuwa,91,86
+28,Panadura,189,178
+28,Dehiwala,27,42
+28,Wadduwa,62,46
+28,Egodauyana,52,51
+28,NIHS,NA,NA
+28,Hanwella,45,48
+28,Kalutara,57,67
+28,Homagama,112,86
+28,Kaduwela,140,128
+28,SOUTHERN,NA,NA
+28,Kahathuduwa,66,36
+28,Kesbewa,42,18
+28,Kolonnawa,33,24
+28,Athuraliya,29,22
+28,Maharagama,254,195
+28,Devinuwara,35,17
+28,Moratuwa,67,73
+28,Dickwella,42,40
+28,Hakmana,9,14
+28,Kamburupitiya,27,17
+28,Piliyandala,101,103
+28,Malimbada,16,16
+28,Pitakotte,39,46
+28,Matara,NA,NA
+28,Rathmalana,55,68
+28,Matara,NA,NA
+28,CMC,NA,NA
+28,Morawaka,28,22
+28,Pasgoda,21,11
+28,Weligama,70,61
+28,Welipitiya,28,34
+28,Akmeemana,23,34
+28,Aththanagalla,59,67
+28,Biyagama,304,320
+28,Divulapitiya,38,27
+28,Bope,NA,NA
+28,Gampaha,98,104
+28,Elpitiya,32,21
+28,Ja-Ela,179,169
+28,Habaraduwa,21,27
+28,Katana,77,82
+28,Hikkaduwa,16,15
+28,Kelaniya,237,256
+28,Imaduwa,22,28
+28,Mahara,173,200
+28,Meerigama,39,35
+28,MC-Galle,74,100
+28,Minuwangoda,100,91
+28,Rathgama,15,15
+28,Negombo,110,103
+28,Thawalama,11,12
+28,Udugama,15,17
+28,Yakkalamulla,20,23
+28,Bandaragama,91,71
+28,Bulathsinhala,12,14
+28,Dodangoda,NA,NA
+28,Horana,91,70
+29,WESTERN,NA,NA
+29,Battaramulla,99,79
+29,Boralesgamuwa,87,76
+29,Aluthgama,8,18
+29,Dehiwala,43,71
+29,Egodauyana,51,40
+29,Gothatuwa,136,105
+29,Hanwella,51,53
+29,Homagama,88,72
+29,Kaduwela,136,134
+29,Kahathuduwa,36,44
+29,Kotapola,3,29
+29,Kesbewa,18,24
+29,Devinuwara,19,21
+29,Kolonnawa,26,30
+29,Kamburupitiya,18,12
+29,Moratuwa,77,63
+29,Malimbada,14,13
+29,Matara,NA,NA
+29,Piliyandala,106,97
+29,Rathmalana,64,67
+29,CMC,NA,NA
+29,Akmeemana,35,12
+29,Ambalangoda,9,10
+29,Balapitiya,21,28
+29,Bope,NA,NA
+29,Elpitiya,21,22
+29,Habaraduwa,24,11
+29,Aththanagalla,67,61
+29,Hikkaduwa,15,15
+29,Biyagama,321,207
+29,Imaduwa,31,20
+29,Divulapitiya,24,31
+29,Karandeniya,20,23
+29,Gampaha,105,93
+29,MC-Galle,101,69
+29,Ja-Ela,169,178
+29,Rathgama,14,11
+29,Katana,82,73
+29,Yakkalamulla,23,12
+29,Kelaniya,255,216
+29,Mahara,201,195
+29,Ambalantota,19,15
+29,Angunukolapelassa,13,10
+29,Negombo,103,166
+29,Katuwana,22,27
+29,Tangalle,53,51
+29,Ragama,55,72
+29,Tissamaharama,10,12
+29,Seeduwa,88,107
+29,Walasmulla,13,11
+29,Bulathsinhala,14,15
+29,Dodangoda,NA,NA
+29,Mathugama,19,20
+30,WESTERN,NA,NA
+30,Battaramulla,79,70
+30,Boralesgamuwa,76,65
+30,Bandaragama,35,44
+30,Dehiwala,73,49
+30,Bulathsinhala,15,10
+30,Egodauyana,42,48
+30,Gothatuwa,108,79
+30,Hanwella,59,43
+30,Homagama,74,78
+30,Mathugama,21,19
+30,Kaduwela,133,104
+30,Kahathuduwa,44,51
+30,Panadura,153,142
+30,Kesbewa,24,17
+30,Kolonnawa,27,19
+30,Kandy,NA,NA
+30,Moratuwa,70,49
+30,Nugegoda,75,68
+30,Medadumbara,13,11
+30,Menikhinna,28,25
+30,Pitakotte,40,58
+30,Pasbage,37,48
+30,Rathmalana,52,74
+30,Thalathuoya,24,14
+30,CMC,NA,NA
+30,Udunuwara,39,23
+30,Dickwella,40,27
+30,Waththegama,29,16
+30,Werellagama,52,48
+30,Ambagamuwa,12,11
+30,Maskeliya,13,12
+30,Rikillagaskada,26,13
+30,SABARAGAMUWA,NA,NA
+30,Aththanagalla,56,58
+30,Biyagama,205,165
+30,Goadakawela,26,13
+30,Gampaha,94,91
+30,Kahawatta,21,11
+30,Ja-Ela,178,137
+30,Kalawana,24,28
+30,Katana,90,89
+30,Kiriella,23,20
+30,Kelaniya,224,167
+30,Kuruvita,26,26
+30,Mahara,201,211
+30,Nivithigala,23,20
+30,Pelmadulla,26,20
+30,Minuwangoda,91,85
+30,Rathnapura,NA,NA
+30,Negombo,142,87
+30,Ratnapura,NA,NA
+30,Rathgama,11,11
+32,WESTERN,NA,NA
+32,Battaramulla,48,49
+32,Boralesgamuwa,35,23
+32,Dehiwala,33,27
+32,Hanwella,37,28
+32,Homagama,56,35
+32,Kaduwela,74,76
+32,Kolonnawa,19,22
+32,Moratuwa,39,31
+32,Piliyandala,66,45
+32,Rathmalana,34,26
+32,Weligama,28,12
+32,Aththanagalla,50,33
+32,Biyagama,112,83
+32,Imaduwa,14,14
+32,Divulapitiya,19,21
+32,MC-Galle,40,25
+32,Gampaha,56,46
+33,Boralesgamuwa,21,22
+33,Egodauyana,16,12
+33,Kahathuduwa,14,14
+33,Moratuwa,29,25
+33,Padukka,9,16
+33,Piliyandala,45,32
+33,Panadura,74,40
+33,Wadduwa,24,17
+33,NIHS,NA,NA
+33,Kalutara,20,13
+34,WESTERN,NA,NA
+34,Battaramulla,29,42
+34,Dehiwala,23,19
+34,Gothatuwa,30,26
+34,Kahathuduwa,14,10
+34,Moratuwa,26,15
+34,Nugegoda,13,14
+34,CMC,NA,NA
+35,Boralesgamuwa,10,14
+35,Homagama,26,23
+35,Padukka,7,12
+35,CMC,NA,NA
+36,Hanwella,17,13
+36,Maharagama,39,18
+36,CMC,NA,NA
+36,Aththanagalla,35,24
+37,Gothatuwa,12,11
+37,Hanwella,13,14
+37,CMC,NA,NA
+37,Wattala,7,10
+40,WESTERN,NA,NA
+40,Maharagama,13,15
+41,WESTERN,NA,NA
+41,Kaduwela,29,26
+41,Nugegoda,2,11
+41,Piliyandala,12,15
+41,CMC,NA,NA
+42,WESTERN,NA,NA
+42,Battaramulla,10,10
+42,Kelaniya,27,17
+43,WESTERN,NA,NA
+43,Homagama,15,17
+43,CMC,NA,NA
+1,PROVINCE D4-CMC 20 23 NORTHERN PROVINCE Werellagama,3,14
+1,MC-Galle 13 22 Balangoda,6,11
+1,Ela 23 50 Akmeemana 8 18 Embilipitiya,3,20
+1,Ambalangoda 7 11 Godakawela,2,10
+1,Kelaniya,26,44
+1,Mahara,21,29
+1,Kalmunai South,7,13
+1,Meerigama,8,16
+1,Minuwangoda,18,15
+1,Uppuveli,9,10
+1,Negombo,9,14
+1,Ragama,4,24
+1,Seeduwa 17 35 Devinuwara 8 15 Mahawewa,2,21
+1,Kamburupitiya 1 10 Puttalam,0,10
+1,Kandy MC 4 16 Badulla,7,11
+1,Monaragala,2,10
+1,Pasbage,5,13
+1,Waththegama,19,11
+2,D4-CMC 23 30 Akmeemana 18 16 Batticaloa,2,14
+2,Ja Ela 50 25 Weligama 14 20 Mahawewa,21,15
+2,Devinuwara 15 18 Puttalam,10,10
+2,Ambalantota 11 10 Badulla,11,11
+2,Ragama,24,13
+2,Wattala 48 36 Karaveddy,6,10
+3,PROVINCE D2A-CMC 21 24 Panadura 25 26 Medadumbara,16,11
+3,Baddegama,11,11
+3,Kalmunai South,3,10
+3,Ambalangoda,9,12
+3,Balapitiya,8,20
+3,Mahawewa,15,11
+3,Ela 25 25 Akuressa,6,10
+3,Dickwella,24,35
+3,Kelaniya 36 24 Matara MC,20,22
+3,Mahara 18 26 Weligama,20,16
+3,MC,9,11
+3,Meerigama 6 14 Devinuwara,18,25
+3,Wattala 36 20 Tangalle,7,46
+4,D1-CMC 13 15 Wattala 20 33 Medadumbara,11,11
+4,D3-CMC 28 41 Panadura 27 14 Batticaloa,12,10
+4,D4-CMC 17 13 Wadduwa 6 10 Chenkalady,14,19
+4,Attanagalla 11 14 MC-Galle,29,14
+4,Biyagama,30,24
+4,Gampaha,18,28
+4,Ja Ela,25,17
+4,Weligama 16 11 Embilipitiya,18,11
+4,Rathnapura MC,11,13
+4,Devinuwara,26,25
+5,D1-CMC 14 11 Panadura 15 21 Batticaloa,10,20
+5,D2A-CMC 26 11 SOUTHERN PROVINCE Chenkalady,19,30
+5,D3-CMC 38 25 Hikkaduwa 9 13 Addalaichchenai,11,10
+5,D4-CMC 16 27 MC-Galle,14,14
+5,South,9,11
+5,D5-CMC 33 20 Rathgama,5,11
+5,Attanagalla,13,12
+5,MC 28 31 Embilipitiya,11,14
+5,Gampaha 29 16 PS Kekanadura,4,10
+5,Ja Ela 16 20 Badulla,8,10
+5,Kelaniya 36 17 Devinuwara,25,30
+5,Minuwangoda 12 15 Beliatta,16,10
+6,CMC Meerigama 7 11 Matara MC,28,17
+6,D1-CMC 10 11 Minuwangoda 15 10 Weligama,21,17
+6,D2B-CMC 22 15 Ragama 5 21 Devinuwara,30,25
+6,D4-CMC 24 16 Wattala 18 28 Tangalle,17,13
+6,Attanagalla 11 18 SOUTHERN PROVINCE Batticaloa,21,20
+6,Gampaha 16 19 Habaraduwa 3 15 Kalmunai South,11,17
+6,Ja Ela 20 31 Hikkaduwa,12,17
+6,Katana 8 17 MC-Galle,14,20
+7,D2B-CMC 16 15 Horana 3 10 Kalmunai South,17,11
+7,Ela 28 18 Dickwella,15,12
+7,Ratnapura MC,9,11
+7,Katana 16 14 Matara MC,17,20
+7,Kelaniya 21 17 Weligama,17,16
+7,Mahara 29 23 Devinuwara,25,44
+8,PROVINCE D2A-CMC 15 13 Seeduwa 17 21 Weligama,17,16
+8,D4-CMC 22 13 Bandaragama 5 16 Batticaloa,9,15
+8,D5-CMC 12 15 Panadura 8 14 Chenkalady,29,14
+8,Attanagalla 14 12 SOUTHERN PROVINCE Addalaichchenai,6,12
+8,Akmeemana,7,13
+8,Hikkaduwa 21 19 Pannala,9,10
+8,MC-Galle,14,14
+8,Minuwangoda 18 18 Tangalle 9 10 Embilipitiya,20,13
+8,Devinuwara,45,19
+9,PROVINCE D2A-CMC 11 12 Seeduwa 21 22 Batticaloa,15,12
+9,D5-CMC 17 10 Panadura,13,14
+9,Attanagalla 11 19 Madampe,9,11
+9,Ja Ela 13 11 Katuwana,3,12
+9,Devinuwara 17 26 Nivithigala,9,14
+9,Meerigama 10 15 Matara MC,9,11
+10,PROVINCE D2B-CMC 12 16 Seeduwa 21 30 Weligama,5,15
+10,D5-CMC 12 14 Mathugama 4 10 Batticaloa,13,18
+10,Gampaha 18 22 Bope Poddala,1,11
+10,Ja Ela 9 14 Habaraduwa,11,10
+10,Hikkaduwa 7 12 Pannala,6,11
+10,Minuwangoda 18 20 Devinuwara 25 12 Embilipitiya,20,15
+10,Negombo 5 10 Dickwella,6,10
+11,Gampaha 23 11 Hikkaduwa,12,10
+11,Ela,15,15
+11,Kelaniya 20 23 Matara MC 11 25 Embilipitiya,13,10
+11,Mahara 19 15 Weligama 15 20 Ratnapura PS,2,11
+11,Wattala,11,10
+12,PROVINCE Rathmalana 15 20 Pugode(Dompe) 9 10 Weligama,20,16
+12,D3-CMC 18 15 Addalaichchenai,6,13
+12,Attanagalla 16 12 Panadura 19 21 Madampe,14,10
+12,Embilipitiya,10,13
+12,Habaraduwa,9,14
+12,Mahara 13 14 MC Galle 10 17 Udawalawa,7,10
+12,Negombo 10 14 Matara MC,25,29
+13,Attanagalla 13 16 Devinuwara,9,16
+13,Biyagama,30,30
+13,Mahara 13 13 NORTHERN PROVINCE Embilipitiya,12,21
+13,Minuwangoda 18 18 Karaveddy 6 12 Dehiovita,9,16
+13,Point Pedro,4,10
+13,Batticaloa,8,11
+14,PROVINCE Rathmalana 13 12 Wattala 21 11 Batticaloa,11,13
+14,D3-CMC 20 10 Panadura 22 29 Addalaichchenai,14,15
+14,Attanagalla 16 12 Devinuwara 16 21 Embilipitiya,21,18
+14,Biyagama 30 35 Dickwella,4,10
+14,MC 24 17 Rathnapura MC,8,14
+14,Ja-Ela,5,15
+14,Udawalawa,8,15
+14,Kelaniya,29,28
+15,D3-CMC 10 18 Ragama 4 12 Batticaloa,13,11
+15,Biyagama 35 47 Ingiriya 31 38 Rathnapura MC,14,12
+15,Gampaha 9 13 Panadura,29,20
+15,Matara MC,17,17
+16,Ingiriya 38 25 Addalaichchenai,14,18
+16,Devinuwara,10,11
+16,Kahawatta,7,11
+16,Weligama,7,11
+16,Kelaniya 16 17 Yakkalamulla 6 11 Pelmadulla,6,14
+16,Minuwangoda 16 17 Katuwana,4,12
+16,Pugoda(Dompe),6,11
+17,PROVINCE Rathmalana 10 12 Wattala 4 10 Addalaichchenai,18,16
+17,Pedro,4,10
+17,Embilipitiya,10,12
+17,Kamburupitiya,8,18
+17,Katana 9 10 Nivithigala,11,13
+17,MC,7,17
+17,Kelaniya 16 30 Rathnapura MC,9,24
+17,Pugoda(Dompe) 11 22 EASTERN PROVINCE Dehiovita,9,13
+18,Wattala 11 13 Addalaichchenai,16,14
+18,Aththanagalla 15 16 Ingiriya 28 23 Wennappuwa,6,10
+18,Panadura,19,16
+18,Akuressa 2 12 Embilipitiya,12,16
+18,Katana 10 16 Kamburupitiya 18 12 Rathnapura MC,24,31
+18,Minuwangoda 11 25 Dehiovita,13,14
+18,Negombo 2 11 Kandy MC,7,13
+18,Pugoda(Dompe) 24 23 Yatinuwara,5,10
+19,Biyagama 66 67 Matara MC,18,27
+19,Nivithigala,7,13
+19,Kelaniya,20,29
+19,CENTRAL PROVINCE Pelmadulla,9,14
+19,Gangawata 6 11 Ratnapura PS,9,15
+19,Yatinuwara,10,17
+19,EASTERN PROVINCE Dehiovita,13,24
+19,Batticaloa,9,15
+20,PROVINCE Aththanagalla 14 13 SOUTHERN PROVINCE Batticaloa,14,18
+20,Gampaha 15 13 Matara MC 27 32 Addalaichchenai,18,11
+20,Mahara 22 32 Bope Poddala,3,16
+20,Galle 7 12 Kalawana,8,10
+20,Minuwangoda,24,26
+20,Thawalama 3 13 Kuruvita,8,16
+20,Gangawata,11,10
+20,Seeduwa 17 15 Rathnapura MC,38,42
+20,Kandy MC 7 21 Ratnapura PS,15,30
+20,Waththegama,4,11
+20,Bulathsinhala,6,10
+20,Dehiovita,24,15
+21,PROVINCE Biyagama 93 114 Weligama 9 21 Addalaichchenai,11,15
+21,Katana 17 14 Bope Poddala,16,36
+21,Kelaniya 37 51 Elpitiya,9,10
+21,Pugoda(Dompe) 18 29 CENTRAL PROVINCE Ayagama,8,16
+21,Seeduwa 15 20 Gampola 6 14 Embilipitiya,14,19
+21,Gangawata,10,19
+21,Godakawela,6,10
+21,Kandy MC 20 32 Kahawatta,9,14
+21,Bulathsinhala 10 14 Thalathuoya 2 10 Kalawana,7,11
+21,Horana 24 27 Udunuwara 3 11 Kuruvita,16,17
+21,Ingiriya 19 30 Waththegama 11 10 Nivithigala,14,21
+21,Madurawala 4 13 Werellagama,8,11
+21,Panadura 16 22 Yatinuwara,26,33
+21,UVA PROVINCE Rathnapura MC,42,34
+21,EASTERN PROVINCE Dehiovita,15,22
+21,MC 33 50 Batticaloa,18,14
+24,PROVINCE Mahara 62 108 Baddegama 6 17 Pelmadulla,32,25
+24,MC,21,25
+24,Minuwangoda,47,44
+24,Ratnapura PS,30,15
+24,Negombo 19 56 Hikkaduwa,3,11
+24,Ragama 22 23 Karandeniya 8 13 Dehiovita,29,18
+24,MC-Galle,10,40
+24,Thawalama 5 17 Mawanella,14,14
+24,Wattala,46,75
+24,Beliatta 8 12 Warakapola,14,10
+24,Katuwana 13 15 Yatiyanthota,9,14
+24,Tangalle,22,24
+24,Gampola 17 39 Batticaloa,24,14
+24,Kandy MC,52,71
+24,Thamankaduwa,7,12
+24,NIHS Pasbage,21,15
+24,Payagala 24 21 Udunuwara,19,26
+24,PROVINCE Waththegama,11,23
+24,Yatinuwara 42 45 Mallawapitiya,10,13
+24,Madampe,5,10
+24,Wennappuwa,18,13
+24,MC 85 157 Embilipitiya,28,18
+24,Kahawatta,12,10
+24,Mulatiyana 6 13 Kalawana,8,20
+24,Badulla,11,26
+24,Kuruvita,25,20
+24,Nivithigala,21,26
+25,PROVINCE Minuwangoda 44 66 Baddegama 18 13 Kiriella,8,13
+25,Poddala 71 13 Nivithigala,24,11
+25,Pugoda(Dompe),40,41
+25,Pelmadulla,26,21
+25,Ragama 23 33 Habaraduwa,12,22
+25,Rathnapura MC,24,14
+25,Imaduwa,9,18
+25,Ratnapura PS,16,17
+25,MC-Galle,41,46
+25,Thawalama 17 17 Aranayake,6,13
+25,Bandaragama,75,75
+25,Dehiovita,18,18
+25,Dodangoda PS 7 12 Ambalantota 10 23 Rambukkana,3,13
+25,Horana 49 51 Angunukolapelassa 8 14 Warakapola,10,17
+25,Ingiriya 12 34 Beliatta 12 13 Yatiyanthota,14,11
+25,Madurawala,24,16
+25,Mathugama 15 10 Auriyawewa 3 11 Batticaloa,14,14
+25,Wadduwa 32 17 Walasmulla 16 12 Thamankaduwa,12,12
+25,Gampola 39 26 Pannala,7,15
+25,Madampe,10,13
+25,Nattandiya,6,13
+25,Wennappuwa,13,53
+25,Matara MC,146,147
+25,Badulla,24,23
+25,Matara PS,18,24
+25,Ambagamuwa,7,14
+25,Siyambalanduwa,7,13
+25,Rikillagaskada,3,12
+25,Wellawaya,2,16
+25,Akmeemana,9,10
+26,Tissamaharama 12 12 Ampara,6,15
+26,Dodangoda PS 12 10 Uhana,4,11
+26,Horana 50 62 Akurana,2,10
+26,Batticaloa,14,18
+26,Bambaradeniya,8,10
+26,Galagedara 5 10 Thambuttegama,3,12
+26,Korale 47 27 Hingurakoda,7,15
+26,Wadduwa,18,40
+26,MC 82 76 Thamankaduwa,12,14
+26,Kalutara 37 45 Menikhinna 29 24 Alawwa,5,11
+26,Payagala 21 46 Pasbage 18 31 Kuliyapitiya,22,19
+26,PROVINCE Poojapitiya,20,12
+26,Kurunegala,3,11
+26,Mallawapitiya,3,10
+26,Udunuwara,24,32
+26,Waththegama 27 18 Narammala,0,13
+26,Werellagama 37 26 Pannala,15,34
+26,Yatinuwara 48 81 Udubaddawa,7,11
+26,Welipitiya 16 14 Godakawela 2 25 Puttalam,7,11
+26,Baddegama 15 10 Kuruvita,10,15
+26,Nivithigala,11,13
+26,Bope Poddala 11 12 Badulla,23,30
+26,Elpitiya 15 18 Hali Ela,8,10
+26,MC,14,10
+26,Habaraduwa 22 12 Passara,2,10
+26,Ratnapura PS,17,16
+26,Imaduwa,18,17
+26,Bulathkohupitiya 8 14 Bibile,11,10
+26,Dehiovita 21 30 Siyambalanduwa,13,14
+26,Deraniyagala 7 15 Wellawaya,16,13
+26,Ambalantota 23 14 Warakapola,17,27
+26,Yatiyanthota,11,17
+27,PROVINCE Millaniya 19 17 Doluwa 14 20 Uhana,12,18
+27,Gampola 36 48 Batticaloa,18,19
+27,Gangawata 26 47 Chenkaladay,6,13
+27,Hasalaka 1 12 Akkaraipathu,7,25
+27,PROVINCE Kundasale 23 22 Kanthale,1,24
+27,Menikhinna 25 32 Nuwaragam-,4,10
+27,Poojapitiya 11 10 Thalawa,9,15
+27,Kamburupitiya,10,27
+27,Udunuwara 36 36 Aralaganwila,7,12
+27,Waththegama 18 32 Hingurakoda,15,12
+27,MC,118,173
+27,Werellagama 26 48 Medirigiriya,1,20
+27,PS,24,53
+27,Pasgoda 3 20 Rattota 11 16 Alawwa,11,10
+27,Thihagoda 8 20 Ukuwela 8 14 Galgamuwa,3,21
+27,Weligama 35 70 Yatawatta 1 13 Ibbagamuwa,7,10
+27,Rikillagaskada 16 21 Mallawapitiya,12,11
+27,SABARAGAMUWA PROVINCE Panduwasnuwara,5,11
+27,Balangoda 3 13 Polgahawela,3,25
+27,Poddala 12 39 Eheliyagoda 13 31 Polpithigama,2,13
+27,Elapatha 5 11 Udubaddawa,11,11
+27,Imbulpe,1,10
+27,Anamaduwa,9,11
+27,Kahawatta,18,23
+27,Chilaw,20,16
+27,Kalawana,20,22
+27,Dankotuwa,19,14
+27,Kiriella,8,23
+27,Madampe,11,18
+27,Kuruvita,15,29
+27,Mahawewa,2,10
+27,Nivithigala,13,13
+27,Nattandiya,16,24
+27,Pelmadulla,22,37
+27,Wennappuwa,59,44
+27,Rathnapura MC,10,28
+27,Yakkalamulla 8 20 Ratnapura PS,16,25
+27,Ela,10,10
+27,Angunukolapelas 13 21 Dehiovita,31,29
+27,sa Galigamuwa,5,11
+27,Beliatta 15 15 Kegalle,9,30
+27,Uva Paranagama,2,12
+27,Rambukkana 7 14 Welimada,1,13
+27,PS 10 19 Weeraketiya 6 10 Warakapola 27 29 Bibile,10,15
+27,CENTRAL PROVINCE Yatiyanthota 17 14 Medagama,10,12
+27,Bambaradeniya 10 17 Damana,8,10
+28,PROVINCE Ingiriya 24 13 Walasmulla 21 13 Yatiyanthota,14,21
+28,Bambaradeniya 17 23 Ampara,8,13
+28,Doluwa 22 24 Damana,10,10
+28,Galagedara 14 15 Uhana,18,17
+28,Gangawata Korale 46 38 Batticaloa,20,16
+28,Hasalaka 12 11 Eravur,5,14
+28,PROVINCE Kandy MC 103 103 Kalmunai North,7,11
+28,Medadumbara 12 12 Hingurakoda,12,12
+28,Menikhinna 34 25 Medirigiriya,20,18
+28,Pasbage 26 29 Thamankaduwa,6,17
+28,Udunuwara 38 37 Alawwa,10,11
+28,Waththegama 31 25 Galgamuwa,21,16
+28,MC,170,108
+28,Werellagama 47 56 Kurunegala,13,10
+28,PS,57,31
+28,Yatinuwara 68 77 MC Kurunegala,11,13
+28,Ukuwela 14 10 Polpithigama,14,21
+28,Ambagamuwa 25 12 Chilaw,16,16
+28,Nawathispane 8 11 Dankotuwa,14,19
+28,SABARAGAMUWA PROVINCE Nattandiya,25,25
+28,Balangoda,13,11
+28,Eheliyagoda,32,25
+28,Poddala 33 34 Badulla,30,48
+28,Elapatha,10,17
+28,Hali Ela,10,15
+28,Embilipitiya,5,10
+28,Rideemaliyadda,13,12
+28,Imbulpe,10,15
+28,Uva Paranagama,11,31
+28,Kalawana,18,29
+28,Welimada,13,22
+28,Kiriella,23,23
+28,Kolonna,7,13
+28,Monaragala,11,16
+28,Kuruvita,29,36
+28,Nivithigala 13 29 Siyambalanduwa,10,27
+28,Beliatta 15 24 Mawanella 23 54 Vavuniya,4,17
+28,Katuwana 22 22 Rambukkana,14,12
+28,PS 20 11 Tangalle 69 52 Ruwanwella,12,14
+28,Tissamaharama 9 10 Warakapola,29,24
+29,PROVINCE Panadura 174 152 Gangawata Korale 36 56 Ampara,14,14
+29,Walallawita 24 18 Kandy MC 104 106 Uhana,15,17
+29,Kurunduwaththa 33 29 Batticaloa,16,21
+29,Payagala 41 47 Menikhinna 26 26 Akkaraipattu,9,17
+29,Waththegama 25 29 Ipalogama,3,26
+29,Werellagama 56 51 Nuwaragam-Palatha,3,31
+29,Matale 7 10 Thamankaduwa,17,11
+29,MC,105,133
+29,Morawaka 22 17 Yatawatta 4 11 Alawwa,10,18
+29,Weligama 57 57 Ambagamuwa 12 12 Galgamuwa,16,10
+29,Welipitiya 38 34 Maskeliya 1 12 Kobeigane,7,15
+29,Rikillagaskada 18 26 Kurunegala,10,11
+29,SABARAGAMUWA PROVINCE Mallawapitiya,4,13
+29,Eheliyagoda,25,32
+29,Poddala 34 20 Embilipitiya,10,27
+29,Goadakawela,9,26
+29,Kahawatta,8,21
+29,Chilaw,16,19
+29,Kalawana,24,27
+29,Dankotuwa,19,24
+29,Kiriella,23,23
+29,Kalpitiya,8,12
+29,Kolonna,13,15
+29,Madampe,27,14
+29,Kuruvita,36,22
+29,Mahawewa,5,10
+29,Nivithigala,30,21
+29,Nattandiya,26,41
+29,Pelmadulla,28,26
+29,Puttalam,3,10
+29,Wennappuwa,65,76
+29,Ratnapura PS,42,28
+29,Udawalwa,3,16
+29,Badulla,48,35
+29,Aranayake,10,11
+29,Bulathkohupitiya,7,12
+29,Uva Paranagama,29,12
+29,Dehiovita,30,21
+29,Welimada,21,14
+29,Deraniyagala,5,11
+29,Akurana 9 15 Rambukkana 12 21 Thanamalwila,9,13
+29,PS 11 16 Bambaradeniya 24 12 Ruwanwella 14 21 wellawaya,10,13
+29,Galaha 8 11 EASTERN PROVINCE Vavuniya,17,11
+30,PROVINCE Ragama 73 62 Yakkalamulla 12 19 Dehiovita,20,20
+30,Wattala 193 135 Ambalantota 15 11 Mawanella,51,39
+30,Tangalle 51 33 Ruwanwella,21,20
+30,Walasmulla 11 12 Warakapola,22,29
+30,Dodangoda PS 15 18 CENTRAL PROVINCE Yatiyanthota,15,11
+30,Bambaradeniya 14 16 Batticaloa,21,15
+30,Galaha 11 11 Kalmunai North,8,21
+30,Wadduwa,44,21
+30,MC 101 88 Medirigiriya,1,12
+30,Kalutara,51,44
+30,Payagala,44,47
+30,Alawwa,18,13
+30,Kobeigane,15,12
+30,Akuressa,15,17
+30,Kuliyapitiya,12,16
+30,Kotapola,29,15
+30,Pannala,29,31
+30,Devinuwara,21,12
+30,Polgahawela,6,11
+30,Polpithigama,18,13
+30,Udubaddawa,10,13
+30,Dankotuwa,25,33
+30,Madampe,14,13
+30,Nattandiya,43,20
+30,PROVINCE Wennappuwa,72,43
+30,Weligama,57,49
+30,Welipitiya,34,24
+30,Badulla,33,48
+30,Akmeemana,12,28
+30,Ambalangoda 9 10 Hali Ela,14,13
+30,Baddegama 27 21 Mahiyanganaya,6,12
+30,Balapitiya 28 21 Rideemaliyadda,4,15
+30,Elpitiya 24 15 Uva Paranagama,12,13
+30,Imaduwa 21 15 Monaragala,8,10
+30,MC,31,36
+30,Karandeniya 21 23 Thanamalwila,12,13
+30,PS,23,16
+32,PROVINCE Ja-Ela 72 77 Yakkalamulla 18 14 Kuruvita,13,12
+32,Kelaniya 108 80 Katuwana 12 11 Pelmadulla,18,14
+32,Mahara 109 88 Tangalle 30 15 Rathnapura MC,21,17
+32,Meerigama 27 25 Walasmulla 8 11 Ratnapura PS,22,13
+32,Pugoda(Dompe) 62 52 Akurana 11 11 Mawanella,41,21
+32,Ragama 41 30 Bambaradeniya 9 14 Ruwanwella,25,19
+32,Seeduwa 60 42 Gampola 39 20 Warakapola,11,17
+32,Bandaragama 25 20 Kandy MC 66 37 Kaluwanchikudy,1,15
+32,Mathugama 14 12 Kurunduwaththa 8 23 Kalmunai North,13,12
+32,Wadduwa 33 24 Poojapitiya 14 12 Telippalai,1,14
+32,NIHS Udunuwara 21 15 Oddusudan,0,12
+32,Rikillagaskada 13 10 Nattandiya,15,11
+32,Kahawatta 8 13 Badulla,23,15
+32,Kiriella,11,10
+33,Aththanagalla 33 32 Weligama 12 14 Ruwanwella,19,22
+33,Divulapitiya 22 14 Baddegama 8 10 Yatiyanthota,9,10
+33,Mahara 88 58 CENTRAL PROVINCE Kalmunai North,12,16
+33,Pugoda(Dompe) 56 52 Korale Pannala,13,11
+33,Seeduwa 43 32 Kundasale 16 11 Dankotuwa,19,16
+33,Wattala 53 47 Kurunduwaththa 23 12 Nattandiya,11,10
+33,Udunuwara 15 11 Badulla,16,14
+33,Waththegama 12 10 Bandarawela,1,18
+33,Werellagama 26 25 Welimada,5,15
+33,Yatinuwara,36,20
+34,PROVINCE D3-CMC 19 17 Wattala 47 32 Kundasale,11,13
+34,D5-CMC 9 11 Bandaragama 15 11 Udunuwara,10,11
+34,Aththanagalla 34 21 Panadura 40 42 Werellagama,25,15
+34,Biyagama 40 35 NIHS Yatinuwara,21,19
+34,Kelaniya 43 19 MC-Galle 26 12 Kuruvita,2,11
+34,Meerigama 27 10 Katuwana 13 10 Ruwanwella,22,15
+34,Minuwangoda 36 26 Tangalle 6 11 Yatiyanthota,10,25
+34,Ragama 26 11 Bambaradeniya 8 12 Kalmunai North,16,12
+35,Gampaha 23 15 Pyagala 11 13 Kuruvita,11,11
+35,Kelaniya 20 25 MC-Galle 12 15 Yatiyanthota,25,15
+35,Ragama 11 10 Kandy MC 31 32 Wennappuwa,8,14
+35,Horana 13 13 Werellagama 16 10 Kalmunai North,12,12
+36,Katana 10 15 CENTRAL PROVINCE Thalawa,1,14
+36,Pugoda(Dompe) 33 36 Pasbage 11 21 Wennappuwa,13,10
+36,Panadura 14 13 Yatinuwara 14 18 Thirukkovil,5,10
+37,Ja-Ela 15 16 MC-Galle 10 16 Mawanella,8,12
+37,Kelaniya 11 11 CENTRAL PROVINCE Ruwanwella,6,11
+37,Pugoda(Dompe) 37 38 Udunuwara 10 14 Wennappuwa,10,11
+37,Werellagama,7,15
+40,PROVINCE D3-CMC 10 19 Panadura 16 14 Yatinuwara,28,22
+40,Mahara 15 23 Kandy MC 22 17 Ambanpola,0,20
+41,PROVINCE D1-CMC 13 24 Seeduwa 7 10 Yatinuwara,23,20
+41,Katana 10 10 Korale Embilipitiya,6,11
+41,Minuwangoda 9 16 Menikhinna 8 12 Kalmunai North,12,13
+41,Negombo 7 10 Udunuwara,10,15
+41,Pugoda(Dompe) 29 19 Waththegama,16,15
+42,PROVINCE Nugegoda 7 10 Mahara 19 12 Udunuwara,15,13
+42,CMC Pugoda(Dompe) 19 18 Werellagama,9,14
+42,Menikhinna 14 11 Thirukkovil,6,25
+43,PROVINCE D3-CMC 10 20 Gampola 4 13 MC Galle,9,10
+43,Katana 3 14 Werellagama 15 15 Mawanella,3,14
+43,Panadura 13 13 Rigillakasgada 4 11 Thirukkovil,25,23
