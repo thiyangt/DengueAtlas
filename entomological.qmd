@@ -13,7 +13,7 @@ editor: "source"
 #| echo: false
 #| message: false
 #| warning: false
-#| fig-cap: "Figure 7.1: Premises inspected and premises found positive for Aedes larvae, by area and province, from January to June 2026 (Source: returns of entomological surveys received by the NDCU).Schools (42.5%) and factories (38.4%) end up at the top "
+#| fig-cap: "Figure 7.1: Premises inspected and premises found positive for Aedes larvae, by area and province, from January to June 2026: (a) Stacked bar chart by counts, (b) Stacked bar chart by percentage. Schools (42.5%) and factories (38.4%) end up at the top. (Source: returns of entomological surveys received by the NDCU)"
 library(tidyverse)
 library(readxl)
 premises_positivity_2026 <- read_excel("dataraw/premises_positivity_2026.xlsx")
@@ -23,6 +23,12 @@ library(ggplot2)
 library(patchwork)
 library(plotly)
 
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(plotly)
+library(htmlwidgets)
+
 plot_dat <- premises_positivity_2026 %>%
   filter(`Premise type` != "Total") %>%
   transmute(
@@ -31,40 +37,59 @@ plot_dat <- premises_positivity_2026 %>%
     Negative = `Number inspected` - `Number with Aedes larvae`,
     pct_pos  = Positive / (Positive + Negative)
   ) %>%
-  mutate(Premise = forcats::fct_reorder(Premise, pct_pos)) %>%   # order by % positive
+  mutate(Premise = forcats::fct_reorder(Premise, pct_pos)) %>%
   pivot_longer(c(Positive, Negative), names_to = "Result", values_to = "Count") %>%
-  mutate(Result = factor(Result,
-                         levels = c("Negative", "Positive"),
-                         labels = c("No larvae", "Aedes larvae present")))
+  mutate(
+    Result = factor(Result, levels = c("Negative", "Positive"),
+                    labels = c("No larvae", "Aedes larvae present"))
+  ) %>%
+  group_by(Premise) %>%
+  mutate(
+    Share = Count / sum(Count),
+    tip   = paste0("<b>", Premise, "</b><br>",
+                   Result, "<br>",
+                   "Count: ", scales::comma(Count), "<br>",
+                   "Share: ", scales::percent(Share, accuracy = 0.1))
+  ) %>%
+  ungroup()
 
 cols <- c("No larvae" = "#a6cee3", "Aedes larvae present" = "#e31a1c")
 
 # (a) stacked counts
-p_a <- ggplot(plot_dat, aes(x = Premise, y = Count, fill = Result)) +
+p_a <- ggplot(plot_dat, aes(x = Premise, y = Count, fill = Result, text = tip)) +
   geom_col(width = 0.75) +
   coord_flip() +
   scale_fill_manual(values = cols) +
-  scale_y_continuous(labels = scales::comma, expand = expansion(mult = c(0, 0.05))) +
+  scale_y_continuous(labels = scales::comma) +
   labs(x = NULL, y = "Number of premises inspected", fill = NULL) +
-  theme_minimal() +
-  theme(legend.position = "top")
+  theme_minimal()
 
 # (b) stacked percentages
-p_b <- ggplot(plot_dat, aes(x = Premise, y = Count, fill = Result)) +
+p_b <- ggplot(plot_dat, aes(x = Premise, y = Count, fill = Result, text = tip)) +
   geom_col(position = "fill", width = 0.75) +
   coord_flip() +
   scale_fill_manual(values = cols) +
-  scale_y_continuous(labels = scales::percent, expand = expansion(mult = c(0, 0.02))) +
+  scale_y_continuous(labels = scales::percent) +
   labs(x = NULL, y = "Percentage of premises inspected", fill = NULL) +
-  theme_minimal() +
-  theme(legend.position = "top", axis.text.y = element_blank())
+  theme_minimal()
 
-p_ab <- (p_a | p_b) +
-  plot_layout(guides = "collect") +
-  plot_annotation(tag_levels = "a", tag_prefix = "(", tag_suffix = ")") &
-  theme(legend.position = "top")
+gp_a <- ggplotly(p_a, tooltip = "text")
+gp_b <- ggplotly(p_b, tooltip = "text") %>% style(showlegend = FALSE)   # one shared legend
 
-p_ab
+p_interactive <- subplot(gp_a, gp_b, nrows = 1, shareY = TRUE,
+                         titleX = TRUE, margin = 0.04) %>%
+  layout(
+    legend = list(orientation = "h", x = 0.5, xanchor = "center", y = 1.12),
+    annotations = list(
+      list(text = "<b>(a)</b>", x = 0, y = 1.05, xref = "paper", yref = "paper",
+           showarrow = FALSE, xanchor = "left"),
+      list(text = "<b>(b)</b>", x = 0.54, y = 1.05, xref = "paper", yref = "paper",
+           showarrow = FALSE, xanchor = "left")
+    )
+  )
+
+p_interactive
+saveWidget(p_interactive, "premises_positivity_ab.html", selfcontained = TRUE)
 
 
 ```

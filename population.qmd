@@ -9,7 +9,7 @@ editor: "source"
 #| echo: false
 #| message: false
 #| warning: false
-#| fig-cap: "Figure 6.1: District-wise Population based on 2024 Census. The graph shows that the population is distributed unevenly across the districts of Sri Lanka. Colombo and Gampaha have the highest populations. Both districts lie in the Western Province, which holds the commercial capital, the main port and airport links, and much of the country’s industrial and service employment. "
+#| fig-cap: "Figure 8.1: District-wise Population based on 2024 Census. The graph shows that the population is distributed unevenly across the districts of Sri Lanka. Colombo and Gampaha have the highest populations. Both districts lie in the Western Province, which holds the commercial capital, the main port and airport links, and much of the country’s industrial and service employment. "
 #| out-width: 100%
 library(tidyverse)
 population <- read_csv("population.csv")

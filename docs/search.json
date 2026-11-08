@@ -46,7 +46,49 @@
     "href": "population.html",
     "title": "Population",
     "section": "",
-    "text": "1 District-wise Population in Sri Lanka\n\n\n\n\n\nFigure 6.1: District-wise Population based on 2024 Census. The graph shows that the population is distributed unevenly across the districts of Sri Lanka. Colombo and Gampaha have the highest populations. Both districts lie in the Western Province, which holds the commercial capital, the main port and airport links, and much of the country’s industrial and service employment."
+    "text": "1 District-wise Population in Sri Lanka\n\n\n\n\n\nFigure 8.1: District-wise Population based on 2024 Census. The graph shows that the population is distributed unevenly across the districts of Sri Lanka. Colombo and Gampaha have the highest populations. Both districts lie in the Western Province, which holds the commercial capital, the main port and airport links, and much of the country’s industrial and service employment."
+  },
+  {
+    "objectID": "entomological.html",
+    "href": "entomological.html",
+    "title": "Entomological status",
+    "section": "",
+    "text": "“Entomological status” describes how much Aedes mosquito breeding was found in an area, which tells you the risk of dengue transmission. In your table it comes from larval surveys: teams visit premises (houses, schools, institutions and so on) and check for Aedes larvae in water-holding containers."
+  },
+  {
+    "objectID": "entomological.html#introduction",
+    "href": "entomological.html#introduction",
+    "title": "Entomological status",
+    "section": "",
+    "text": "“Entomological status” describes how much Aedes mosquito breeding was found in an area, which tells you the risk of dengue transmission. In your table it comes from larval surveys: teams visit premises (houses, schools, institutions and so on) and check for Aedes larvae in water-holding containers."
+  },
+  {
+    "objectID": "entomological.html#premises-inspected-and-premises-found-positive-for-aedes-larvae-by-area-and-province-from-january-to-june-2026-across-4018-divisions",
+    "href": "entomological.html#premises-inspected-and-premises-found-positive-for-aedes-larvae-by-area-and-province-from-january-to-june-2026-across-4018-divisions",
+    "title": "Entomological status",
+    "section": "2 Premises inspected and premises found positive for Aedes larvae, by area and province, from January to June 2026 Across 4018 Divisions",
+    "text": "2 Premises inspected and premises found positive for Aedes larvae, by area and province, from January to June 2026 Across 4018 Divisions\n\n\n\n\nFigure 7.1: Premises inspected and premises found positive for Aedes larvae, by area and province, from January to June 2026: (a) Stacked bar chart by counts, (b) Stacked bar chart by percentage. Schools (42.5%) and factories (38.4%) end up at the top. (Source: returns of entomological surveys received by the NDCU)"
+  },
+  {
+    "objectID": "entomological.html#premises-inspected-and-premises-found-positive-for-aedes-larvae-by-area-and-province-june-2026",
+    "href": "entomological.html#premises-inspected-and-premises-found-positive-for-aedes-larvae-by-area-and-province-june-2026",
+    "title": "Entomological status",
+    "section": "3 Premises inspected and premises found positive for Aedes larvae, by area and province, June 2026",
+    "text": "3 Premises inspected and premises found positive for Aedes larvae, by area and province, June 2026\n\n\n\n\n\nFigure 7.2: Premises inspected and premises found positive for Aedes larvae, by area and province, June 2026 (Monthly Dengue Summary, source: returns of entomological surveys received by the NDCU). Blue bars show the number of premises inspected and red bars the number positive, with counts printed above each bar. Each panel has its own y-axis, so bar heights can be compared within a province but not between provinces. Survey effort differed widely between areas. It was greatest in the Western Province, where Gampaha (3,489 premises), Kalutara (2,339) and Colombo (1,902) were the most heavily inspected, and smallest in Mullaithivu (130). Gampaha also had the largest number of positive premises (460). Counts alone depend on how many premises were inspected, so the proportion positive is more useful for comparing risk. Breeding was highest in NIHS (21.9% of premises positive), followed by Galle (15.2%), Hambantota (14.4%) and Matara (13.5%), and most other Western Province areas were close to 12-13%. Positivity was lowest in the Northern Province, at 1.5% in Mullaithivu, 2.4% in Mannar and 3.3% in Vavuniya, and in Batticaloa (4.6%) and Ampara (5.0%) in the Eastern Province. Because these areas inspected fewer premises, their percentages are less stable. The high NIHS value probably reflects surveys directed at known hotspots rather than the whole district. These data describe vector breeding, not dengue cases, so they should be read alongside case data when judging transmission risk."
+  },
+  {
+    "objectID": "entomological.html#main-type-of-containers-positive-for-larvae-and-percentage-june-2026-data",
+    "href": "entomological.html#main-type-of-containers-positive-for-larvae-and-percentage-june-2026-data",
+    "title": "Entomological status",
+    "section": "4 Main type of containers positive for larvae and percentage: June 2026 Data",
+    "text": "4 Main type of containers positive for larvae and percentage: June 2026 Data\n\n\n\n\n\nFigure 7.3: Main type of containers positive for larvae and percentage. This is based on June 2026 data.Temporary removable items and and discarded non-degradable items were the leading container type. This points to poorly managed household and solid waste as an important source of breeding."
+  },
+  {
+    "objectID": "entomological.html#data-source",
+    "href": "entomological.html#data-source",
+    "title": "Entomological status",
+    "section": "5 Data Source",
+    "text": "5 Data Source\nEntomology Update June 2026 Published by the National Dengue Control Unit. Link: https://www.dengue.health.gov.lk/wp-content/uploads/2026/07/entomology_update_June-2026.pdf"
   },
   {
     "objectID": "about.html",
@@ -95,14 +137,14 @@
     "href": "seasonal.html",
     "title": "Seasonal Time Series Visualizations",
     "section": "",
-    "text": "Figure 4.1: Seasonal time series plots of weekly dengue cases by districts"
+    "text": "Figure 4.1: Seasonal time series plots of weekly dengue cases by districts. Dengue incidence in 2026 was notably higher than in previous years in several districts. This increase may be linked to Cyclone Ditwah in late 2025, whose flooding and storm debris created abundant stagnant water and potential Aedes breeding sites. Note that 2026 data are incomplete, covering only weeks up to [last reported week]"
   },
   {
     "objectID": "seasonal.html#seasonal-time-series-plots-weekly-dengue-cases-by-district",
     "href": "seasonal.html#seasonal-time-series-plots-weekly-dengue-cases-by-district",
     "title": "Seasonal Time Series Visualizations",
     "section": "",
-    "text": "Figure 4.1: Seasonal time series plots of weekly dengue cases by districts"
+    "text": "Figure 4.1: Seasonal time series plots of weekly dengue cases by districts. Dengue incidence in 2026 was notably higher than in previous years in several districts. This increase may be linked to Cyclone Ditwah in late 2025, whose flooding and storm debris created abundant stagnant water and potential Aedes breeding sites. Note that 2026 data are incomplete, covering only weeks up to [last reported week]"
   },
   {
     "objectID": "summary.html",

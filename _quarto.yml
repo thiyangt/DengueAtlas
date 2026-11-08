@@ -12,6 +12,7 @@ website:
       - time.qmd
       - seasonal.qmd
       - summary.qmd
+      - entomological.qmd
       - population.qmd
       - about.qmd
     right: 
