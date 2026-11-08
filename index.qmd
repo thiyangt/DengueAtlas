@@ -3,25 +3,22 @@ title: "Sri Lanka Dengue Atlas"
 editor: "source"
 ---
 
-## Sri Lanka Dengue Situation in 2026 (up to Week 43,  2026)
+## Sri Lanka Dengue Situation in 2026 (up to Week 43, 2026)
 
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r}
 #| echo: false
 #| message: false
 #| warning: false
 #| out-width: 100%
 #| out-height: 1500px
 
-# ============================================================
 # LIBRARIES
-# ============================================================
-
 library(dplyr)
 library(sf)
 library(leaflet)
 library(fuzzyjoin)
 library(denguedatahub)
+pak::pak("thiyangt/ceylon")
 library(ceylon)
 library(stringdist)
 library(viridis)
@@ -32,41 +29,29 @@ library(jsonlite)
 library(leafsync)
 
 
-# ============================================================
+
 # PART 1: DISTRICT DATA
-# ============================================================
-
-data(srilanka_weekly_data)
-data(district)
-
-
-# ------------------------------------------------------------
 # Aggregate annual dengue cases
-# ------------------------------------------------------------
+
 data <- read_excel("dataraw/DengueCountsNDC.xlsx", sheet=1)
 
-annual_df2026_43 <- data %>%
+annual_df2026_43 <- data |>
+  filter(year == 2026) |>
   select(year, district, annual_cases)
 
-
-# ------------------------------------------------------------
 # Clean district names
-# ------------------------------------------------------------
-
-annual_df2026_43 <- annual_df2026_43 %>%
+annual_df2026_43 <- annual_df2026_43 |>
   mutate(
     district_clean = toupper(trimws(district))
   )
 
-district_sf <- district %>%
+district_sf <- district |>
   mutate(
     DISTRICT_clean = toupper(trimws(DISTRICT))
   )
 
 
-# ------------------------------------------------------------
 # Fuzzy match district names
-# ------------------------------------------------------------
 
 annual_df2026_43 <- annual_df2026_43 %>%
   rowwise() %>%
@@ -82,9 +67,9 @@ annual_df2026_43 <- annual_df2026_43 %>%
   ungroup()
 
 
-# ------------------------------------------------------------
+
 # Join annual cases with polygons
-# ------------------------------------------------------------
+
 
 annual_sf <- district_sf %>%
   left_join(
@@ -96,9 +81,7 @@ annual_sf <- district_sf %>%
   st_transform(4326)
 
 
-# ------------------------------------------------------------
 # District data used for map
-# ------------------------------------------------------------
 
 district_sf <- annual_sf %>%
   filter(!is.na(annual_cases)) %>%
@@ -115,9 +98,7 @@ district_sf <- annual_sf %>%
   )
 
 
-# ============================================================
 # DISTRICT MAP
-# ============================================================
 
 district_pal <- colorNumeric(
   palette = "YlOrRd",
@@ -129,89 +110,42 @@ district_pal <- colorNumeric(
 map1 <- leaflet(
   district_sf
 ) %>%
-
-  addTiles() %>%
-
-  addPolygons(
-
-    # District key used by JavaScript
+addTiles() %>%
+addPolygons(
+# District key used by JavaScript
     layerId = ~district_key,
-
     fillColor = ~district_pal(
       annual_cases
-    ),
-
-    fillOpacity = 0.75,
-
-    color = "white",
-
-    weight = 1,
-
-    popup = ~paste0(
-
-      "<b>District:</b> ",
+    ),fillOpacity = 0.75, color = "white", weight = 1, popup = ~paste0(
+"<b>District:</b> ",
       DISTRICT,
-
-      "<br><b>Annual cases:</b> ",
+"<br><b>Annual cases:</b> ",
       format(
         annual_cases,
-        big.mark = ","
-      )
-
-    ),
-
-    label = ~paste0(
-
-      DISTRICT,
+        big.mark = ",")),
+        label = ~paste0(
+          DISTRICT,
       ": ",
       format(
         annual_cases,
         big.mark = ","
       ),
-      " cases"
+      " cases")) %>%
+addLegend(
+position = "bottomright",
+pal = district_pal,
+values = ~annual_cases,
+title = "Dengue cases<br>(2025)",
+opacity = 1) %>%
+setView(
+lng = 80.7,
+lat = 7.8,
+zoom = 10
+)
 
-    )
-
-  ) %>%
-
-  addLegend(
-
-    position = "bottomright",
-
-    pal = district_pal,
-
-    values = ~annual_cases,
-
-    title = "Dengue cases<br>(2025)",
-
-    opacity = 1
-
-  ) %>%
-
-  setView(
-
-    lng = 80.7,
-
-    lat = 7.8,
-
-    zoom = 10
-
-  )
-
-
-# ============================================================
 # PART 2: MOH AREA DATA
-# ============================================================
-
-
-# ------------------------------------------------------------
-# Read Dengue Atlas data
-# ------------------------------------------------------------
-
-
-#DengueAtlas1 <- read_excel("dataraw/DengueAtlas.xlsx", sheet=1)
 DengueAtlas1 <- read_csv("dataraw/2026_11_1.csv")
-DengueAtlas2 <- read_excel("dataraw/DengueAtlas.xlsx", sheet=2)
+DengueAtlasmoh2026 <- read_excel("dataraw/DengueAtlas.xlsx", sheet=2)
 df <- read_csv("dataraw/sri_lanka_areas_coordinates.csv")
 
 
