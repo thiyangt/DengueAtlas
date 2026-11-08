@@ -4,28 +4,28 @@
     "href": "time.html",
     "title": "Time Series Visualizations by District and Year",
     "section": "",
-    "text": "NoteExplore Interactive Dashboard\n\n\n\nTo zoom into district charts and statistics:\nOpen Dashboard\n\n\n\n\n\n\n\nFigure 4: Time series plots of weekly dengue cases by districts"
+    "text": "NoteExplore Interactive Dashboard\n\n\n\nTo zoom into district charts and statistics:\nOpen Dashboard\n\n\n\n\n\n\n\nFigure 3.1: Time series plots of weekly dengue cases by districts. According to the plots dengue transmission generally shows two seasonal peaks within a year, rather than a single annual peak. These are associated with the two monsoon seasons: First peak: May–July, following the Southwest monsoon, Second peak: October–January, following the Northeast monsoon and inter-monsoon rainfall."
   },
   {
     "objectID": "time.html#weekly-dengue-cases-by-district",
     "href": "time.html#weekly-dengue-cases-by-district",
     "title": "Time Series Visualizations by District and Year",
     "section": "",
-    "text": "NoteExplore Interactive Dashboard\n\n\n\nTo zoom into district charts and statistics:\nOpen Dashboard\n\n\n\n\n\n\n\nFigure 4: Time series plots of weekly dengue cases by districts"
+    "text": "NoteExplore Interactive Dashboard\n\n\n\nTo zoom into district charts and statistics:\nOpen Dashboard\n\n\n\n\n\n\n\nFigure 3.1: Time series plots of weekly dengue cases by districts. According to the plots dengue transmission generally shows two seasonal peaks within a year, rather than a single annual peak. These are associated with the two monsoon seasons: First peak: May–July, following the Southwest monsoon, Second peak: October–January, following the Northeast monsoon and inter-monsoon rainfall."
   },
   {
     "objectID": "spatial.html",
     "href": "spatial.html",
     "title": "Spatial Distribution of Annual Dengue Cases by Districts and Year",
     "section": "",
-    "text": "Figure 3: Maps of annual dengue cases by districts"
+    "text": "Figure 2.1: Maps of annual dengue cases by districts. The maps illustrate an overall increase in dengue transmission across all districts over time, indicating a gradual expansion and intensification of dengue incidence throughout the country. However, the magnitude and spatial distribution of cases vary among districts, highlighting geographical differences in dengue transmission patterns."
   },
   {
     "objectID": "spatial.html#map-visuaizations",
     "href": "spatial.html#map-visuaizations",
     "title": "Spatial Distribution of Annual Dengue Cases by Districts and Year",
     "section": "",
-    "text": "Figure 3: Maps of annual dengue cases by districts"
+    "text": "Figure 2.1: Maps of annual dengue cases by districts. The maps illustrate an overall increase in dengue transmission across all districts over time, indicating a gradual expansion and intensification of dengue incidence throughout the country. However, the magnitude and spatial distribution of cases vary among districts, highlighting geographical differences in dengue transmission patterns."
   },
   {
     "objectID": "spatial.html#tile-map-visualisation-of-district-counts",
@@ -46,7 +46,7 @@
     "href": "population.html",
     "title": "Population",
     "section": "",
-    "text": "1 District-wise Population in Sri Lanka\n\n\n\n\n\nFigure 6: District-wise Population based on 2024 Census"
+    "text": "1 District-wise Population in Sri Lanka\n\n\n\n\n\nFigure 6.1: District-wise Population based on 2024 Census. The graph shows that the population is distributed unevenly across the districts of Sri Lanka. Colombo and Gampaha have the highest populations. Both districts lie in the Western Province, which holds the commercial capital, the main port and airport links, and much of the country’s industrial and service employment."
   },
   {
     "objectID": "about.html",
@@ -95,13 +95,20 @@
     "href": "seasonal.html",
     "title": "Seasonal Time Series Visualizations",
     "section": "",
-    "text": "Figure 5: Seasonal time series plots of weekly dengue cases by districts"
+    "text": "Figure 4.1: Seasonal time series plots of weekly dengue cases by districts"
   },
   {
     "objectID": "seasonal.html#seasonal-time-series-plots-weekly-dengue-cases-by-district",
     "href": "seasonal.html#seasonal-time-series-plots-weekly-dengue-cases-by-district",
     "title": "Seasonal Time Series Visualizations",
     "section": "",
-    "text": "Figure 5: Seasonal time series plots of weekly dengue cases by districts"
+    "text": "Figure 4.1: Seasonal time series plots of weekly dengue cases by districts"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "Summary of District-wise Dengue Cases by Year",
+    "section": "",
+    "text": "Figure 5.1: District bar charts. The graph shows the trend within each district over time, and which districts show rising, falling or fluctuating counts."
   }
 ]

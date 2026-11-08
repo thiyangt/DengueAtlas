@@ -14,6 +14,8 @@ library(stringdist)  # for fuzzy matching
 library(ggplot2)
 library(viridis)
 library(plotly)
+library(denguedatahub)
+data("srilanka_weekly_data")
 ```
 
 ## Map Visuaizations
@@ -22,7 +24,7 @@ library(plotly)
 #| echo: false
 #| message: false
 #| warning: false
-#| fig-cap: "Figure 3: Maps of annual dengue cases by districts"
+#| fig-cap: "Figure 2.1: Maps of annual dengue cases by districts. The maps illustrate an overall increase in dengue transmission across all districts over time, indicating a gradual expansion and intensification of dengue incidence throughout the country. However, the magnitude and spatial distribution of cases vary among districts, highlighting geographical differences in dengue transmission patterns."
 #| fig-width: 20
 #| fig-height: 10
 data(srilanka_weekly_data)
@@ -87,7 +89,7 @@ p1
 #| echo: false
 #| message: false
 #| warning: false
-#| fit-cap: "Figure 3: Tile map of annual dengue cases by districts"
+#| fit-cap: "Figure 2.2: Tile map of annual dengue cases by districts. The maps indicate a major dengue outbreak in 2017, with exceptionally high case numbers recorded across almost all districts. Since 2017, Kandy, Kalutara, Gampaha, and Colombo have consistently reported more than 1,000 dengue cases annually, highlighting their persistent contribution to the national dengue burden. More recently, Galle and Matara have also recorded more than 1,000 cases annually since 2022. Overall, the spatial patterns suggest substantial geographical variation in dengue transmission, with these districts emerging as persistent high-incidence areas."
 #| fig-width: 10
 #| fig-height: 20
 library(dplyr)

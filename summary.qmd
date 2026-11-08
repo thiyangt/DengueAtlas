@@ -2,7 +2,7 @@
 title: "Summary of District-wise Dengue Cases by Year"
 ---
 
-```{r}
+```{r, fig.cap="Figure 5.1: District bar charts. The graph shows the trend within each district over time, and which districts show rising, falling or fluctuating counts."}
 #| echo: false
 #| warning: false
 #| message: false
