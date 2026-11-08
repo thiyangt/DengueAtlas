@@ -5,7 +5,7 @@ editor: "source"
 
 ## Sri Lanka Dengue Situation in 2026 (up to Week 43, 2026)
 
-```{r, fig.cap="Figure 1. Dengue burden in Sri Lanka in 2026. (a) Cumulative dengue cases by district up to epidemiological week 43, with darker shades of orange to red indicating higher case counts. (b) High-risk Medical Officer of Health (MOH) areas, with each point coloured by the total number of cases reported for that area in 2026 (light pink to dark purple-red indicates increasing totals). The district name and case count (a) and the MOH area name (b) are shown when the cursor is placed over the corresponding feature. Data source: Weekly Epidemiological Reports, Epidemiology Unit, Ministry of Health, Sri Lanka; Weekly Dengue Update, National Dengue Control Unit, Ministry of Health, Sri Lanka."}
+```{r, fig.cap="Figure 1.1: Dengue burden in Sri Lanka in 2026. (a) Cumulative dengue cases by district up to epidemiological week 43, with darker shades of orange to red indicating higher case counts. (b) High-risk Medical Officer of Health (MOH) areas, with each point coloured by the total number of cases reported for that area in 2026 (light pink to dark purple-red indicates increasing totals). The district name and case count (a) and the MOH area name (b) are shown when the cursor is placed over the corresponding feature. Data source: Weekly Epidemiological Reports, Epidemiology Unit, Ministry of Health, Sri Lanka; Weekly Dengue Update, National Dengue Control Unit, Ministry of Health, Sri Lanka."}
 #| echo: false
 #| message: false
 #| warning: false
@@ -195,7 +195,7 @@ map2 <- leaflet(moh2026, height = map_height, width = map_width) |>
   ) |>
   addLegend(
     position = "bottomright", pal = moh_pal, values = ~Cases,
-    title = paste0("High-risk MOH<br>total cases 2026"),
+    title = paste0("High-risk MOH<br>total cases 2026<br>up to wk 43"),
     opacity = 1
   )
 
@@ -212,6 +212,211 @@ both <- leafsync::sync(map1, map2, ncol = 2)
 both
 
 htmltools::save_html(both, "dengue_maps_2026.html")
+
+```
+
+## Sri Lanka Dengue Situation in 2025 
+
+```{r, fig.cap="Figure 1.2: Dengue burden in Sri Lanka in 2025. (a) Cumulative dengue cases by district up to epidemiological week 53, with darker shades of orange to red indicating higher case counts. (b) High-risk Medical Officer of Health (MOH) areas, with each point coloured by the total number of cases reported for that area in 2025 upto week 25 (light pink to dark purple-red indicates increasing totals). The district name and case count (a) and the MOH area name (b) are shown when the cursor is placed over the corresponding feature. Data source: Weekly Epidemiological Reports, Epidemiology Unit, Ministry of Health, Sri Lanka; Weekly Dengue Update, National Dengue Control Unit, Ministry of Health, Sri Lanka."}
+#| echo: false
+#| message: false
+#| warning: false
+#| out-width: 150%
+#| out-height: 1500px
+
+# LIBRARIES
+library(dplyr)
+library(sf)
+library(leaflet)
+library(fuzzyjoin)
+library(denguedatahub)
+# pak::pak("thiyangt/ceylon")
+library(ceylon)
+library(stringdist)
+library(viridis)
+library(readxl)
+library(readr)
+library(htmlwidgets)
+library(jsonlite)
+library(leafsync)
+
+
+# ============================================================
+# Dengue maps for Sri Lanka, 2025
+#   Map (a): district counts (district name + count shown)
+#   Map (b): high-risk MOH areas (points coloured by total
+#            cases, name shown)
+# ============================================================
+
+library(dplyr)
+library(sf)
+library(leaflet)
+library(readxl)
+library(readr)
+library(stringdist)
+library(htmlwidgets)
+library(leafsync)
+library(ceylon)
+
+# ------------------------------------------------------------
+# 1. READ DATA
+# ------------------------------------------------------------
+district <- read_excel("dataraw/District.xlsx", sheet = 1)
+MOH      <- read_csv("dataraw/MOH.csv", show_col_types = FALSE)
+coords   <- read_csv("dataraw/sri_lanka_areas_coordinates.csv",
+                     show_col_types = FALSE)
+missing_moh_coordinates <- read_excel("dataraw/missing_moh_coordinates.xlsx", 
+                                      sheet=1)
+
+coords <- bind_rows(
+  coords,
+  missing_moh_coordinates |> select(area, longitude, latitude)
+) |>
+  distinct(area, .keep_all = TRUE)   # keeps your original row if an area appears in both
+
+
+district2025 <- district |>
+  filter(year == 2025) |>
+  select(district, annual_cases) |>
+  mutate(district_clean = toupper(trimws(district)))
+
+week_up_to <- district |>
+  filter(year == 2025) |>
+  pull(`Up to week`) |>
+  max(na.rm = TRUE)
+
+# ------------------------------------------------------------
+# 2. DISTRICT POLYGONS
+# ------------------------------------------------------------
+# District boundaries from the ceylon package.
+# If your boundary object has a different name, change it here.
+polys <- ceylon::district |> st_as_sf() |> st_transform(4326)
+
+# Find the column that holds the district names automatically:
+# the character column that best overlaps with our district names
+char_cols <- names(polys)[sapply(polys, is.character)]
+overlap <- sapply(char_cols, function(cl) {
+  sum(toupper(trimws(polys[[cl]])) %in% district2026$district_clean)
+})
+name_col <- char_cols[which.max(overlap)]
+
+polys <- polys |>
+  mutate(DISTRICT_clean = toupper(trimws(.data[[name_col]])))
+
+# Fuzzy match the Excel district names to the polygon names
+district2025 <- district2025 |>
+  mutate(
+    DISTRICT_match = polys$DISTRICT_clean[
+      amatch(district_clean, polys$DISTRICT_clean, maxDist = 3)
+    ]
+  )
+
+district_sf <- polys |>
+  left_join(district2025, by = c("DISTRICT_clean" = "DISTRICT_match")) |>
+  filter(!is.na(annual_cases))
+
+# Label points inside each polygon
+district_pts <- st_point_on_surface(district_sf)
+district_sf$lab_lng <- st_coordinates(district_pts)[, 1]
+district_sf$lab_lat <- st_coordinates(district_pts)[, 2]
+
+# ------------------------------------------------------------
+# 3. MAP (a): DISTRICT COUNTS
+# ------------------------------------------------------------
+district_pal <- colorNumeric("YlOrRd", district_sf$annual_cases,
+                             na.color = "white")
+
+map_height <- 1000   # increase/decrease to resize both maps
+map_width <- 900   # increase/decrease to resize both maps
+
+map1 <- leaflet(district_sf, height = map_height, width = map_width) |>
+  addTiles() |>
+  addControl(
+    htmltools::tags$div("(a)", style = "font-size:24px; font-weight:bold;
+      background:white; padding:2px 10px; border-radius:4px;"),
+    position = "topleft"
+  ) |>
+  addPolygons(
+    fillColor   = ~district_pal(annual_cases),
+    fillOpacity = 0.75,
+    color       = "white",
+    weight      = 1,
+    highlightOptions = highlightOptions(weight = 3, color = "blue",
+                                        bringToFront = TRUE),
+    # District name + count shown only on mouse hover
+    label = ~paste0(district, ": ", format(annual_cases, big.mark = ",")),
+    labelOptions = labelOptions(
+      style = list("font-size" = "13px", "font-weight" = "bold")
+    )
+  ) |>
+  addLegend(
+    position = "bottomright", pal = district_pal,
+    values = ~annual_cases,
+    title = paste0("Dengue cases<br>2026 (up to wk ", week_up_to, ")"),
+    opacity = 1
+  )
+
+# ------------------------------------------------------------
+# 4. MOH AREAS
+# ------------------------------------------------------------
+coords <- coords |> rename(HighRiskMOHAreas = area)
+
+moh2025 <- MOH |>
+  filter(Year == 2025) |>
+  left_join(coords, by = "HighRiskMOHAreas") |>
+  filter(is.finite(longitude), is.finite(latitude), !is.na(Cases)) |>
+  group_by(HighRiskMOHAreas, District, longitude, latitude) |>
+  summarise(Cases = sum(as.numeric(Cases), na.rm = TRUE), .groups = "drop")
+
+# ------------------------------------------------------------
+# 5. MAP (b): HIGH-RISK MOH AREAS
+# ------------------------------------------------------------
+# Red-magenta palette. Other options: "PuRd", "RdPu", "Reds", "magma"
+moh_pal <- colorNumeric("RdPu", moh2025$Cases, na.color = "grey")
+
+map2 <- leaflet(moh2025, height = map_height, width = map_width) |>
+  addTiles() |>
+  addControl(
+    htmltools::tags$div("(b)", style = "font-size:24px; font-weight:bold;
+      background:white; padding:2px 10px; border-radius:4px;"),
+    position = "topleft"
+  ) |>
+  addCircleMarkers(
+    lng = ~longitude, lat = ~latitude,
+    radius      = 7,
+    color       = "black",
+    weight      = 1.5,
+    fillColor   = ~moh_pal(Cases),
+    fillOpacity = 0.9,
+    # Name shown only on mouse hover
+    label = ~HighRiskMOHAreas,
+    labelOptions = labelOptions(
+      style = list("font-size" = "13px", "font-weight" = "bold")
+    ),
+    popup = ~paste0("<b>MOH area:</b> ", HighRiskMOHAreas,
+                    "<br><b>District:</b> ", District,
+                    "<br><b>Total cases (2025):</b> ",
+                    format(Cases, big.mark = ","))
+  ) |>
+  addLegend(
+    position = "bottomright", pal = moh_pal, values = ~Cases,
+    title = paste0("High-risk MOH<br>total cases 2025<br>(up to wk 25 and wk 52)"),
+    opacity = 1
+  )
+
+# ------------------------------------------------------------
+# 6. SHOW SIDE BY SIDE (zoom/pan linked) AND SAVE
+# ------------------------------------------------------------
+sri_lanka_view <- function(m) {
+  m |> setView(lng = 80.7, lat = 7.8, zoom = 8)
+}
+map1 <- sri_lanka_view(map1)
+map2 <- sri_lanka_view(map2)
+
+both <- leafsync::sync(map1, map2, ncol = 2)
+both
+
+htmltools::save_html(both, "dengue_maps_2025.html")
 
 ```
 
