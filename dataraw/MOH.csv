@@ -1,4 +1,4 @@
- Year,Week,District,HighRiskMOHAreas,Cases
+﻿Year,Week,District,HighRiskMOHAreas,Cases
 2022,25,Colombo,Dehiwala,33
 2022,25,Colombo,Piliyandala,27
 2022,25,Colombo,Homagama,30
@@ -612,7 +612,7 @@
 2023,8,Kalutara,Beruwala (NIHS),8
 2023,8,Kalutara,Kalutara (NIHS),16
 2023,8,Kalutara,Panadura,27
-2023,8,Kandy,Kandy,14
+2023,8,Kandy,MC Kandy,14
 2023,8,Kandy,Talathuoya,10
 2023,8,Kandy,Yatinuwara,11
 2023,8,Matara,Akuressa,18
@@ -1552,7 +1552,7 @@
 2023,23,Kalutara,Bandaragama,15
 2023,23,Kalutara,Beruwala (NIHS),39
 2023,23,Kalutara,Kalutara (NIHS),10
-2023,23,Kalutara,Kalutara (NIHS),77
+2023,23,Kalutara,Panadura,77
 2023,23,Kalutara,Wadduwa,18
 2023,23,Kandy,Gampola,35
 2023,23,Kandy,Gangawata Korale,28
@@ -1631,7 +1631,7 @@
 2023,24,Galle,Ambalangoda,8
 2023,24,Galle,Habaraduwa,8
 2023,24,Galle,Karandeniya,1
-2023,24,Galle,Karandeniya,14
+2023,24,Galle,MC Galle,14
 2023,24,Matara,MC Matara,7
 2023,24,Batticaloa,Batticaloa,38
 2023,24,Trincomalee,Muthur,24
@@ -1640,7 +1640,7 @@
 2023,24,Puttalam,Kalpitiya,5
 2023,24,Kegalle,Galigamuwa,20
 2023,24,Kegalle,Mawanella,20
-2023,24,Kegalle,Mawanella,12
+2023,24,Kegalle,Ruwanwella,12
 2023,24,Kegalle,Warakapola,10
 2023,24,Kegalle,Yatiyantota,17
 2023,24,Ratnapura,Eheliyagoda,12
@@ -2976,7 +2976,7 @@
 2024,1,Kegalle,Dehiovita,4
 2024,1,Kegalle,Mawanella,22
 2024,1,Kegalle,Warakapola,5
-2024,2,Colombo,CMC,180
+2024,2,Colombo,CMC,188
 2024,2,Colombo,Battaramulla,23
 2024,2,Colombo,Boralesgamuwa,17
 2024,2,Colombo,Dehiwala,33
@@ -2991,7 +2991,6 @@
 2024,2,Colombo,Piliyandala,22
 2024,2,Colombo,Pitakotte,19
 2024,2,Colombo,Ratmalana,35
-2024,2,Colombo,CMC,188
 2024,2,Gampaha,Attanagalla,12
 2024,2,Gampaha,Biyagama,24
 2024,2,Gampaha,Gampaha,24
@@ -3338,7 +3337,7 @@
 2024,42,Gampaha,Ragama,10
 2024,42,Kandy,Yatinuwara,12
 2024,42,Puttalam,Wennappuwa,10
-2024,42,Ratnapura,Ratnapura MC,8
+2024,42,Ratnapura,MC Ratnapura,8
 2024,43,Colombo,CMC,57
 2024,43,Colombo,Kaduwela,10
 2024,43,Colombo,Maharagama,9
@@ -3348,9 +3347,9 @@
 2024,43,Gampaha,Kelaniya,15
 2024,43,Gampaha,Wattala,14
 2024,43,Gampaha,Mahara,6
-2024,43,Ratnapura,Ratnapura MC,15
+2024,43,Ratnapura,MC Ratnapura,15
 2024,43,Galle,Bope (Poddala),4
-2024,43,Jaffna,Jaffna,6
+2024,43,Jaffna,MC Jaffna,6
 2024,44,Colombo,CMC,51
 2024,44,Colombo,Kaduwela,11
 2024,44,Colombo,Gothatuwa,9
@@ -3361,9 +3360,9 @@
 2024,44,Gampaha,Mahara,12
 2024,44,Gampaha,Gampaha,3
 2024,44,Gampaha,Ja-Ela,2
-2024,44,Ratnapura,Ratnapura MC,15
+2024,44,Ratnapura,MC Ratnapura,15
 2024,44,Galle,Bope (Poddala),18
-2024,44,Jaffna,Jaffna,13
+2024,44,Jaffna,MC Jaffna,13
 2024,44,Monaragala,Siyambalanduwa,1
 2024,45,Colombo,CMC,85
 2024,45,Colombo,Gothatuwa,20
@@ -3373,7 +3372,7 @@
 2024,45,Gampaha,Wattala,26
 2024,45,Gampaha,Gampaha,10
 2024,45,Gampaha,Ja-Ela,12
-2024,45,Ratnapura,Ratnapura MC,20
+2024,45,Ratnapura,MC Ratnapura,20
 2024,45,Monaragala,Siyambalanduwa,10
 2024,49,Colombo,CMC,69
 2024,49,Colombo,Homagama,15
@@ -3583,7 +3582,6 @@
 2025,10,Colombo,Nugegoda,11
 2025,10,Colombo,Kaduwela,36
 2025,10,Colombo,Maharagama,28
-2025,10,Colombo,CMC,62
 2025,10,Colombo,Moratuwa,8
 2025,10,Colombo,Boralesgamuwa,5
 2025,10,Colombo,Hanwella,19
@@ -4223,3 +4221,3421 @@
 2025,25,Hambantota,Ambalantota,14
 2025,25,Jaffna,Kayts,16
 2025,25,Kurunegala,Kurunegala,13
+2025,52,Colombo,Battaramulla,30
+2025,52,Colombo,Boralesgamuwa,14
+2025,52,Colombo,Dehiwala,26
+2025,52,Colombo,Egoda Uyana,11
+2025,52,Colombo,Gothatuwa,54
+2025,52,Colombo,Hanwella,4
+2025,52,Colombo,Homagama,30
+2025,52,Colombo,Kaduwela,37
+2025,52,Colombo,Kahathuduwa,13
+2025,52,Colombo,Kolonnawa,19
+2025,52,Colombo,Maharagama,25
+2025,52,Colombo,Moratuwa,23
+2025,52,Colombo,Nugegoda,14
+2025,52,Colombo,Padukka,9
+2025,52,Colombo,Piliyandala,14
+2025,52,Colombo,Pitakotte (Kotte),11
+2025,52,Colombo,Ratmalana,23
+2025,52,Colombo,CMC-D1,23
+2025,52,Colombo,CMC-D2A,17
+2025,52,Colombo,CMC-D2B,9
+2025,52,Colombo,CMC-D3,25
+2025,52,Colombo,CMC-D4,20
+2025,52,Colombo,CMC-D5,22
+2025,52,Gampaha,Attanagalla,19
+2025,52,Gampaha,Biyagama,15
+2025,52,Gampaha,Gampaha,27
+2025,52,Gampaha,Ja-Ela,23
+2025,52,Gampaha,Katana,
+2025,52,Gampaha,Kelaniya,26
+2025,52,Gampaha,Mahara,21
+2025,52,Gampaha,Mirigama,8
+2025,52,Gampaha,Minuwangoda,18
+2025,52,Gampaha,Negombo,9
+2025,52,Gampaha,Pugoda,12
+2025,52,Gampaha,Ragama,4
+2025,52,Gampaha,Seeduwa,17
+2025,52,Gampaha,Wattala,25
+2025,52,Kalutara,Bandaragama,15
+2025,52,Kalutara,Horana,5
+2025,52,Kalutara,Ingiriya,6
+2025,52,Kalutara,Panadura,12
+2025,52,Kalutara,Wadduwa,9
+2025,52,Kalutara,Walallawita,6
+2025,52,Jaffna,Karaveddy,13
+2025,52,Galle,MC Galle,13
+2025,52,Galle,Akmeemana,8
+2025,52,Galle,Ambalangoda,7
+2025,52,Galle,Habaraduwa,7
+2025,52,Hambantota,Ambalantota,6
+2025,52,Matara,Dickwella,24
+2025,52,Matara,MC Matara,13
+2025,52,Matara,Weligama,12
+2025,52,Matara,Devinuwara,8
+2025,52,Matara,Kamburupitiya,1
+2025,52,Kandy,MC Kandy,4
+2025,52,Kandy,Kundasale,9
+2025,52,Kandy,Medadumbara,7
+2025,52,Kandy,Pasbage,5
+2025,52,Kandy,Wattegama,19
+2025,52,Kandy,Werellagama,3
+2025,52,Kandy,Yatinuwara,3
+2025,52,Ratnapura,MC Ratnapura,10
+2025,52,Ratnapura,Balangoda,6
+2025,52,Ratnapura,Embilipitiya,3
+2025,52,Ratnapura,Godakawela,2
+2025,52,Kalmunai,Kalmunai South,7
+2025,52,Trincomalee,Uppuveli,9
+2025,52,Puttalam,Mahawewa,2
+2025,52,Puttalam,Puttalam,0
+2025,52,Badulla,Badulla,7
+2025,52,Monaragala,Monaragala,2
+2026,1,Colombo,Battaramulla,47
+2026,1,Colombo,Boralesgamuwa,22
+2026,1,Colombo,Dehiwala,36
+2026,1,Colombo,Egoda Uyana,25
+2026,1,Colombo,Gothatuwa,82
+2026,1,Colombo,Hanwella,16
+2026,1,Colombo,Homagama,37
+2026,1,Colombo,Kaduwela,58
+2026,1,Colombo,Kahathuduwa,19
+2026,1,Colombo,Kolonnawa,24
+2026,1,Colombo,Maharagama,41
+2026,1,Colombo,Moratuwa,39
+2026,1,Colombo,Nugegoda,36
+2026,1,Colombo,Padukka,12
+2026,1,Colombo,Piliyandala,41
+2026,1,Colombo,Pitakotte (Kotte),21
+2026,1,Colombo,Ratmalana,46
+2026,1,Colombo,CMC-D1,18
+2026,1,Colombo,CMC-D2A,29
+2026,1,Colombo,CMC-D2B,31
+2026,1,Colombo,CMC-D3,32
+2026,1,Colombo,CMC-D4,23
+2026,1,Colombo,CMC-D5,21
+2026,1,Gampaha,Attanagalla,29
+2026,1,Gampaha,Biyagama,37
+2026,1,Gampaha,Gampaha,48
+2026,1,Gampaha,Ja-Ela,50
+2026,1,Gampaha,Katana,12
+2026,1,Gampaha,Kelaniya,44
+2026,1,Gampaha,Mahara,29
+2026,1,Gampaha,Mirigama,16
+2026,1,Gampaha,Minuwangoda,15
+2026,1,Gampaha,Negombo,14
+2026,1,Gampaha,Pugoda,14
+2026,1,Gampaha,Ragama,24
+2026,1,Gampaha,Seeduwa,35
+2026,1,Gampaha,Wattala,48
+2026,1,Kalutara,Panadura,38
+2026,1,Kalutara,Wadduwa,24
+2026,1,Kalutara,Bandaragama,23
+2026,1,Kalutara,Horana,10
+2026,1,Kalutara,Ingiriya,10
+2026,1,Kalutara,Walallawita,13
+2026,1,Galle,MC Galle,22
+2026,1,Galle,Akmeemana,18
+2026,1,Galle,Baddegama,4
+2026,1,Galle,Rathgama,0
+2026,1,Galle,Ambalangoda,11
+2026,1,Galle,Habaraduwa,12
+2026,1,Matara,Dickwella,27
+2026,1,Matara,MC Matara,17
+2026,1,Matara,Weligama,14
+2026,1,Matara,Devinuwara,15
+2026,1,Matara,Kamburupitiya,10
+2026,1,Hambantota,Ambalantota,11
+2026,1,Kandy,Gangawata Korale,1
+2026,1,Kandy,Medadumbara,26
+2026,1,Kandy,MC Kandy,16
+2026,1,Kandy,Kundasale,10
+2026,1,Kandy,Pasbage,13
+2026,1,Kandy,Wattegama,11
+2026,1,Kandy,Werellagama,14
+2026,1,Kandy,Yatinuwara,12
+2026,1,Ampara,Ampara,1
+2026,1,Batticaloa,Batticaloa,2
+2026,1,Trincomalee,Uppuveli,3
+2026,1,Puttalam,Mahawewa,21
+2026,1,Puttalam,Puttalam,10
+2026,1,Badulla,Badulla,11
+2026,1,Jaffna,Karaveddy,6
+2026,1,Ratnapura,MC Ratnapura,10
+2026,1,Ratnapura,Balangoda,11
+2026,1,Ratnapura,Embilipitiya,20
+2026,1,Ratnapura,Godakawela,10
+2026,1,Kalmunai,Kalmunai South,13
+2026,1,Monaragala,Monaragala,10
+2026,2,Colombo,Battaramulla,41
+2026,2,Colombo,Boralesgamuwa,17
+2026,2,Colombo,Dehiwala,35
+2026,2,Colombo,Egoda Uyana,24
+2026,2,Colombo,Gothatuwa,66
+2026,2,Colombo,Hanwella,14
+2026,2,Colombo,Homagama,15
+2026,2,Colombo,Kaduwela,46
+2026,2,Colombo,Kahathuduwa,9
+2026,2,Colombo,Kolonnawa,20
+2026,2,Colombo,Maharagama,28
+2026,2,Colombo,Moratuwa,33
+2026,2,Colombo,Nugegoda,39
+2026,2,Colombo,Piliyandala,19
+2026,2,Colombo,Pitakotte (Kotte),20
+2026,2,Colombo,Ratmalana,35
+2026,2,Colombo,CMC-D1,14
+2026,2,Colombo,CMC-D2A,21
+2026,2,Colombo,CMC-D2B,21
+2026,2,Colombo,CMC-D3,41
+2026,2,Colombo,CMC-D4,30
+2026,2,Colombo,CMC-D5,25
+2026,2,Gampaha,Attanagalla,15
+2026,2,Gampaha,Biyagama,29
+2026,2,Gampaha,Divulapitiya,6
+2026,2,Gampaha,Gampaha,39
+2026,2,Gampaha,Ja-Ela,25
+2026,2,Gampaha,Katana,11
+2026,2,Gampaha,Kelaniya,36
+2026,2,Gampaha,Mahara,18
+2026,2,Gampaha,Mirigama,6
+2026,2,Gampaha,Minuwangoda,14
+2026,2,Gampaha,Pugoda,12
+2026,2,Gampaha,Ragama,13
+2026,2,Gampaha,Seeduwa,13
+2026,2,Gampaha,Wattala,36
+2026,2,Kalutara,Horana,2
+2026,2,Kalutara,Panadura,25
+2026,2,Kalutara,Kalutara,8
+2026,2,Kalutara,Wadduwa,18
+2026,2,Galle,MC Galle,20
+2026,2,Galle,Akmeemana,16
+2026,2,Galle,Baddegama,11
+2026,2,Galle,Ambalangoda,9
+2026,2,Galle,Balapitiya,8
+2026,2,Galle,Rathgama,13
+2026,2,Matara,Akuressa,6
+2026,2,Matara,Dickwella,24
+2026,2,Matara,MC Matara,20
+2026,2,Matara,Weligama,20
+2026,2,Matara,Devinuwara,18
+2026,2,Hambantota,Beliatta,3
+2026,2,Hambantota,Tangalle,7
+2026,2,Hambantota,Ambalantota,10
+2026,2,Kandy,Medadumbara,16
+2026,2,Kandy,Gangawata Korale,11
+2026,2,Batticaloa,Batticaloa,14
+2026,2,Batticaloa,Chenkalady,5
+2026,2,Kalmunai,Kalmunai South,3
+2026,2,Puttalam,Mahawewa,15
+2026,2,Puttalam,Puttalam,10
+2026,2,Ratnapura,Embilipitiya,9
+2026,2,Ratnapura,MC Ratnapura,9
+2026,2,Ampara,Ampara,12
+2026,2,Trincomalee,Uppuveli,10
+2026,2,Badulla,Badulla,11
+2026,2,Jaffna,Karaveddy,10
+2026,3,Colombo,Battaramulla,53
+2026,3,Colombo,Boralesgamuwa,18
+2026,3,Colombo,Dehiwala,28
+2026,3,Colombo,Egoda Uyana,11
+2026,3,Colombo,Gothatuwa,79
+2026,3,Colombo,Hanwella,20
+2026,3,Colombo,Homagama,23
+2026,3,Colombo,Kaduwela,40
+2026,3,Colombo,Kahathuduwa,15
+2026,3,Colombo,Kolonnawa,19
+2026,3,Colombo,Maharagama,39
+2026,3,Colombo,Moratuwa,28
+2026,3,Colombo,Nugegoda,15
+2026,3,Colombo,Piliyandala,17
+2026,3,Colombo,Pitakotte (Kotte),15
+2026,3,Colombo,Ratmalana,38
+2026,3,Colombo,CMC-D1,13
+2026,3,Colombo,CMC-D2A,26
+2026,3,Colombo,CMC-D2B,18
+2026,3,Colombo,CMC-D3,28
+2026,3,Colombo,CMC-D4,17
+2026,3,Colombo,CMC-D5,28
+2026,3,Gampaha,Attanagalla,11
+2026,3,Gampaha,Biyagama,30
+2026,3,Gampaha,Divulapitiya,10
+2026,3,Gampaha,Gampaha,18
+2026,3,Gampaha,Ja-Ela,25
+2026,3,Gampaha,Katana,12
+2026,3,Gampaha,Kelaniya,24
+2026,3,Gampaha,Mahara,28
+2026,3,Gampaha,Mirigama,14
+2026,3,Gampaha,Ragama,5
+2026,3,Gampaha,Minuwangoda,18
+2026,3,Gampaha,Seeduwa,21
+2026,3,Gampaha,Wattala,20
+2026,3,Kalutara,Horana,10
+2026,3,Kalutara,Panadura,27
+2026,3,Kalutara,Wadduwa,6
+2026,3,Kalutara,Kalutara,11
+2026,3,Galle,MC Galle,29
+2026,3,Galle,Akmeemana,14
+2026,3,Galle,Baddegama,11
+2026,3,Galle,Ambalangoda,12
+2026,3,Galle,Balapitiya,20
+2026,3,Matara,Akuressa,10
+2026,3,Matara,Dickwella,33
+2026,3,Matara,MC Matara,21
+2026,3,Matara,Weligama,16
+2026,3,Matara,Devinuwara,26
+2026,3,Hambantota,Beliatta,25
+2026,3,Hambantota,Tangalle,46
+2026,3,Kandy,Medadumbara,11
+2026,3,Batticaloa,Batticaloa,12
+2026,3,Batticaloa,Chenkalady,14
+2026,3,Kalmunai,Addalaichchenai,7
+2026,3,Kalmunai,Kalmunai North,1
+2026,3,Kalmunai,Kalmunai South,10
+2026,3,Ratnapura,Embilipitiya,18
+2026,3,Ratnapura,MC Ratnapura,11
+2026,3,Puttalam,Mahawewa,11
+2026,4,Colombo,Battaramulla,26
+2026,4,Colombo,Boralesgamuwa,17
+2026,4,Colombo,Dehiwala,23
+2026,4,Colombo,Egoda Uyana,15
+2026,4,Colombo,Gothatuwa,49
+2026,4,Colombo,Hanwella,13
+2026,4,Colombo,Homagama,23
+2026,4,Colombo,Kaduwela,46
+2026,4,Colombo,Kahathuduwa,10
+2026,4,Colombo,Kolonnawa,17
+2026,4,Colombo,Maharagama,24
+2026,4,Colombo,Moratuwa,22
+2026,4,Colombo,Nugegoda,20
+2026,4,Colombo,Padukka,9
+2026,4,Colombo,Piliyandala,19
+2026,4,Colombo,Pitakotte (Kotte),13
+2026,4,Colombo,Ratmalana,34
+2026,4,Colombo,CMC-D1,14
+2026,4,Colombo,CMC-D2A,26
+2026,4,Colombo,CMC-D2B,19
+2026,4,Colombo,CMC-D3,38
+2026,4,Colombo,CMC-D4,16
+2026,4,Colombo,CMC-D5,33
+2026,4,Gampaha,Attanagalla,13
+2026,4,Gampaha,Biyagama,22
+2026,4,Gampaha,Gampaha,29
+2026,4,Gampaha,Ja-Ela,16
+2026,4,Gampaha,Katana,19
+2026,4,Gampaha,Kelaniya,36
+2026,4,Gampaha,Mahara,27
+2026,4,Gampaha,Minuwangoda,12
+2026,4,Gampaha,Ragama,17
+2026,4,Gampaha,Seeduwa,18
+2026,4,Gampaha,Wattala,35
+2026,4,Kalutara,Panadura,15
+2026,4,Kalutara,Horana,11
+2026,4,Kalutara,Wadduwa,10
+2026,4,Galle,Hikkaduwa,9
+2026,4,Galle,MC Galle,14
+2026,4,Galle,Rathgama,5
+2026,4,Matara,Dickwella,20
+2026,4,Matara,MC Matara,28
+2026,4,Matara,PS Kekanadura,4
+2026,4,Matara,Weligama,11
+2026,4,Matara,Devinuwara,25
+2026,4,Hambantota,Beliatta,16
+2026,4,Hambantota,Tangalle,29
+2026,4,Kandy,Medadumbara,11
+2026,4,Batticaloa,Batticaloa,10
+2026,4,Batticaloa,Chenkalady,19
+2026,4,Kalmunai,Addalaichchenai,11
+2026,4,Kalmunai,Kalmunai South,9
+2026,4,Kalmunai,Kalmunai North,10
+2026,4,Ratnapura,Embilipitiya,11
+2026,4,Ratnapura,MC Ratnapura,13
+2026,4,Badulla,Badulla,8
+2026,4,Badulla,Sevanagala,5
+2026,5,Colombo,Battaramulla,15
+2026,5,Colombo,Boralesgamuwa,6
+2026,5,Colombo,Dehiwala,16
+2026,5,Colombo,Egoda Uyana,14
+2026,5,Colombo,Gothatuwa,36
+2026,5,Colombo,Hanwella,9
+2026,5,Colombo,Homagama,12
+2026,5,Colombo,Kaduwela,30
+2026,5,Colombo,Kahathuduwa,10
+2026,5,Colombo,Kolonnawa,15
+2026,5,Colombo,Maharagama,26
+2026,5,Colombo,Moratuwa,9
+2026,5,Colombo,Nugegoda,25
+2026,5,Colombo,Padukka,10
+2026,5,Colombo,Piliyandala,16
+2026,5,Colombo,Pitakotte (Kotte),11
+2026,5,Colombo,Ratmalana,32
+2026,5,Colombo,CMC-D1,10
+2026,5,Colombo,CMC-D2A,11
+2026,5,Colombo,CMC-D2B,22
+2026,5,Colombo,CMC-D3,24
+2026,5,Colombo,CMC-D4,24
+2026,5,Colombo,CMC-D5,21
+2026,5,Gampaha,Attanagalla,11
+2026,5,Gampaha,Biyagama,32
+2026,5,Gampaha,Divulapitiya,9
+2026,5,Gampaha,Gampaha,16
+2026,5,Gampaha,Ja-Ela,20
+2026,5,Gampaha,Katana,8
+2026,5,Gampaha,Kelaniya,17
+2026,5,Gampaha,Mahara,15
+2026,5,Gampaha,Mirigama,7
+2026,5,Gampaha,Minuwangoda,15
+2026,5,Gampaha,Ragama,5
+2026,5,Gampaha,Seeduwa,13
+2026,5,Gampaha,Wattala,18
+2026,5,Kalutara,Panadura,21
+2026,5,Galle,Balapitiya,7
+2026,5,Galle,Habaraduwa,3
+2026,5,Galle,Hikkaduwa,12
+2026,5,Galle,MC Galle,14
+2026,5,Galle,Rathgama,11
+2026,5,Matara,Dickwella,17
+2026,5,Matara,MC Matara,28
+2026,5,Matara,Weligama,21
+2026,5,Matara,Devinuwara,30
+2026,5,Matara,PS Kekanadura,10
+2026,5,Hambantota,Tangalle,17
+2026,5,Hambantota,Beliatta,10
+2026,5,Batticaloa,Batticaloa,21
+2026,5,Batticaloa,Chenkalady,30
+2026,5,Kalmunai,Kalmunai South,11
+2026,5,Kalmunai,Addalaichchenai,10
+2026,5,Ratnapura,Embilipitiya,14
+2026,5,Badulla,Badulla,10
+2026,5,Badulla,Sevanagala,10
+2026,6,Colombo,Battaramulla,30
+2026,6,Colombo,Boralesgamuwa,15
+2026,6,Colombo,Dehiwala,22
+2026,6,Colombo,Egoda Uyana,15
+2026,6,Colombo,Gothatuwa,28
+2026,6,Colombo,Hanwella,15
+2026,6,Colombo,Homagama,11
+2026,6,Colombo,Kaduwela,43
+2026,6,Colombo,Kolonnawa,14
+2026,6,Colombo,Kahathuduwa,4
+2026,6,Colombo,Maharagama,20
+2026,6,Colombo,Moratuwa,17
+2026,6,Colombo,Nugegoda,13
+2026,6,Colombo,Piliyandala,16
+2026,6,Colombo,Pitakotte (Kotte),10
+2026,6,Colombo,Padukka,6
+2026,6,Colombo,Ratmalana,26
+2026,6,Colombo,CMC-D1,7
+2026,6,Colombo,CMC-D2A,12
+2026,6,Colombo,CMC-D2B,16
+2026,6,Colombo,CMC-D3,17
+2026,6,Colombo,CMC-D4,17
+2026,6,Colombo,CMC-D5,24
+2026,6,Gampaha,Attanagalla,17
+2026,6,Gampaha,Biyagama,32
+2026,6,Gampaha,Divulapitiya,10
+2026,6,Gampaha,Gampaha,20
+2026,6,Gampaha,Ja-Ela,28
+2026,6,Gampaha,Katana,16
+2026,6,Gampaha,Kelaniya,21
+2026,6,Gampaha,Mahara,29
+2026,6,Gampaha,Mirigama,11
+2026,6,Gampaha,Minuwangoda,9
+2026,6,Gampaha,Ragama,21
+2026,6,Gampaha,Seeduwa,19
+2026,6,Gampaha,Wattala,29
+2026,6,Kalutara,Horana,3
+2026,6,Kalutara,Kalutara (NIHS),6
+2026,6,Kalutara,Panadura,14
+2026,6,Galle,Hikkaduwa,17
+2026,6,Galle,MC Galle,20
+2026,6,Galle,Balapitiya,12
+2026,6,Galle,Habaraduwa,15
+2026,6,Matara,Dickwella,15
+2026,6,Matara,MC Matara,17
+2026,6,Matara,Weligama,17
+2026,6,Matara,Devinuwara,25
+2026,6,Hambantota,Tangalle,13
+2026,6,Batticaloa,Chenkalady,34
+2026,6,Batticaloa,Batticaloa,20
+2026,6,Kalmunai,Kalmunai South,17
+2026,6,Kandy,Yatinuwara,3
+2026,6,Ratnapura,Embilipitiya,8
+2026,6,Ratnapura,MC Ratnapura,9
+2026,7,Colombo,Battaramulla,21
+2026,7,Colombo,Boralesgamuwa,11
+2026,7,Colombo,Dehiwala,16
+2026,7,Colombo,Gothatuwa,34
+2026,7,Colombo,Egoda Uyana,12
+2026,7,Colombo,Hanwella,11
+2026,7,Colombo,Homagama,16
+2026,7,Colombo,Kaduwela,39
+2026,7,Colombo,Kahathuduwa,14
+2026,7,Colombo,Kesbewa,7
+2026,7,Colombo,Kolonnawa,7
+2026,7,Colombo,Maharagama,38
+2026,7,Colombo,Moratuwa,16
+2026,7,Colombo,Nugegoda,19
+2026,7,Colombo,Padukka,11
+2026,7,Colombo,Ratmalana,17
+2026,7,Colombo,CMC-D1,17
+2026,7,Colombo,CMC-D2A,15
+2026,7,Colombo,CMC-D2B,16
+2026,7,Colombo,CMC-D3,34
+2026,7,Colombo,CMC-D4,22
+2026,7,Colombo,CMC-D5,12
+2026,7,Gampaha,Attanagalla,14
+2026,7,Gampaha,Biyagama,31
+2026,7,Gampaha,Gampaha,29
+2026,7,Gampaha,Ja-Ela,18
+2026,7,Gampaha,Katana,14
+2026,7,Gampaha,Kelaniya,18
+2026,7,Gampaha,Mahara,25
+2026,7,Gampaha,Mirigama,16
+2026,7,Gampaha,Minuwangoda,18
+2026,7,Gampaha,Pugoda,9
+2026,7,Gampaha,Ragama,7
+2026,7,Gampaha,Seeduwa,17
+2026,7,Gampaha,Wattala,16
+2026,7,Kalutara,Bandaragama,5
+2026,7,Kalutara,Panadura,8
+2026,7,Kalutara,Wadduwa,5
+2026,7,Kalutara,Horana,10
+2026,7,Kalutara,Kalutara (NIHS),11
+2026,7,Galle,Akmeemana,7
+2026,7,Galle,Habaraduwa,7
+2026,7,Galle,Hikkaduwa,21
+2026,7,Galle,Imaduwa,3
+2026,7,Galle,MC Galle,14
+2026,7,Hambantota,Tangalle,9
+2026,7,Matara,Devinuwara,45
+2026,7,Matara,MC Matara,19
+2026,7,Matara,Weligama,17
+2026,7,Batticaloa,Batticaloa,9
+2026,7,Batticaloa,Chenkalady,29
+2026,7,Kalmunai,Addalaichchenai,6
+2026,7,Kalmunai,Kalmunai South,11
+2026,7,Kurunegala,Pannala,9
+2026,7,Ratnapura,Embilipitiya,20
+2026,7,Ratnapura,Pelmadulla,5
+2026,7,Ratnapura,MC Ratnapura,11
+2026,7,Kandy,Yatinuwara,11
+2026,8,Colombo,Battaramulla,22
+2026,8,Colombo,Boralesgamuwa,16
+2026,8,Colombo,Dehiwala,20
+2026,8,Colombo,Gothatuwa,24
+2026,8,Colombo,Hanwella,8
+2026,8,Colombo,Homagama,15
+2026,8,Colombo,Kaduwela,54
+2026,8,Colombo,Kesbewa,11
+2026,8,Colombo,Kolonnawa,11
+2026,8,Colombo,Maharagama,34
+2026,8,Colombo,Moratuwa,20
+2026,8,Colombo,Nugegoda,18
+2026,8,Colombo,Piliyandala,7
+2026,8,Colombo,Ratmalana,27
+2026,8,Colombo,CMC-D1,13
+2026,8,Colombo,CMC-D2A,11
+2026,8,Colombo,CMC-D2B,9
+2026,8,Colombo,CMC-D3,33
+2026,8,Colombo,CMC-D4,14
+2026,8,Colombo,CMC-D5,17
+2026,8,Gampaha,Attanagalla,11
+2026,8,Gampaha,Biyagama,28
+2026,8,Gampaha,Gampaha,22
+2026,8,Gampaha,Ja-Ela,13
+2026,8,Gampaha,Katana,12
+2026,8,Gampaha,Kelaniya,22
+2026,8,Gampaha,Mahara,22
+2026,8,Gampaha,Mirigama,10
+2026,8,Gampaha,Minuwangoda,17
+2026,8,Gampaha,Pugoda,11
+2026,8,Gampaha,Ragama,14
+2026,8,Gampaha,Seeduwa,21
+2026,8,Gampaha,Wattala,16
+2026,8,Kalutara,Ingiriya,5
+2026,8,Kalutara,Panadura,13
+2026,8,Kalutara,Bandaragama,16
+2026,8,Kalutara,Wadduwa,14
+2026,8,Galle,Habaraduwa,12
+2026,8,Galle,Akmeemana,13
+2026,8,Galle,Hikkaduwa,19
+2026,8,Galle,Imaduwa,13
+2026,8,Galle,MC Galle,14
+2026,8,Hambantota,Katuwana,3
+2026,8,Hambantota,Tangalle,10
+2026,8,Matara,Devinuwara,17
+2026,8,Matara,MC Matara,9
+2026,8,Matara,Weligama,16
+2026,8,Batticaloa,Batticaloa,15
+2026,8,Batticaloa,Chenkalady,14
+2026,8,Kalmunai,Kalmunai South,2
+2026,8,Kalmunai,Addalaichchenai,12
+2026,8,Kurunegala,Pannala,10
+2026,8,Puttalam,Madampe,9
+2026,8,Ratnapura,Embilipitiya,12
+2026,8,Ratnapura,Nivithigala,9
+2026,8,Ratnapura,Pelmadulla,13
+2026,9,Colombo,Battaramulla,33
+2026,9,Colombo,Boralesgamuwa,19
+2026,9,Colombo,Dehiwala,6
+2026,9,Colombo,Gothatuwa,18
+2026,9,Colombo,Hanwella,11
+2026,9,Colombo,Homagama,19
+2026,9,Colombo,Kaduwela,38
+2026,9,Colombo,Kolonnawa,12
+2026,9,Colombo,Maharagama,41
+2026,9,Colombo,Moratuwa,9
+2026,9,Colombo,Nugegoda,10
+2026,9,Colombo,Piliyandala,16
+2026,9,Colombo,Ratmalana,17
+2026,9,Colombo,CMC-D1,16
+2026,9,Colombo,CMC-D2A,13
+2026,9,Colombo,CMC-D2B,12
+2026,9,Colombo,CMC-D3,17
+2026,9,Colombo,CMC-D4,13
+2026,9,Colombo,CMC-D5,12
+2026,9,Gampaha,Attanagalla,19
+2026,9,Gampaha,Biyagama,29
+2026,9,Gampaha,Divulapitiya,4
+2026,9,Gampaha,Gampaha,18
+2026,9,Gampaha,Ja-Ela,9
+2026,9,Gampaha,Katana,7
+2026,9,Gampaha,Kelaniya,19
+2026,9,Gampaha,Mahara,20
+2026,9,Gampaha,Mirigama,15
+2026,9,Gampaha,Minuwangoda,18
+2026,9,Gampaha,Negombo,5
+2026,9,Gampaha,Pugoda,17
+2026,9,Gampaha,Seeduwa,21
+2026,9,Gampaha,Wattala,15
+2026,9,Kalutara,Mathugama,4
+2026,9,Kalutara,Panadura,13
+2026,9,Kalutara,Ingiriya,11
+2026,9,Galle,Balapitiya,7
+2026,9,Galle,Bope (Poddala),1
+2026,9,Galle,Habaraduwa,11
+2026,9,Galle,Hikkaduwa,7
+2026,9,Galle,MC Galle,9
+2026,9,Hambantota,Katuwana,12
+2026,9,Matara,Devinuwara,25
+2026,9,Matara,Dickwella,6
+2026,9,Matara,MC Matara,11
+2026,9,Matara,Weligama,5
+2026,9,Batticaloa,Batticaloa,13
+2026,9,Batticaloa,Chenkalady,5
+2026,9,Kalmunai,Addalaichchenai,7
+2026,9,Kalmunai,Kalmunai South,11
+2026,9,Puttalam,Madampe,11
+2026,9,Kurunegala,Pannala,6
+2026,9,Ratnapura,Embilipitiya,20
+2026,9,Ratnapura,Nivithigala,14
+2026,10,Colombo,Battaramulla,18
+2026,10,Colombo,Boralesgamuwa,13
+2026,10,Colombo,Dehiwala,9
+2026,10,Colombo,Egoda Uyana,8
+2026,10,Colombo,Gothatuwa,18
+2026,10,Colombo,Hanwella,14
+2026,10,Colombo,Homagama,16
+2026,10,Colombo,Kaduwela,43
+2026,10,Colombo,Kahathuduwa,8
+2026,10,Colombo,Maharagama,43
+2026,10,Colombo,Moratuwa,11
+2026,10,Colombo,Nugegoda,12
+2026,10,Colombo,Piliyandala,24
+2026,10,Colombo,Ratmalana,24
+2026,10,Colombo,CMC-D3,27
+2026,10,Colombo,CMC-D2A,10
+2026,10,Colombo,CMC-D2B,16
+2026,10,Colombo,CMC-D4,10
+2026,10,Colombo,CMC-D5,14
+2026,10,Gampaha,Attanagalla,13
+2026,10,Gampaha,Biyagama,37
+2026,10,Gampaha,Divulapitiya,10
+2026,10,Gampaha,Gampaha,23
+2026,10,Gampaha,Ja-Ela,15
+2026,10,Gampaha,Katana,13
+2026,10,Gampaha,Kelaniya,20
+2026,10,Gampaha,Mahara,19
+2026,10,Gampaha,Minuwangoda,20
+2026,10,Gampaha,Negombo,11
+2026,10,Gampaha,Pugoda,11
+2026,10,Gampaha,Seeduwa,29
+2026,10,Gampaha,Wattala,11
+2026,10,Kalutara,Ingiriya,6
+2026,10,Kalutara,Panadura,22
+2026,10,Kalutara,Mathugama,10
+2026,10,Galle,Hikkaduwa,12
+2026,10,Galle,Balapitiya,12
+2026,10,Galle,Bope (Poddala),11
+2026,10,Galle,Habaraduwa,10
+2026,10,Galle,MC Galle,18
+2026,10,Matara,Devinuwara,13
+2026,10,Matara,MC Matara,11
+2026,10,Matara,Weligama,15
+2026,10,Matara,Dickwella,10
+2026,10,Batticaloa,Batticaloa,19
+2026,10,Batticaloa,Chenkalady,11
+2026,10,Kalmunai,Addalaichchenai,11
+2026,10,Kurunegala,Pannala,11
+2026,10,Puttalam,Madampe,9
+2026,10,Ratnapura,Embilipitiya,13
+2026,10,Ratnapura,Ratnapura PS,2
+2026,11,Colombo,Battaramulla,17
+2026,11,Colombo,Boralesgamuwa,9
+2026,11,Colombo,Dehiwala,13
+2026,11,Colombo,Egoda Uyana,11
+2026,11,Colombo,Gothatuwa,22
+2026,11,Colombo,Hanwella,11
+2026,11,Colombo,Homagama,16
+2026,11,Colombo,Kaduwela,46
+2026,11,Colombo,Kahathuduwa,10
+2026,11,Colombo,Maharagama,25
+2026,11,Colombo,Moratuwa,11
+2026,11,Colombo,Padukka,3
+2026,11,Colombo,Piliyandala,14
+2026,11,Colombo,Ratmalana,15
+2026,11,Colombo,CMC-D2B,10
+2026,11,Colombo,CMC-D3,18
+2026,11,Colombo,CMC-D4,11
+2026,11,Gampaha,Attanagalla,16
+2026,11,Gampaha,Biyagama,33
+2026,11,Gampaha,Gampaha,11
+2026,11,Gampaha,Ja-Ela,15
+2026,11,Gampaha,Katana,13
+2026,11,Gampaha,Kelaniya,24
+2026,11,Gampaha,Mahara,13
+2026,11,Gampaha,Minuwangoda,5
+2026,11,Gampaha,Negombo,10
+2026,11,Gampaha,Pugoda,9
+2026,11,Gampaha,Ragama,9
+2026,11,Gampaha,Seeduwa,15
+2026,11,Gampaha,Wattala,10
+2026,11,Kalutara,Ingiriya,15
+2026,11,Kalutara,Panadura,19
+2026,11,Kalutara,Wadduwa,4
+2026,11,Galle,Habaraduwa,9
+2026,11,Galle,MC Galle,10
+2026,11,Galle,Hikkaduwa,10
+2026,11,Matara,MC Matara,25
+2026,11,Matara,Weligama,20
+2026,11,Matara,Devinuwara,11
+2026,11,Batticaloa,Batticaloa,17
+2026,11,Kurunegala,Pannala,10
+2026,11,Kalmunai,Addalaichchenai,6
+2026,11,Puttalam,Madampe,14
+2026,11,Ratnapura,Embilipitiya,10
+2026,11,Ratnapura,Udawalawa,7
+2026,11,Ratnapura,Ratnapura PS,11
+2026,12,Colombo,Battaramulla,22
+2026,12,Colombo,Boralesgamuwa,10
+2026,12,Colombo,Dehiwala,13
+2026,12,Colombo,Egoda Uyana,14
+2026,12,Colombo,Gothatuwa,21
+2026,12,Colombo,Hanwella,10
+2026,12,Colombo,Homagama,11
+2026,12,Colombo,Kaduwela,84
+2026,12,Colombo,Maharagama,50
+2026,12,Colombo,Moratuwa,11
+2026,12,Colombo,Padukka,11
+2026,12,Colombo,Piliyandala,12
+2026,12,Colombo,Ratmalana,23
+2026,12,Colombo,CMC-D2A,9
+2026,12,Colombo,CMC-D2B,12
+2026,12,Colombo,CMC-D3,15
+2026,12,Colombo,CMC-D4,20
+2026,12,Colombo,CMC-D5,5
+2026,12,Gampaha,Attanagalla,13
+2026,12,Gampaha,Biyagama,30
+2026,12,Gampaha,Gampaha,15
+2026,12,Gampaha,Katana,11
+2026,12,Gampaha,Kelaniya,39
+2026,12,Gampaha,Mahara,13
+2026,12,Gampaha,Mirigama,9
+2026,12,Gampaha,Minuwangoda,18
+2026,12,Gampaha,Negombo,14
+2026,12,Gampaha,Pugoda,10
+2026,12,Gampaha,Ragama,11
+2026,12,Gampaha,Seeduwa,16
+2026,12,Gampaha,Wattala,13
+2026,12,Kalutara,Ingiriya,18
+2026,12,Kalutara,Panadura,21
+2026,12,Kalutara,Wadduwa,12
+2026,12,Galle,Baddegama,7
+2026,12,Galle,MC Galle,16
+2026,12,Galle,Habaraduwa,14
+2026,12,Matara,Devinuwara,9
+2026,12,Matara,MC Matara,28
+2026,12,Matara,Weligama,15
+2026,12,Jaffna,Karaveddy,6
+2026,12,Jaffna,Point Pedro,4
+2026,12,Trincomalee,Trincomalee,2
+2026,12,Batticaloa,Batticaloa,8
+2026,12,Kalmunai,Addalaichchenai,13
+2026,12,Puttalam,Madampe,10
+2026,12,Badulla,Badulla,3
+2026,12,Ratnapura,Embilipitiya,12
+2026,12,Ratnapura,Udawalawa,10
+2026,12,Kegalle,Dehiovita,9
+2026,12,Kandy,Yatinuwara,3
+2026,13,Colombo,Battaramulla,17
+2026,13,Colombo,Boralesgamuwa,10
+2026,13,Colombo,Dehiwala,14
+2026,13,Colombo,Egoda Uyana,12
+2026,13,Colombo,Gothatuwa,18
+2026,13,Colombo,Hanwella,9
+2026,13,Colombo,Homagama,18
+2026,13,Colombo,Kaduwela,55
+2026,13,Colombo,Maharagama,35
+2026,13,Colombo,Padukka,12
+2026,13,Colombo,Piliyandala,24
+2026,13,Colombo,Pitakotte,11
+2026,13,Colombo,Ratmalana,13
+2026,13,Colombo,CMC-D2A,14
+2026,13,Colombo,CMC-D3,20
+2026,13,Colombo,CMC-D4,14
+2026,13,Colombo,CMC-D5,10
+2026,13,Gampaha,Attanagalla,16
+2026,13,Gampaha,Biyagama,30
+2026,13,Gampaha,Ja-Ela,5
+2026,13,Gampaha,Kelaniya,29
+2026,13,Gampaha,Mahara,14
+2026,13,Gampaha,Minuwangoda,17
+2026,13,Gampaha,Mirigama,15
+2026,13,Gampaha,Seeduwa,11
+2026,13,Gampaha,Wattala,21
+2026,13,Kalutara,Ingiriya,36
+2026,13,Kalutara,Panadura,22
+2026,13,Galle,Baddegama,13
+2026,13,Galle,MC Galle,17
+2026,13,Matara,Devinuwara,16
+2026,13,Matara,Dickwella,4
+2026,13,Matara,MC Matara,24
+2026,13,Matara,Weligama,11
+2026,13,Jaffna,Karaveddy,12
+2026,13,Jaffna,Point Pedro,10
+2026,13,Trincomalee,Trincomalee,13
+2026,13,Batticaloa,Batticaloa,11
+2026,13,Batticaloa,Chenkalady,8
+2026,13,Kalmunai,Addalaichchenai,14
+2026,13,Badulla,Badulla,11
+2026,13,Ratnapura,Embilipitiya,21
+2026,13,Ratnapura,MC Ratnapura,8
+2026,13,Ratnapura,Udawalawa,8
+2026,13,Kegalle,Dehiovita,16
+2026,13,Kandy,Yatinuwara,14
+2026,14,Colombo,Battaramulla,25
+2026,14,Colombo,Dehiwala,13
+2026,14,Colombo,Gothatuwa,15
+2026,14,Colombo,Hanwella,13
+2026,14,Colombo,Homagama,8
+2026,14,Colombo,Kaduwela,54
+2026,14,Colombo,Maharagama,49
+2026,14,Colombo,Nugegoda,5
+2026,14,Colombo,Padukka,11
+2026,14,Colombo,Piliyandala,15
+2026,14,Colombo,Pitakotte,11
+2026,14,Colombo,Ratmalana,12
+2026,14,Colombo,CMC-D2A,12
+2026,14,Colombo,CMC-D2B,6
+2026,14,Colombo,CMC-D3,10
+2026,14,Colombo,CMC-D4,11
+2026,14,Colombo,CMC-D5,5
+2026,14,Gampaha,Attanagalla,12
+2026,14,Gampaha,Biyagama,35
+2026,14,Gampaha,Gampaha,9
+2026,14,Gampaha,Ja-Ela,15
+2026,14,Gampaha,Kelaniya,28
+2026,14,Gampaha,Mahara,25
+2026,14,Gampaha,Minuwangoda,13
+2026,14,Gampaha,Pugoda,6
+2026,14,Gampaha,Ragama,4
+2026,14,Gampaha,Wattala,11
+2026,14,Kalutara,Bandaragama,8
+2026,14,Kalutara,Horana,7
+2026,14,Kalutara,Ingiriya,31
+2026,14,Kalutara,Panadura,29
+2026,14,Matara,MC Matara,17
+2026,14,Matara,Devinuwara,21
+2026,14,Matara,Dickwella,10
+2026,14,Matara,Weligama,12
+2026,14,Batticaloa,Batticaloa,13
+2026,14,Batticaloa,Chenkalady,10
+2026,14,Kalmunai,Addalaichchenai,15
+2026,14,Ratnapura,MC Ratnapura,14
+2026,14,Ratnapura,Embilipitiya,18
+2026,14,Ratnapura,Udawalawa,15
+2026,15,Colombo,Battaramulla,24
+2026,15,Colombo,Dehiwala,15
+2026,15,Colombo,Gothatuwa,20
+2026,15,Colombo,Hanwella,14
+2026,15,Colombo,Homagama,6
+2026,15,Colombo,Kaduwela,32
+2026,15,Colombo,Maharagama,45
+2026,15,Colombo,Nugegoda,14
+2026,15,Colombo,Padukka,11
+2026,15,Colombo,Piliyandala,22
+2026,15,Colombo,Ratmalana,10
+2026,15,Colombo,CMC-D2B,11
+2026,15,Colombo,CMC-D1,7
+2026,15,Colombo,CMC-D3,18
+2026,15,Colombo,CMC-D4,20
+2026,15,Colombo,CMC-D5,10
+2026,15,Gampaha,Attanagalla,10
+2026,15,Gampaha,Biyagama,56
+2026,15,Gampaha,Gampaha,11
+2026,15,Gampaha,Ja-Ela,10
+2026,15,Gampaha,Kelaniya,16
+2026,15,Gampaha,Mahara,42
+2026,15,Gampaha,Minuwangoda,16
+2026,15,Gampaha,Pugoda,6
+2026,15,Gampaha,Ragama,12
+2026,15,Gampaha,Wattala,24
+2026,15,Kalutara,Bandaragama,12
+2026,15,Kalutara,Horana,15
+2026,15,Kalutara,Ingiriya,38
+2026,15,Kalutara,Panadura,19
+2026,15,Matara,MC Matara,17
+2026,15,Matara,Devinuwara,10
+2026,15,Matara,Weligama,7
+2026,15,Galle,Yakkalamulla,6
+2026,15,Hambantota,Katuwana,4
+2026,15,Batticaloa,Batticaloa,11
+2026,15,Kalmunai,Addalaichchenai,14
+2026,15,Ratnapura,Godakawela,3
+2026,15,Ratnapura,Kahawatta,7
+2026,15,Ratnapura,Nivithigala,8
+2026,15,Ratnapura,Pelmadulla,6
+2026,15,Ratnapura,MC Ratnapura,12
+2026,16,Colombo,Battaramulla,19
+2026,16,Colombo,Boralesgamuwa,9
+2026,16,Colombo,Dehiwala,11
+2026,16,Colombo,Gothatuwa,20
+2026,16,Colombo,Hanwella,15
+2026,16,Colombo,Homagama,12
+2026,16,Colombo,Kaduwela,39
+2026,16,Colombo,Kahathuduwa,14
+2026,16,Colombo,Kesbewa,5
+2026,16,Colombo,Maharagama,27
+2026,16,Colombo,Padukka,10
+2026,16,Colombo,Piliyandala,10
+2026,16,Colombo,Pitakotte,6
+2026,16,Colombo,Ratmalana,10
+2026,16,Colombo,CMC-D1,7
+2026,16,Colombo,CMC-D3,16
+2026,16,Gampaha,Attanagalla,13
+2026,16,Gampaha,Biyagama,51
+2026,16,Gampaha,Gampaha,13
+2026,16,Gampaha,Ja-Ela,16
+2026,16,Gampaha,Katana,9
+2026,16,Gampaha,Kelaniya,16
+2026,16,Gampaha,Mahara,25
+2026,16,Gampaha,Minuwangoda,17
+2026,16,Gampaha,Pugoda,11
+2026,16,Gampaha,Seeduwa,5
+2026,16,Gampaha,Wattala,4
+2026,16,Kalutara,Horana,11
+2026,16,Kalutara,Ingiriya,25
+2026,16,Kalutara,Panadura,24
+2026,16,Kalutara,Aluthgama,1
+2026,16,Matara,Kamburupitiya,8
+2026,16,Matara,MC Matara,7
+2026,16,Matara,Weligama,10
+2026,16,Matara,Devinuwara,11
+2026,16,Galle,Yakkalamulla,10
+2026,16,Hambantota,Katuwana,12
+2026,16,Kalmunai,Addalaichchenai,18
+2026,16,Kalmunai,Ninthavur,5
+2026,16,Jaffna,Point Pedro,4
+2026,16,Ratnapura,Embilipitiya,10
+2026,16,Ratnapura,Nivithigala,11
+2026,16,Ratnapura,MC Ratnapura,9
+2026,16,Ratnapura,Ratnapura PS,9
+2026,16,Ratnapura,Godakawela,15
+2026,16,Ratnapura,Kahawatta,11
+2026,16,Ratnapura,Pelmadulla,14
+2026,16,Kegalle,Dehiovita,9
+2026,17,Colombo,Battaramulla,25
+2026,17,Colombo,Boralesgamuwa,12
+2026,17,Colombo,Dehiwala,13
+2026,17,Colombo,Egoda Uyana,11
+2026,17,Colombo,Gothatuwa,27
+2026,17,Colombo,Hanwella,18
+2026,17,Colombo,Homagama,12
+2026,17,Colombo,Kaduwela,45
+2026,17,Colombo,Kahathuduwa,12
+2026,17,Colombo,Kesbewa,11
+2026,17,Colombo,Maharagama,54
+2026,17,Colombo,Nugegoda,3
+2026,17,Colombo,Padukka,12
+2026,17,Colombo,Piliyandala,23
+2026,17,Colombo,Pitakotte,17
+2026,17,Colombo,Ratmalana,12
+2026,17,Colombo,CMC-D2A,2
+2026,17,Colombo,CMC-D1,12
+2026,17,Colombo,CMC-D3,15
+2026,17,Colombo,CMC-D4,8
+2026,17,Gampaha,Attanagalla,15
+2026,17,Gampaha,Biyagama,62
+2026,17,Gampaha,Gampaha,13
+2026,17,Gampaha,Ja-Ela,17
+2026,17,Gampaha,Katana,10
+2026,17,Gampaha,Kelaniya,31
+2026,17,Gampaha,Mahara,42
+2026,17,Gampaha,Minuwangoda,11
+2026,17,Gampaha,Negombo,2
+2026,17,Gampaha,Pugoda,24
+2026,17,Gampaha,Ragama,4
+2026,17,Gampaha,Seeduwa,15
+2026,17,Gampaha,Wattala,11
+2026,17,Kalutara,Horana,10
+2026,17,Kalutara,Ingiriya,28
+2026,17,Kalutara,Panadura,19
+2026,17,Kalutara,Aluthgama,11
+2026,17,Matara,Akuressa,2
+2026,17,Matara,Kamburupitiya,18
+2026,17,Matara,MC Matara,18
+2026,17,Matara,Weligama,11
+2026,17,Galle,Yakkalamulla,12
+2026,17,Kandy,MC Kandy,7
+2026,17,Kandy,Yatinuwara,5
+2026,17,Kalmunai,Addalaichchenai,16
+2026,17,Kalmunai,Ninthavur,13
+2026,17,Jaffna,Point Pedro,10
+2026,17,Puttalam,Wennappuwa,6
+2026,17,Ratnapura,Embilipitiya,12
+2026,17,Ratnapura,MC Ratnapura,24
+2026,17,Ratnapura,Nivithigala,13
+2026,17,Ratnapura,Ratnapura PS,18
+2026,17,Kegalle,Dehiovita,13
+2026,18,Colombo,Battaramulla,18
+2026,18,Colombo,Boralesgamuwa,14
+2026,18,Colombo,Egoda Uyana,10
+2026,18,Colombo,Gothatuwa,28
+2026,18,Colombo,Hanwella,23
+2026,18,Colombo,Homagama,15
+2026,18,Colombo,Kaduwela,42
+2026,18,Colombo,Kahathuduwa,17
+2026,18,Colombo,Kolonnawa,4
+2026,18,Colombo,Maharagama,64
+2026,18,Colombo,Nugegoda,17
+2026,18,Colombo,Padukka,14
+2026,18,Colombo,Pitakotte,14
+2026,18,Colombo,Piliyandala,10
+2026,18,Colombo,Ratmalana,17
+2026,18,Colombo,CMC-D2A,12
+2026,18,Colombo,CMC-D3,11
+2026,18,Colombo,CMC-D4,16
+2026,18,Gampaha,Attanagalla,16
+2026,18,Gampaha,Biyagama,66
+2026,18,Gampaha,Gampaha,16
+2026,18,Gampaha,Ja-Ela,14
+2026,18,Gampaha,Katana,16
+2026,18,Gampaha,Kelaniya,20
+2026,18,Gampaha,Mahara,24
+2026,18,Gampaha,Mirigama,6
+2026,18,Gampaha,Minuwangoda,24
+2026,18,Gampaha,Negombo,11
+2026,18,Gampaha,Pugoda,24
+2026,18,Gampaha,Ragama,10
+2026,18,Gampaha,Seeduwa,13
+2026,18,Gampaha,Wattala,14
+2026,18,Kalutara,Horana,23
+2026,18,Kalutara,Ingiriya,25
+2026,18,Kalutara,Panadura,16
+2026,18,Matara,MC Matara,18
+2026,18,Matara,Akuressa,12
+2026,18,Matara,Kamburupitiya,12
+2026,18,Hambantota,Katuwana,4
+2026,18,Kandy,Gangawata Korale,6
+2026,18,Kandy,Yatinuwara,10
+2026,18,Kandy,MC Kandy,13
+2026,18,Batticaloa,Batticaloa,9
+2026,18,Kalmunai,Addalaichchenai,14
+2026,18,Puttalam,Wennappuwa,10
+2026,18,Ratnapura,Ayagama,9
+2026,18,Ratnapura,Embilipitiya,15
+2026,18,Ratnapura,Nivithigala,7
+2026,18,Ratnapura,Pelmadulla,9
+2026,18,Ratnapura,MC Ratnapura,31
+2026,18,Ratnapura,Ratnapura PS,9
+2026,18,Kegalle,Dehiovita,13
+2026,19,Colombo,Battaramulla,13
+2026,19,Colombo,Boralesgamuwa,16
+2026,19,Colombo,Dehiwala,6
+2026,19,Colombo,Gothatuwa,43
+2026,19,Colombo,Hanwella,29
+2026,19,Colombo,Homagama,9
+2026,19,Colombo,Kaduwela,40
+2026,19,Colombo,Kahathuduwa,14
+2026,19,Colombo,Kolonnawa,10
+2026,19,Colombo,Maharagama,56
+2026,19,Colombo,Moratuwa,7
+2026,19,Colombo,Padukka,17
+2026,19,Colombo,Piliyandala,16
+2026,19,Colombo,Ratmalana,15
+2026,19,Colombo,Pitakotte,9
+2026,19,Colombo,CMC-D3,15
+2026,19,Colombo,CMC-D4,10
+2026,19,Gampaha,Attanagalla,14
+2026,19,Gampaha,Biyagama,70
+2026,19,Gampaha,Gampaha,15
+2026,19,Gampaha,Ja-Ela,5
+2026,19,Gampaha,Katana,9
+2026,19,Gampaha,Kelaniya,30
+2026,19,Gampaha,Mahara,22
+2026,19,Gampaha,Mirigama,17
+2026,19,Gampaha,Minuwangoda,24
+2026,19,Gampaha,Negombo,7
+2026,19,Gampaha,Pugoda,27
+2026,19,Gampaha,Ragama,5
+2026,19,Gampaha,Seeduwa,17
+2026,19,Gampaha,Wattala,19
+2026,19,Kalutara,Bulathsinhala,6
+2026,19,Kalutara,Horana,22
+2026,19,Kalutara,Ingiriya,28
+2026,19,Kalutara,Panadura,20
+2026,19,Matara,MC Matara,27
+2026,19,Hambantota,Katuwana,12
+2026,19,Galle,Bope (Poddala),3
+2026,19,Galle,MC Galle,7
+2026,19,Galle,Thawalama,3
+2026,19,Kandy,Gangawata Korale,11
+2026,19,Kandy,MC Kandy,7
+2026,19,Kandy,Wattegama,4
+2026,19,Kandy,Yatinuwara,16
+2026,19,Batticaloa,Batticaloa,14
+2026,19,Kalmunai,Addalaichchenai,18
+2026,19,Ratnapura,Ayagama,14
+2026,19,Ratnapura,Embilipitiya,9
+2026,19,Ratnapura,Kalawana,8
+2026,19,Ratnapura,Kuruvita,8
+2026,19,Ratnapura,Nivithigala,14
+2026,19,Ratnapura,Pelmadulla,14
+2026,19,Ratnapura,MC Ratnapura,38
+2026,19,Ratnapura,Ratnapura PS,15
+2026,19,Kegalle,Dehiovita,24
+2026,19,Kegalle,Mawanella,4
+2026,20,Colombo,Battaramulla,15
+2026,20,Colombo,Boralesgamuwa,11
+2026,20,Colombo,Dehiwala,7
+2026,20,Colombo,Egoda Uyana,8
+2026,20,Colombo,Gothatuwa,24
+2026,20,Colombo,Hanwella,34
+2026,20,Colombo,Homagama,22
+2026,20,Colombo,Kaduwela,49
+2026,20,Colombo,Kahathuduwa,19
+2026,20,Colombo,Kesbewa,13
+2026,20,Colombo,Maharagama,51
+2026,20,Colombo,Moratuwa,14
+2026,20,Colombo,Padukka,8
+2026,20,Colombo,Piliyandala,10
+2026,20,Colombo,Pitakotte,14
+2026,20,Colombo,Ratmalana,4
+2026,20,Colombo,CMC-D2B,4
+2026,20,Colombo,CMC-D3,10
+2026,20,Colombo,CMC-D4,8
+2026,20,Gampaha,Attanagalla,13
+2026,20,Gampaha,Biyagama,93
+2026,20,Gampaha,Gampaha,14
+2026,20,Gampaha,Ja-Ela,20
+2026,20,Gampaha,Katana,17
+2026,20,Gampaha,Kelaniya,37
+2026,20,Gampaha,Mahara,34
+2026,20,Gampaha,Minuwangoda,26
+2026,20,Gampaha,Negombo,13
+2026,20,Gampaha,Pugoda,18
+2026,20,Gampaha,Ragama,10
+2026,20,Gampaha,Seeduwa,15
+2026,20,Gampaha,Wattala,17
+2026,20,Kalutara,Bandaragama,8
+2026,20,Kalutara,Bulathsinhala,10
+2026,20,Kalutara,Horana,24
+2026,20,Kalutara,Ingiriya,19
+2026,20,Kalutara,Madurawala,4
+2026,20,Kalutara,Panadura,16
+2026,20,Kalutara,Wadduwa,4
+2026,20,Matara,Akuressa,2
+2026,20,Matara,Dickwella,3
+2026,20,Matara,MC Matara,33
+2026,20,Matara,Matara PS,3
+2026,20,Matara,Weligama,9
+2026,20,Matara,Welipitiya,0
+2026,20,Hambantota,Katuwana,14
+2026,20,Galle,Bope (Poddala),16
+2026,20,Galle,Elpitiya,9
+2026,20,Galle,MC Galle,11
+2026,20,Galle,Thawalama,13
+2026,20,Kandy,Gampola,6
+2026,20,Kandy,Gangawata Korale,10
+2026,20,Kandy,MC Kandy,20
+2026,20,Kandy,Talathuoya,2
+2026,20,Kandy,Udunuwara,3
+2026,20,Kandy,Wattegama,11
+2026,20,Kandy,Werellagama,8
+2026,20,Kandy,Yatinuwara,26
+2026,20,Badulla,Badulla,6
+2026,20,Batticaloa,Batticaloa,18
+2026,20,Kalmunai,Addalaichchenai,11
+2026,20,Puttalam,Wennappuwa,2
+2026,20,Ratnapura,Ayagama,8
+2026,20,Ratnapura,Elapatha,6
+2026,20,Ratnapura,Embilipitiya,14
+2026,20,Ratnapura,Godakawela,6
+2026,20,Ratnapura,Kahawatta,9
+2026,20,Ratnapura,Kalawana,7
+2026,20,Ratnapura,Kuruvita,16
+2026,20,Ratnapura,Nivithigala,14
+2026,20,Ratnapura,Pelmadulla,14
+2026,20,Ratnapura,MC Ratnapura,42
+2026,20,Ratnapura,Ratnapura PS,30
+2026,20,Kegalle,Dehiovita,15
+2026,20,Kegalle,Mawanella,10
+2026,21,Colombo,Battaramulla,21
+2026,21,Colombo,Boralesgamuwa,17
+2026,21,Colombo,Dehiwala,16
+2026,21,Colombo,Egoda Uyana,10
+2026,21,Colombo,Gothatuwa,35
+2026,21,Colombo,Hanwella,32
+2026,21,Colombo,Homagama,25
+2026,21,Colombo,Kaduwela,47
+2026,21,Colombo,Kahathuduwa,17
+2026,21,Colombo,Kesbewa,13
+2026,21,Colombo,Maharagama,79
+2026,21,Colombo,Moratuwa,19
+2026,21,Colombo,Nugegoda,3
+2026,21,Colombo,Padukka,33
+2026,21,Colombo,Piliyandala,16
+2026,21,Colombo,Pitakotte,17
+2026,21,Colombo,Ratmalana,13
+2026,21,Colombo,CMC-D1,8
+2026,21,Colombo,CMC-D2A,7
+2026,21,Colombo,CMC-D2B,16
+2026,21,Colombo,CMC-D3,24
+2026,21,Colombo,CMC-D4,9
+2026,21,Colombo,CMC-D5,11
+2026,21,Gampaha,Attanagalla,10
+2026,21,Gampaha,Biyagama,114
+2026,21,Gampaha,Divulapitiya,4
+2026,21,Gampaha,Gampaha,21
+2026,21,Gampaha,Ja-Ela,30
+2026,21,Gampaha,Katana,14
+2026,21,Gampaha,Kelaniya,51
+2026,21,Gampaha,Mahara,44
+2026,21,Gampaha,Mirigama,9
+2026,21,Gampaha,Minuwangoda,25
+2026,21,Gampaha,Negombo,6
+2026,21,Gampaha,Pugoda,28
+2026,21,Gampaha,Ragama,15
+2026,21,Gampaha,Seeduwa,21
+2026,21,Gampaha,Wattala,27
+2026,21,Kalutara,Bandaragama,19
+2026,21,Kalutara,Dodangoda PS,10
+2026,21,Kalutara,Horana,22
+2026,21,Kalutara,Ingiriya,33
+2026,21,Kalutara,Millaniya,4
+2026,21,Kalutara,Panadura,22
+2026,21,Kalutara,Wadduwa,12
+2026,21,Kalutara,Kalutara (NIHS),6
+2026,21,Kalutara,Payagala,8
+2026,21,Kalutara,Bulathsinhala,14
+2026,21,Kalutara,Madurawala,13
+2026,21,Matara,Athuraliya,8
+2026,21,Matara,MC Matara,50
+2026,21,Matara,Weligama,21
+2026,21,Matara,Akuressa,10
+2026,21,Matara,Dickwella,10
+2026,21,Matara,Matara PS,14
+2026,21,Matara,Welipitiya,11
+2026,21,Galle,Bope (Poddala),36
+2026,21,Galle,Elpitiya,10
+2026,21,Galle,Habaraduwa,6
+2026,21,Galle,MC Galle,14
+2026,21,Galle,Thawalama,16
+2026,21,Hambantota,Katuwana,7
+2026,21,Kandy,Gangawata Korale,19
+2026,21,Kandy,MC Kandy,33
+2026,21,Kandy,Udunuwara,11
+2026,21,Kandy,Werellagama,11
+2026,21,Kandy,Yatinuwara,33
+2026,21,Kandy,Gampola,14
+2026,21,Kandy,Talathuoya,10
+2026,21,Kandy,Wattegama,10
+2026,21,Badulla,Badulla,11
+2026,21,Batticaloa,Batticaloa,14
+2026,21,Kalmunai,Addalaichchenai,15
+2026,21,Puttalam,Wennappuwa,15
+2026,21,Ratnapura,Ayagama,16
+2026,21,Ratnapura,Elapatha,10
+2026,21,Ratnapura,Embilipitiya,19
+2026,21,Ratnapura,Kahawatta,14
+2026,21,Ratnapura,Nivithigala,18
+2026,21,Ratnapura,Pelmadulla,24
+2026,21,Ratnapura,MC Ratnapura,33
+2026,21,Ratnapura,Godakawela,10
+2026,21,Ratnapura,Kalawana,11
+2026,21,Ratnapura,Kuruvita,17
+2026,21,Ratnapura,Ratnapura PS,23
+2026,21,Kegalle,Dehiovita,22
+2026,21,Kegalle,Yatiyantota,4
+2026,22,Colombo,Battaramulla,33
+2026,22,Colombo,Boralesgamuwa,24
+2026,22,Colombo,Dehiwala,13
+2026,22,Colombo,Egoda Uyana,10
+2026,22,Colombo,Gothatuwa,51
+2026,22,Colombo,Hanwella,41
+2026,22,Colombo,Homagama,37
+2026,22,Colombo,Kaduwela,56
+2026,22,Colombo,Kahathuduwa,12
+2026,22,Colombo,Kesbewa,19
+2026,22,Colombo,Maharagama,71
+2026,22,Colombo,Moratuwa,25
+2026,22,Colombo,Nugegoda,11
+2026,22,Colombo,Padukka,20
+2026,22,Colombo,Piliyandala,23
+2026,22,Colombo,Pitakotte,6
+2026,22,Colombo,Ratmalana,13
+2026,22,Colombo,CMC-D1,9
+2026,22,Colombo,CMC-D2A,11
+2026,22,Colombo,CMC-D2B,14
+2026,22,Colombo,CMC-D3,15
+2026,22,Colombo,CMC-D4,16
+2026,22,Colombo,CMC-D5,11
+2026,22,Gampaha,Attanagalla,10
+2026,22,Gampaha,Biyagama,143
+2026,22,Gampaha,Divulapitiya,11
+2026,22,Gampaha,Gampaha,19
+2026,22,Gampaha,Ja-Ela,39
+2026,22,Gampaha,Katana,31
+2026,22,Gampaha,Kelaniya,56
+2026,22,Gampaha,Mahara,37
+2026,22,Gampaha,Mirigama,15
+2026,22,Gampaha,Minuwangoda,29
+2026,22,Gampaha,Negombo,17
+2026,22,Gampaha,Pugoda,36
+2026,22,Gampaha,Ragama,10
+2026,22,Gampaha,Seeduwa,31
+2026,22,Gampaha,Wattala,46
+2026,22,Kalutara,Bandaragama,42
+2026,22,Kalutara,Bulathsinhala,9
+2026,22,Kalutara,Dodangoda PS,10
+2026,22,Kalutara,Horana,43
+2026,22,Kalutara,Ingiriya,25
+2026,22,Kalutara,Madurawala,9
+2026,22,Kalutara,Millaniya,12
+2026,22,Kalutara,Panadura,51
+2026,22,Kalutara,Wadduwa,24
+2026,22,Kalutara,Kalutara (NIHS),10
+2026,22,Kalutara,Payagala,10
+2026,22,Matara,Akuressa,7
+2026,22,Matara,Devinuwara,10
+2026,22,Matara,MC Matara,61
+2026,22,Matara,Matara PS,5
+2026,22,Matara,Weligama,20
+2026,22,Matara,Athuraliya,16
+2026,22,Galle,Bope (Poddala),46
+2026,22,Galle,Elpitiya,11
+2026,22,Galle,Habaraduwa,10
+2026,22,Galle,MC Galle,11
+2026,22,Galle,Thawalama,10
+2026,22,Hambantota,Angunukolapelassa,7
+2026,22,Hambantota,Katuwana,13
+2026,22,Hambantota,Tangalle,10
+2026,22,Kandy,Gampola,6
+2026,22,Kandy,Gangawata Korale,16
+2026,22,Kandy,MC Kandy,31
+2026,22,Kandy,Kundasale,8
+2026,22,Kandy,Menikhinna,4
+2026,22,Kandy,Pasbage,2
+2026,22,Kandy,Udunuwara,13
+2026,22,Kandy,Wattegama,8
+2026,22,Kandy,Werellagama,13
+2026,22,Kandy,Yatinuwara,18
+2026,22,Matale,Matale,3
+2026,22,Matale,Rattota,4
+2026,22,Ratnapura,Ayagama,10
+2026,22,Ratnapura,Eheliyagoda,2
+2026,22,Ratnapura,Elapatha,11
+2026,22,Ratnapura,Embilipitiya,11
+2026,22,Ratnapura,Godakawela,9
+2026,22,Ratnapura,Kahawatta,11
+2026,22,Ratnapura,Kiriella,2
+2026,22,Ratnapura,Kuruvita,9
+2026,22,Ratnapura,Nivithigala,21
+2026,22,Ratnapura,Pelmadulla,15
+2026,22,Ratnapura,MC Ratnapura,31
+2026,22,Ratnapura,Ratnapura PS,7
+2026,22,Kegalle,Dehiovita,15
+2026,22,Kegalle,Mawanella,5
+2026,22,Kegalle,Warakapola,8
+2026,22,Kegalle,Yatiyantota,13
+2026,22,Batticaloa,Batticaloa,7
+2026,22,Trincomalee,Muthur,7
+2026,22,Kurunegala,Mallawapitiya,3
+2026,22,Puttalam,Wennappuwa,4
+2026,22,Badulla,Badulla,6
+2026,23,Colombo,Battaramulla,30
+2026,23,Colombo,Boralesgamuwa,31
+2026,23,Colombo,Dehiwala,25
+2026,23,Colombo,Egoda Uyana,23
+2026,23,Colombo,Gothatuwa,47
+2026,23,Colombo,Hanwella,40
+2026,23,Colombo,Homagama,41
+2026,23,Colombo,Kaduwela,80
+2026,23,Colombo,Kahathuduwa,19
+2026,23,Colombo,Kesbewa,28
+2026,23,Colombo,Kolonnawa,5
+2026,23,Colombo,Maharagama,121
+2026,23,Colombo,Moratuwa,32
+2026,23,Colombo,Nugegoda,31
+2026,23,Colombo,Padukka,36
+2026,23,Colombo,Piliyandala,20
+2026,23,Colombo,Pitakotte,12
+2026,23,Colombo,Ratmalana,24
+2026,23,Colombo,CMC-D1,9
+2026,23,Colombo,CMC-D2A,7
+2026,23,Colombo,CMC-D2B,13
+2026,23,Colombo,CMC-D3,22
+2026,23,Colombo,CMC-D4,23
+2026,23,Colombo,CMC-D5,9
+2026,23,Gampaha,Attanagalla,23
+2026,23,Gampaha,Biyagama,132
+2026,23,Gampaha,Divulapitiya,11
+2026,23,Gampaha,Gampaha,27
+2026,23,Gampaha,Ja-Ela,52
+2026,23,Gampaha,Katana,25
+2026,23,Gampaha,Kelaniya,84
+2026,23,Gampaha,Mahara,62
+2026,23,Gampaha,Mirigama,16
+2026,23,Gampaha,Minuwangoda,47
+2026,23,Gampaha,Negombo,19
+2026,23,Gampaha,Pugoda,26
+2026,23,Gampaha,Ragama,22
+2026,23,Gampaha,Seeduwa,56
+2026,23,Gampaha,Wattala,46
+2026,23,Kalutara,Bandaragama,54
+2026,23,Kalutara,Bulathsinhala,13
+2026,23,Kalutara,Horana,34
+2026,23,Kalutara,Ingiriya,30
+2026,23,Kalutara,Madurawala,16
+2026,23,Kalutara,Mathugama,6
+2026,23,Kalutara,Millaniya,14
+2026,23,Kalutara,Panadura,45
+2026,23,Kalutara,Wadduwa,24
+2026,23,Kalutara,Kalutara (NIHS),29
+2026,23,Kalutara,Payagala,24
+2026,23,Kalutara,Dodangoda PS,14
+2026,23,Matara,Akuressa,12
+2026,23,Matara,Athuraliya,13
+2026,23,Matara,Deniyaya,9
+2026,23,Matara,Devinuwara,16
+2026,23,Matara,Dickwella,8
+2026,23,Matara,Kamburupitiya,2
+2026,23,Matara,Malimbada,6
+2026,23,Matara,MC Matara,85
+2026,23,Matara,Matara PS,14
+2026,23,Matara,Morawaka,7
+2026,23,Matara,Mulatiyana,6
+2026,23,Matara,Pasgoda,2
+2026,23,Matara,Weligama,26
+2026,23,Matara,Welipitiya,4
+2026,23,Galle,Baddegama,6
+2026,23,Galle,Bope (Poddala),41
+2026,23,Galle,Elpitiya,8
+2026,23,Galle,Habaraduwa,4
+2026,23,Galle,Hikkaduwa,3
+2026,23,Galle,Imaduwa,4
+2026,23,Galle,Karandeniya,8
+2026,23,Galle,MC Galle,10
+2026,23,Galle,Thawalama,5
+2026,23,Hambantota,Ambalantota,9
+2026,23,Hambantota,Beliatta,8
+2026,23,Hambantota,Katuwana,13
+2026,23,Hambantota,Tangalle,22
+2026,23,Hambantota,Walasmulla,9
+2026,23,Hambantota,Angunukolapelassa,11
+2026,23,Kandy,Gampola,17
+2026,23,Kandy,Gangawata Korale,23
+2026,23,Kandy,MC Kandy,52
+2026,23,Kandy,Kurunduwatta,5
+2026,23,Kandy,Menikhinna,13
+2026,23,Kandy,Pasbage,21
+2026,23,Kandy,Talathuoya,6
+2026,23,Kandy,Udunuwara,19
+2026,23,Kandy,Wattegama,11
+2026,23,Kandy,Werellagama,16
+2026,23,Kandy,Yatinuwara,42
+2026,23,Kandy,Kundasale,10
+2026,23,Matale,Matale,10
+2026,23,Matale,Rattota,15
+2026,23,Ratnapura,Ayagama,11
+2026,23,Ratnapura,Eheliyagoda,11
+2026,23,Ratnapura,Embilipitiya,28
+2026,23,Ratnapura,Kahawatta,12
+2026,23,Ratnapura,Kalawana,8
+2026,23,Ratnapura,Kuruvita,25
+2026,23,Ratnapura,Nivithigala,21
+2026,23,Ratnapura,Pelmadulla,32
+2026,23,Ratnapura,MC Ratnapura,21
+2026,23,Ratnapura,Ratnapura PS,30
+2026,23,Ratnapura,Elapatha,12
+2026,23,Ratnapura,Godakawela,10
+2026,23,Ratnapura,Kiriella,12
+2026,23,Kegalle,Dehiovita,29
+2026,23,Kegalle,Mawanella,14
+2026,23,Kegalle,Ruwanwella,8
+2026,23,Kegalle,Warakapola,14
+2026,23,Kegalle,Yatiyantota,9
+2026,23,Batticaloa,Batticaloa,24
+2026,23,Trincomalee,Muthur,11
+2026,23,Polonnaruwa,Thamankaduwa,7
+2026,23,Kurunegala,Kuliyapitiya,2
+2026,23,Kurunegala,Mallawapitiya,10
+2026,23,Puttalam,Chilaw,9
+2026,23,Puttalam,Madampe,5
+2026,23,Puttalam,Wennappuwa,18
+2026,23,Badulla,Badulla,11
+2026,24,Colombo,Battaramulla,54
+2026,24,Colombo,Boralesgamuwa,56
+2026,24,Colombo,Dehiwala,55
+2026,24,Colombo,Egoda Uyana,34
+2026,24,Colombo,Gothatuwa,86
+2026,24,Colombo,Hanwella,34
+2026,24,Colombo,Homagama,103
+2026,24,Colombo,Kaduwela,108
+2026,24,Colombo,Kahathuduwa,35
+2026,24,Colombo,Kesbewa,20
+2026,24,Colombo,Kolonnawa,12
+2026,24,Colombo,Maharagama,200
+2026,24,Colombo,Moratuwa,52
+2026,24,Colombo,Nugegoda,40
+2026,24,Colombo,Padukka,23
+2026,24,Colombo,Piliyandala,65
+2026,24,Colombo,Pitakotte,26
+2026,24,Colombo,Ratmalana,47
+2026,24,Colombo,CMC-D1,20
+2026,24,Colombo,CMC-D2A,15
+2026,24,Colombo,CMC-D2B,12
+2026,24,Colombo,CMC-D3,37
+2026,24,Colombo,CMC-D4,41
+2026,24,Colombo,CMC-D5,26
+2026,24,Gampaha,Attanagalla,33
+2026,24,Gampaha,Biyagama,236
+2026,24,Gampaha,Divulapitiya,20
+2026,24,Gampaha,Gampaha,36
+2026,24,Gampaha,Ja-Ela,81
+2026,24,Gampaha,Katana,49
+2026,24,Gampaha,Kelaniya,131
+2026,24,Gampaha,Mahara,90
+2026,24,Gampaha,Mirigama,31
+2026,24,Gampaha,Minuwangoda,44
+2026,24,Gampaha,Negombo,53
+2026,24,Gampaha,Pugoda,40
+2026,24,Gampaha,Ragama,23
+2026,24,Gampaha,Seeduwa,97
+2026,24,Gampaha,Wattala,77
+2026,24,Kalutara,Bandaragama,75
+2026,24,Kalutara,Bulathsinhala,12
+2026,24,Kalutara,Dodangoda PS,7
+2026,24,Kalutara,Horana,49
+2026,24,Kalutara,Ingiriya,12
+2026,24,Kalutara,Madurawala,24
+2026,24,Kalutara,Mathugama,15
+2026,24,Kalutara,Millaniya,12
+2026,24,Kalutara,Panadura,114
+2026,24,Kalutara,Wadduwa,32
+2026,24,Kalutara,Kalutara (NIHS),28
+2026,24,Kalutara,Payagala,23
+2026,24,Matara,Akuressa,36
+2026,24,Matara,Athuraliya,23
+2026,24,Matara,Devinuwara,26
+2026,24,Matara,Dickwella,12
+2026,24,Matara,Hakmana,8
+2026,24,Matara,Kamburupitiya,23
+2026,24,Matara,Malimbada,15
+2026,24,Matara,MC Matara,146
+2026,24,Matara,Matara PS,18
+2026,24,Matara,Morawaka,22
+2026,24,Matara,Mulatiyana,13
+2026,24,Matara,Weligama,67
+2026,24,Matara,Welipitiya,17
+2026,24,Matara,Deniyaya,13
+2026,24,Matara,Pasgoda,12
+2026,24,Galle,Akmeemana,9
+2026,24,Galle,Baddegama,18
+2026,24,Galle,Balapitiya,9
+2026,24,Galle,Bope (Poddala),71
+2026,24,Galle,Elpitiya,12
+2026,24,Galle,Habaraduwa,12
+2026,24,Galle,Imaduwa,9
+2026,24,Galle,MC Galle,41
+2026,24,Galle,Neluwa,9
+2026,24,Galle,Thawalama,17
+2026,24,Galle,Yakkalamulla,8
+2026,24,Galle,Hikkaduwa,11
+2026,24,Galle,Karandeniya,13
+2026,24,Hambantota,Ambalantota,10
+2026,24,Hambantota,Angunukolapelassa,8
+2026,24,Hambantota,Beliatta,12
+2026,24,Hambantota,Hambantota,4
+2026,24,Hambantota,Katuwana,15
+2026,24,Hambantota,Auriyawewa,3
+2026,24,Hambantota,Tangalle,24
+2026,24,Hambantota,Tissamaharama,2
+2026,24,Hambantota,Walasmulla,16
+2026,24,Hambantota,Weeraketiya,2
+2026,24,Kandy,Gampola,39
+2026,24,Kandy,Gangawata Korale,40
+2026,24,Kandy,Hatharaliyadda,8
+2026,24,Kandy,MC Kandy,70
+2026,24,Kandy,Kundasale,5
+2026,24,Kandy,Menikhinna,15
+2026,24,Kandy,Pasbage,14
+2026,24,Kandy,Poojapitiya,6
+2026,24,Kandy,Udunuwara,26
+2026,24,Kandy,Wattegama,21
+2026,24,Kandy,Werellagama,21
+2026,24,Kandy,Yatinuwara,45
+2026,24,Kandy,Kurunduwatta,10
+2026,24,Kandy,Talathuoya,11
+2026,24,Nuwara Eliya,Ambagamuwa,7
+2026,24,Nuwara Eliya,Rikillagaskada,3
+2026,24,Ratnapura,Kiriella,8
+2026,24,Ratnapura,Kuruvita,19
+2026,24,Ratnapura,Nivithigala,24
+2026,24,Ratnapura,Pelmadulla,26
+2026,24,Ratnapura,MC Ratnapura,24
+2026,24,Ratnapura,Ratnapura PS,16
+2026,24,Ratnapura,Ayagama,15
+2026,24,Ratnapura,Eheliyagoda,14
+2026,24,Ratnapura,Embilipitiya,18
+2026,24,Ratnapura,Kahawatta,10
+2026,24,Ratnapura,Kalawana,20
+2026,24,Kegalle,Aranayaka,6
+2026,24,Kegalle,Dehiovita,18
+2026,24,Kegalle,Mawanella,15
+2026,24,Kegalle,Rambukkana,3
+2026,24,Kegalle,Warakapola,10
+2026,24,Kegalle,Yatiyantota,14
+2026,24,Kegalle,Ruwanwella,14
+2026,24,Batticaloa,Batticaloa,14
+2026,24,Polonnaruwa,Thamankaduwa,12
+2026,24,Kurunegala,Kuliyapitiya,14
+2026,24,Kurunegala,Pannala,7
+2026,24,Kurunegala,Mallawapitiya,13
+2026,24,Puttalam,Chilaw,31
+2026,24,Puttalam,Dankotuwa,4
+2026,24,Puttalam,Madampe,10
+2026,24,Puttalam,Nattandiya,6
+2026,24,Puttalam,Wennappuwa,13
+2026,24,Badulla,Badulla,24
+2026,24,Monaragala,Bibile,4
+2026,24,Monaragala,Siyambalanduwa,7
+2026,24,Monaragala,Wellawaya,2
+2026,25,Colombo,Battaramulla,54
+2026,25,Colombo,Boralesgamuwa,58
+2026,25,Colombo,Dehiwala,67
+2026,25,Colombo,Egoda Uyana,33
+2026,25,Colombo,Gothatuwa,84
+2026,25,Colombo,Hanwella,69
+2026,25,Colombo,Homagama,80
+2026,25,Colombo,Kaduwela,120
+2026,25,Colombo,Kahathuduwa,35
+2026,25,Colombo,Kesbewa,24
+2026,25,Colombo,Kolonnawa,15
+2026,25,Colombo,Maharagama,194
+2026,25,Colombo,Moratuwa,51
+2026,25,Colombo,Nugegoda,50
+2026,25,Colombo,Padukka,37
+2026,25,Colombo,Piliyandala,85
+2026,25,Colombo,Pitakotte,27
+2026,25,Colombo,Ratmalana,22
+2026,25,Colombo,CMC-D1,22
+2026,25,Colombo,CMC-D2A,25
+2026,25,Colombo,CMC-D2B,29
+2026,25,Colombo,CMC-D3,37
+2026,25,Colombo,CMC-D4,39
+2026,25,Colombo,CMC-D5,33
+2026,25,Gampaha,Attanagalla,44
+2026,25,Gampaha,Biyagama,250
+2026,25,Gampaha,Divulapitiya,16
+2026,25,Gampaha,Gampaha,45
+2026,25,Gampaha,Ja-Ela,111
+2026,25,Gampaha,Katana,44
+2026,25,Gampaha,Kelaniya,196
+2026,25,Gampaha,Mahara,111
+2026,25,Gampaha,Mirigama,31
+2026,25,Gampaha,Minuwangoda,66
+2026,25,Gampaha,Negombo,55
+2026,25,Gampaha,Pugoda,39
+2026,25,Gampaha,Ragama,32
+2026,25,Gampaha,Seeduwa,103
+2026,25,Gampaha,Wattala,113
+2026,25,Kalutara,Bandaragama,71
+2026,25,Kalutara,Bulathsinhala,17
+2026,25,Kalutara,Dodangoda PS,12
+2026,25,Kalutara,Horana,50
+2026,25,Kalutara,Ingiriya,34
+2026,25,Kalutara,Madurawala,16
+2026,25,Kalutara,Millaniya,16
+2026,25,Kalutara,Panadura,129
+2026,25,Kalutara,Wadduwa,18
+2026,25,Kalutara,Walallawita,9
+2026,25,Kalutara,Kalutara (NIHS),37
+2026,25,Kalutara,Payagala,21
+2026,25,Kalutara,Mathugama,10
+2026,25,Matara,Akuressa,25
+2026,25,Matara,Athuraliya,12
+2026,25,Matara,Devinuwara,14
+2026,25,Matara,Dickwella,18
+2026,25,Matara,Hakmana,11
+2026,25,Matara,Kamburupitiya,13
+2026,25,Matara,Malimbada,17
+2026,25,Matara,MC Matara,147
+2026,25,Matara,Matara PS,24
+2026,25,Matara,Morawaka,16
+2026,25,Matara,Weligama,42
+2026,25,Matara,Welipitiya,16
+2026,25,Matara,Mulatiyana,11
+2026,25,Galle,Ambalangoda,3
+2026,25,Galle,Baddegama,15
+2026,25,Galle,Balapitiya,13
+2026,25,Galle,Bope (Poddala),11
+2026,25,Galle,Elpitiya,15
+2026,25,Galle,Habaraduwa,22
+2026,25,Galle,Hikkaduwa,7
+2026,25,Galle,Imaduwa,18
+2026,25,Galle,Karandeniya,9
+2026,25,Galle,MC Galle,46
+2026,25,Galle,Thawalama,17
+2026,25,Galle,Udugama,9
+2026,25,Galle,Neluwa,11
+2026,25,Galle,Yakkalamulla,20
+2026,25,Hambantota,Ambalantota,23
+2026,25,Hambantota,Angunukolapelassa,14
+2026,25,Hambantota,Beliatta,13
+2026,25,Hambantota,Katuwana,27
+2026,25,Hambantota,Tangalle,45
+2026,25,Hambantota,Tissamaharama,12
+2026,25,Hambantota,Hambantota,14
+2026,25,Hambantota,Auriyawewa,11
+2026,25,Hambantota,Walasmulla,12
+2026,25,Hambantota,Weeraketiya,11
+2026,25,Kandy,Akurana,2
+2026,25,Kandy,Bambaradeniya,8
+2026,25,Kandy,Doluwa,8
+2026,25,Kandy,Galagedara,5
+2026,25,Kandy,Gampola,24
+2026,25,Kandy,Gangawata Korale,47
+2026,25,Kandy,MC Kandy,82
+2026,25,Kandy,Kundasale,11
+2026,25,Kandy,Kurunduwatta,8
+2026,25,Kandy,Menikhinna,29
+2026,25,Kandy,Pasbage,18
+2026,25,Kandy,Poojapitiya,20
+2026,25,Kandy,Talathuoya,8
+2026,25,Kandy,Udunuwara,24
+2026,25,Kandy,Wattegama,27
+2026,25,Kandy,Werellagama,37
+2026,25,Kandy,Yatinuwara,48
+2026,25,Kandy,Hatharaliyadda,10
+2026,25,Matale,Rattota,8
+2026,25,Nuwara Eliya,Rikillagaskada,12
+2026,25,Nuwara Eliya,Ambagamuwa,14
+2026,25,Ratnapura,Eheliyagoda,8
+2026,25,Ratnapura,Godakawela,2
+2026,25,Ratnapura,Kahawatta,8
+2026,25,Ratnapura,Kalawana,7
+2026,25,Ratnapura,Kuruvita,10
+2026,25,Ratnapura,Nivithigala,11
+2026,25,Ratnapura,Pelmadulla,21
+2026,25,Ratnapura,MC Ratnapura,14
+2026,25,Ratnapura,Ratnapura PS,17
+2026,25,Ratnapura,Kiriella,13
+2026,25,Kegalle,Bulathkohupitiya,8
+2026,25,Kegalle,Dehiovita,21
+2026,25,Kegalle,Deraniyagala,7
+2026,25,Kegalle,Mawanella,25
+2026,25,Kegalle,Ruwanwella,9
+2026,25,Kegalle,Warakapola,17
+2026,25,Kegalle,Yatiyantota,11
+2026,25,Kegalle,Aranayaka,13
+2026,25,Kegalle,Rambukkana,13
+2026,25,Ampara,Ampara,6
+2026,25,Ampara,Uhana,4
+2026,25,Batticaloa,Batticaloa,14
+2026,25,Anuradhapura,Thambuttegama,3
+2026,25,Polonnaruwa,Hingurakoda,7
+2026,25,Polonnaruwa,Thamankaduwa,12
+2026,25,Kurunegala,Alawwa,5
+2026,25,Kurunegala,Kuliyapitiya,22
+2026,25,Kurunegala,Kurunegala,3
+2026,25,Kurunegala,Mallawapitiya,3
+2026,25,Kurunegala,Narammala,0
+2026,25,Kurunegala,Pannala,15
+2026,25,Kurunegala,Udubaddawa,7
+2026,25,Puttalam,Anamaduwa,6
+2026,25,Puttalam,Chilaw,15
+2026,25,Puttalam,Dankotuwa,10
+2026,25,Puttalam,Madampe,13
+2026,25,Puttalam,Mundel,2
+2026,25,Puttalam,Nattandiya,14
+2026,25,Puttalam,Puttalam,7
+2026,25,Puttalam,Wennappuwa,32
+2026,25,Badulla,Badulla,23
+2026,25,Badulla,Hali Ela,8
+2026,25,Badulla,Passara,2
+2026,25,Monaragala,Bibile,11
+2026,25,Monaragala,Siyambalanduwa,13
+2026,25,Monaragala,Wellawaya,16
+2026,26,Colombo,Battaramulla,56
+2026,26,Colombo,Boralesgamuwa,59
+2026,26,Colombo,Dehiwala,51
+2026,26,Colombo,Egoda Uyana,28
+2026,26,Colombo,Gothatuwa,120
+2026,26,Colombo,Hanwella,46
+2026,26,Colombo,Homagama,90
+2026,26,Colombo,Kaduwela,156
+2026,26,Colombo,Kahathuduwa,37
+2026,26,Colombo,Kesbewa,36
+2026,26,Colombo,Kolonnawa,6
+2026,26,Colombo,Maharagama,173
+2026,26,Colombo,Moratuwa,30
+2026,26,Colombo,Nugegoda,41
+2026,26,Colombo,Padukka,20
+2026,26,Colombo,Piliyandala,48
+2026,26,Colombo,Pitakotte,21
+2026,26,Colombo,Ratmalana,17
+2026,26,Colombo,CMC-D1,21
+2026,26,Colombo,CMC-D2A,21
+2026,26,Colombo,CMC-D2B,15
+2026,26,Colombo,CMC-D3,28
+2026,26,Colombo,CMC-D4,43
+2026,26,Colombo,CMC-D5,10
+2026,26,Gampaha,Attanagalla,53
+2026,26,Gampaha,Biyagama,259
+2026,26,Gampaha,Divulapitiya,51
+2026,26,Gampaha,Gampaha,57
+2026,26,Gampaha,Ja-Ela,160
+2026,26,Gampaha,Katana,95
+2026,26,Gampaha,Kelaniya,220
+2026,26,Gampaha,Mahara,160
+2026,26,Gampaha,Mirigama,29
+2026,26,Gampaha,Minuwangoda,90
+2026,26,Gampaha,Negombo,145
+2026,26,Gampaha,Pugoda,69
+2026,26,Gampaha,Ragama,48
+2026,26,Gampaha,Seeduwa,163
+2026,26,Gampaha,Wattala,139
+2026,26,Kalutara,Bandaragama,52
+2026,26,Kalutara,Bulathsinhala,10
+2026,26,Kalutara,Dodangoda PS,10
+2026,26,Kalutara,Horana,70
+2026,26,Kalutara,Ingiriya,22
+2026,26,Kalutara,Madurawala,18
+2026,26,Kalutara,Mathugama,7
+2026,26,Kalutara,Millaniya,19
+2026,26,Kalutara,Panadura,92
+2026,26,Kalutara,Wadduwa,42
+2026,26,Kalutara,Walallawita,15
+2026,26,Kalutara,Kalutara (NIHS),43
+2026,26,Kalutara,Payagala,43
+2026,26,Matara,Akuressa,23
+2026,26,Matara,Athuraliya,19
+2026,26,Matara,Devinuwara,14
+2026,26,Matara,Dickwella,28
+2026,26,Matara,Kamburupitiya,10
+2026,26,Matara,Malimbada,15
+2026,26,Matara,MC Matara,118
+2026,26,Matara,Matara PS,24
+2026,26,Matara,Morawaka,24
+2026,26,Matara,Mulatiyana,8
+2026,26,Matara,Pasgoda,3
+2026,26,Matara,Thihagoda,8
+2026,26,Matara,Weligama,35
+2026,26,Matara,Welipitiya,15
+2026,26,Matara,Hakmana,11
+2026,26,Galle,Akmeemana,6
+2026,26,Galle,Ambalangoda,11
+2026,26,Galle,Baddegama,10
+2026,26,Galle,Balapitiya,19
+2026,26,Galle,Bope (Poddala),12
+2026,26,Galle,Elpitiya,18
+2026,26,Galle,Habaraduwa,9
+2026,26,Galle,Hikkaduwa,14
+2026,26,Galle,Imaduwa,18
+2026,26,Galle,Induruwa,8
+2026,26,Galle,Karandeniya,19
+2026,26,Galle,MC Galle,38
+2026,26,Galle,Rathgama,6
+2026,26,Galle,Thawalama,13
+2026,26,Galle,Udugama,18
+2026,26,Galle,Yakkalamulla,8
+2026,26,Hambantota,Ambalantota,14
+2026,26,Hambantota,Angunukolapelassa,13
+2026,26,Hambantota,Beliatta,15
+2026,26,Hambantota,Katuwana,10
+2026,26,Hambantota,Tangalle,49
+2026,26,Hambantota,Walasmulla,9
+2026,26,Hambantota,Weeraketiya,6
+2026,26,Hambantota,Tissamaharama,12
+2026,26,Kandy,Akurana,10
+2026,26,Kandy,Bambaradeniya,10
+2026,26,Kandy,Doluwa,14
+2026,26,Kandy,Galagedara,10
+2026,26,Kandy,Gampola,36
+2026,26,Kandy,Gangawata Korale,26
+2026,26,Kandy,Hasalaka,1
+2026,26,Kandy,MC Kandy,73
+2026,26,Kandy,Kundasale,23
+2026,26,Kandy,Kurunduwatta,13
+2026,26,Kandy,Medadumbara,8
+2026,26,Kandy,Menikhinna,25
+2026,26,Kandy,Pasbage,31
+2026,26,Kandy,Poojapitiya,11
+2026,26,Kandy,Talathuoya,14
+2026,26,Kandy,Udunuwara,36
+2026,26,Kandy,Wattegama,18
+2026,26,Kandy,Werellagama,26
+2026,26,Kandy,Yatinuwara,78
+2026,26,Matale,Rattota,11
+2026,26,Matale,Ukuwela,8
+2026,26,Matale,Yatawatta,1
+2026,26,Nuwara Eliya,Ambagamuwa,8
+2026,26,Nuwara Eliya,Rikillagaskada,16
+2026,26,Ratnapura,Balangoda,3
+2026,26,Ratnapura,Eheliyagoda,13
+2026,26,Ratnapura,Elapatha,5
+2026,26,Ratnapura,Godakawela,25
+2026,26,Ratnapura,Imbulpe,1
+2026,26,Ratnapura,Kahawatta,18
+2026,26,Ratnapura,Kalawana,20
+2026,26,Ratnapura,Kiriella,8
+2026,26,Ratnapura,Kuruvita,15
+2026,26,Ratnapura,Nivithigala,13
+2026,26,Ratnapura,Pelmadulla,22
+2026,26,Ratnapura,MC Ratnapura,10
+2026,26,Ratnapura,Ratnapura PS,16
+2026,26,Kegalle,Bulathkohupitiya,14
+2026,26,Kegalle,Dehiovita,31
+2026,26,Kegalle,Galigamuwa,5
+2026,26,Kegalle,Kegalle,9
+2026,26,Kegalle,Mawanella,48
+2026,26,Kegalle,Rambukkana,7
+2026,26,Kegalle,Ruwanwella,10
+2026,26,Kegalle,Warakapola,27
+2026,26,Kegalle,Yatiyantota,17
+2026,26,Kegalle,Deraniyagala,15
+2026,26,Ampara,Damana,8
+2026,26,Ampara,Dehiattakandiya,8
+2026,26,Ampara,Uhana,12
+2026,26,Ampara,Ampara,15
+2026,26,Batticaloa,Batticaloa,18
+2026,26,Batticaloa,Chenkalady,6
+2026,26,Kalmunai,Akkaraipattu,7
+2026,26,Trincomalee,Kanthale,1
+2026,26,Anuradhapura,Nuwaragam-Palatha,4
+2026,26,Anuradhapura,Thalawa,9
+2026,26,Anuradhapura,Thambuttegama,12
+2026,26,Polonnaruwa,Aralaganwila,7
+2026,26,Polonnaruwa,Hingurakoda,15
+2026,26,Polonnaruwa,Thamankaduwa,14
+2026,26,Polonnaruwa,Medirigiriya,1
+2026,26,Kurunegala,Alawwa,11
+2026,26,Kurunegala,Galgamuwa,3
+2026,26,Kurunegala,Ibbagamuwa,7
+2026,26,Kurunegala,Kuliyapitiya,18
+2026,26,Kurunegala,Kurunegala,6
+2026,26,Kurunegala,Mallawapitiya,12
+2026,26,Kurunegala,Panduwasnuwara,5
+2026,26,Kurunegala,Pannala,34
+2026,26,Kurunegala,Polgahawela,3
+2026,26,Kurunegala,Polpithigama,2
+2026,26,Kurunegala,Udubaddawa,11
+2026,26,Kurunegala,Narammala,13
+2026,26,Puttalam,Anamaduwa,9
+2026,26,Puttalam,Chilaw,20
+2026,26,Puttalam,Dankotuwa,19
+2026,26,Puttalam,Madampe,11
+2026,26,Puttalam,Mahawewa,2
+2026,26,Puttalam,Nattandiya,16
+2026,26,Puttalam,Wennappuwa,59
+2026,26,Puttalam,Mundel,10
+2026,26,Puttalam,Puttalam,11
+2026,26,Badulla,Badulla,30
+2026,26,Badulla,Hali Ela,10
+2026,26,Badulla,Mahiyanganaya,7
+2026,26,Badulla,Rideemaliyadda,5
+2026,26,Badulla,Uva Paranagama,2
+2026,26,Badulla,Welimada,1
+2026,26,Badulla,Passara,10
+2026,26,Monaragala,Bibile,10
+2026,26,Monaragala,Medagama,10
+2026,26,Monaragala,Monaragala,9
+2026,26,Monaragala,Siyambalanduwa,14
+2026,26,Monaragala,Wellawaya,13
+2026,27,Colombo,Battaramulla,86
+2026,27,Colombo,Boralesgamuwa,91
+2026,27,Colombo,Dehiwala,27
+2026,27,Colombo,Egoda Uyana,52
+2026,27,Colombo,Gothatuwa,121
+2026,27,Colombo,Hanwella,45
+2026,27,Colombo,Homagama,112
+2026,27,Colombo,Kaduwela,140
+2026,27,Colombo,Kahathuduwa,66
+2026,27,Colombo,Kesbewa,42
+2026,27,Colombo,Kolonnawa,33
+2026,27,Colombo,Maharagama,254
+2026,27,Colombo,Moratuwa,67
+2026,27,Colombo,Nugegoda,70
+2026,27,Colombo,Padukka,33
+2026,27,Colombo,Piliyandala,101
+2026,27,Colombo,Pitakotte,39
+2026,27,Colombo,Ratmalana,55
+2026,27,Colombo,CMC-D1,51
+2026,27,Colombo,CMC-D2A,28
+2026,27,Colombo,CMC-D2B,27
+2026,27,Colombo,CMC-D3,50
+2026,27,Colombo,CMC-D4,44
+2026,27,Colombo,CMC-D5,21
+2026,27,Gampaha,Attanagalla,59
+2026,27,Gampaha,Biyagama,304
+2026,27,Gampaha,Divulapitiya,38
+2026,27,Gampaha,Gampaha,98
+2026,27,Gampaha,Ja-Ela,179
+2026,27,Gampaha,Katana,77
+2026,27,Gampaha,Kelaniya,237
+2026,27,Gampaha,Mahara,173
+2026,27,Gampaha,Mirigama,39
+2026,27,Gampaha,Minuwangoda,100
+2026,27,Gampaha,Negombo,110
+2026,27,Gampaha,Pugoda,75
+2026,27,Gampaha,Ragama,78
+2026,27,Gampaha,Seeduwa,119
+2026,27,Gampaha,Wattala,175
+2026,27,Kalutara,Bandaragama,91
+2026,27,Kalutara,Bulathsinhala,12
+2026,27,Kalutara,Dodangoda PS,20
+2026,27,Kalutara,Horana,91
+2026,27,Kalutara,Ingiriya,24
+2026,27,Kalutara,Madurawala,17
+2026,27,Kalutara,Mathugama,27
+2026,27,Kalutara,Millaniya,18
+2026,27,Kalutara,Panadura,189
+2026,27,Kalutara,Wadduwa,62
+2026,27,Kalutara,Walallawita,11
+2026,27,Kalutara,Kalutara (NIHS),57
+2026,27,Kalutara,Payagala,56
+2026,27,Matara,Akuressa,34
+2026,27,Matara,Athuraliya,29
+2026,27,Matara,Devinuwara,35
+2026,27,Matara,Dickwella,42
+2026,27,Matara,Hakmana,9
+2026,27,Matara,Kamburupitiya,27
+2026,27,Matara,Malimbada,16
+2026,27,Matara,MC Matara,170
+2026,27,Matara,Matara PS,57
+2026,27,Matara,Morawaka,28
+2026,27,Matara,Mulatiyana,27
+2026,27,Matara,Pasgoda,21
+2026,27,Matara,Thihagoda,21
+2026,27,Matara,Weligama,70
+2026,27,Matara,Welipitiya,28
+2026,27,Galle,Akmeemana,23
+2026,27,Galle,Ambalangoda,17
+2026,27,Galle,Baddegama,25
+2026,27,Galle,Balapitiya,31
+2026,27,Galle,Bope (Poddala),33
+2026,27,Galle,Elpitiya,32
+2026,27,Galle,Habaraduwa,21
+2026,27,Galle,Hikkaduwa,16
+2026,27,Galle,Imaduwa,22
+2026,27,Galle,Karandeniya,19
+2026,27,Galle,MC Galle,74
+2026,27,Galle,Rathgama,15
+2026,27,Galle,Thawalama,11
+2026,27,Galle,Udugama,15
+2026,27,Galle,Yakkalamulla,20
+2026,27,Galle,Induruwa,13
+2026,27,Hambantota,Ambalantota,25
+2026,27,Hambantota,Angunukolapelassa,21
+2026,27,Hambantota,Beliatta,15
+2026,27,Hambantota,Katuwana,22
+2026,27,Hambantota,Tangalle,69
+2026,27,Hambantota,Tissamaharama,9
+2026,27,Hambantota,Walasmulla,21
+2026,27,Hambantota,Weeraketiya,10
+2026,27,Kandy,Bambaradeniya,17
+2026,27,Kandy,Doluwa,22
+2026,27,Kandy,Galagedara,14
+2026,27,Kandy,Gampola,45
+2026,27,Kandy,Gangawata Korale,46
+2026,27,Kandy,Hasalaka,12
+2026,27,Kandy,Hatharaliyadda,7
+2026,27,Kandy,MC Kandy,103
+2026,27,Kandy,Kundasale,22
+2026,27,Kandy,Kurunduwatta,30
+2026,27,Kandy,Medadumbara,12
+2026,27,Kandy,Menikhinna,34
+2026,27,Kandy,Pasbage,26
+2026,27,Kandy,Poojapitiya,11
+2026,27,Kandy,Talathuoya,16
+2026,27,Kandy,Udunuwara,38
+2026,27,Kandy,Wattegama,31
+2026,27,Kandy,Werellagama,47
+2026,27,Kandy,Yatinuwara,68
+2026,27,Kandy,Akurana,17
+2026,27,Matale,Ukuwela,14
+2026,27,Matale,Rattota,16
+2026,27,Matale,Yatawatta,13
+2026,27,Nuwara Eliya,Ambagamuwa,25
+2026,27,Nuwara Eliya,Nawathispane,8
+2026,27,Nuwara Eliya,Rikillagaskada,22
+2026,27,Ratnapura,Ayagama,6
+2026,27,Ratnapura,Balangoda,13
+2026,27,Ratnapura,Eheliyagoda,32
+2026,27,Ratnapura,Elapatha,10
+2026,27,Ratnapura,Embilipitiya,5
+2026,27,Ratnapura,Imbulpe,10
+2026,27,Ratnapura,Kalawana,18
+2026,27,Ratnapura,Kiriella,23
+2026,27,Ratnapura,Kolonna,7
+2026,27,Ratnapura,Kuruvita,29
+2026,27,Ratnapura,Nivithigala,13
+2026,27,Ratnapura,Pelmadulla,38
+2026,27,Ratnapura,MC Ratnapura,29
+2026,27,Ratnapura,Ratnapura PS,26
+2026,27,Ratnapura,Godakawela,23
+2026,27,Ratnapura,Kahawatta,23
+2026,27,Kegalle,Dehiovita,32
+2026,27,Kegalle,Mawanella,23
+2026,27,Kegalle,Rambukkana,14
+2026,27,Kegalle,Ruwanwella,12
+2026,27,Kegalle,Warakapola,29
+2026,27,Kegalle,Yatiyantota,14
+2026,27,Kegalle,Bulathkohupitiya,11
+2026,27,Kegalle,Galigamuwa,11
+2026,27,Kegalle,Kegalle,30
+2026,27,Ampara,Ampara,8
+2026,27,Ampara,Damana,10
+2026,27,Ampara,Uhana,18
+2026,27,Ampara,Dehiattakandiya,13
+2026,27,Batticaloa,Batticaloa,20
+2026,27,Batticaloa,Eravur,5
+2026,27,Batticaloa,Chenkalady,13
+2026,27,Kalmunai,Kalmunai North,7
+2026,27,Kalmunai,Akkaraipattu,25
+2026,27,Polonnaruwa,Hingurakoda,12
+2026,27,Polonnaruwa,Medirigiriya,20
+2026,27,Polonnaruwa,Thamankaduwa,6
+2026,27,Polonnaruwa,Aralaganwila,12
+2026,27,Kurunegala,Alawwa,10
+2026,27,Kurunegala,Galgamuwa,21
+2026,27,Kurunegala,Kurunegala,13
+2026,27,Kurunegala,MC Kurunegala,11
+2026,27,Kurunegala,Pannala,18
+2026,27,Kurunegala,Polpithigama,14
+2026,27,Kurunegala,Ibbagamuwa,10
+2026,27,Kurunegala,Kuliyapitiya,15
+2026,27,Kurunegala,Mallawapitiya,11
+2026,27,Kurunegala,Panduwasnuwara,11
+2026,27,Kurunegala,Polgahawela,25
+2026,27,Kurunegala,Udubaddawa,11
+2026,27,Puttalam,Chilaw,16
+2026,27,Puttalam,Dankotuwa,14
+2026,27,Puttalam,Madampe,18
+2026,27,Puttalam,Nattandiya,25
+2026,27,Puttalam,Wennappuwa,45
+2026,27,Puttalam,Anamaduwa,11
+2026,27,Puttalam,Mahawewa,10
+2026,27,Badulla,Badulla,30
+2026,27,Badulla,Hali Ela,10
+2026,27,Badulla,Rideemaliyadda,13
+2026,27,Badulla,Uva Paranagama,11
+2026,27,Badulla,Welimada,13
+2026,27,Badulla,Mahiyanganaya,13
+2026,27,Monaragala,Monaragala,11
+2026,27,Monaragala,Siyambalanduwa,10
+2026,27,Monaragala,Wellawaya,7
+2026,27,Monaragala,Bibile,15
+2026,27,Monaragala,Medagama,12
+2026,27,Jaffna,Tellippalai,2
+2026,27,Vavuniya,Vavuniya,4
+2026,27,Trincomalee,Kanthale,24
+2026,27,Anuradhapura,Nuwaragam-Palatha,10
+2026,27,Anuradhapura,Thalawa,15
+2026,28,Colombo,Battaramulla,99
+2026,28,Colombo,Boralesgamuwa,87
+2026,28,Colombo,Dehiwala,43
+2026,28,Colombo,Egoda Uyana,51
+2026,28,Colombo,Gothatuwa,136
+2026,28,Colombo,Hanwella,51
+2026,28,Colombo,Homagama,88
+2026,28,Colombo,Kaduwela,136
+2026,28,Colombo,Kahathuduwa,36
+2026,28,Colombo,Kesbewa,18
+2026,28,Colombo,Kolonnawa,26
+2026,28,Colombo,Maharagama,201
+2026,28,Colombo,Moratuwa,77
+2026,28,Colombo,Nugegoda,87
+2026,28,Colombo,Padukka,32
+2026,28,Colombo,Piliyandala,106
+2026,28,Colombo,Pitakotte,33
+2026,28,Colombo,Ratmalana,64
+2026,28,Colombo,CMC-D1,45
+2026,28,Colombo,CMC-D2A,54
+2026,28,Colombo,CMC-D2B,25
+2026,28,Colombo,CMC-D3,82
+2026,28,Colombo,CMC-D4,24
+2026,28,Colombo,CMC-D5,25
+2026,28,Gampaha,Attanagalla,67
+2026,28,Gampaha,Biyagama,321
+2026,28,Gampaha,Divulapitiya,24
+2026,28,Gampaha,Gampaha,105
+2026,28,Gampaha,Ja-Ela,169
+2026,28,Gampaha,Katana,82
+2026,28,Gampaha,Kelaniya,255
+2026,28,Gampaha,Mahara,201
+2026,28,Gampaha,Mirigama,34
+2026,28,Gampaha,Minuwangoda,91
+2026,28,Gampaha,Negombo,103
+2026,28,Gampaha,Pugoda,93
+2026,28,Gampaha,Ragama,55
+2026,28,Gampaha,Seeduwa,88
+2026,28,Gampaha,Wattala,149
+2026,28,Kalutara,Bandaragama,69
+2026,28,Kalutara,Bulathsinhala,14
+2026,28,Kalutara,Dodangoda PS,11
+2026,28,Kalutara,Horana,71
+2026,28,Kalutara,Ingiriya,13
+2026,28,Kalutara,Mathugama,19
+2026,28,Kalutara,Millaniya,19
+2026,28,Kalutara,Panadura,174
+2026,28,Kalutara,Wadduwa,50
+2026,28,Kalutara,Walallawita,24
+2026,28,Kalutara,Aluthgama,8
+2026,28,Kalutara,Kalutara (NIHS),66
+2026,28,Kalutara,Payagala,41
+2026,28,Kalutara,Madurawala,22
+2026,28,Matara,Akuressa,25
+2026,28,Matara,Athuraliya,24
+2026,28,Matara,Kotapola,3
+2026,28,Matara,Devinuwara,19
+2026,28,Matara,Dickwella,37
+2026,28,Matara,Kamburupitiya,18
+2026,28,Matara,Malimbada,14
+2026,28,Matara,MC Matara,105
+2026,28,Matara,Matara PS,33
+2026,28,Matara,Morawaka,22
+2026,28,Matara,Thihagoda,12
+2026,28,Matara,Weligama,57
+2026,28,Matara,Welipitiya,38
+2026,28,Matara,Hakmana,14
+2026,28,Matara,Mulatiyana,17
+2026,28,Matara,Pasgoda,11
+2026,28,Galle,Akmeemana,35
+2026,28,Galle,Ambalangoda,9
+2026,28,Galle,Baddegama,37
+2026,28,Galle,Balapitiya,21
+2026,28,Galle,Bope (Poddala),34
+2026,28,Galle,Elpitiya,21
+2026,28,Galle,Habaraduwa,24
+2026,28,Galle,Hikkaduwa,15
+2026,28,Galle,Imaduwa,31
+2026,28,Galle,Karandeniya,20
+2026,28,Galle,MC Galle,101
+2026,28,Galle,Rathgama,14
+2026,28,Galle,Yakkalamulla,23
+2026,28,Galle,Thawalama,12
+2026,28,Galle,Udugama,17
+2026,28,Hambantota,Ambalantota,19
+2026,28,Hambantota,Angunukolapelassa,13
+2026,28,Hambantota,Beliatta,26
+2026,28,Hambantota,Katuwana,22
+2026,28,Hambantota,Tangalle,53
+2026,28,Hambantota,Tissamaharama,10
+2026,28,Hambantota,Walasmulla,13
+2026,28,Hambantota,Weeraketiya,8
+2026,28,Kandy,Akurana,9
+2026,28,Kandy,Bambaradeniya,24
+2026,28,Kandy,Doluwa,24
+2026,28,Kandy,Galagedara,15
+2026,28,Kandy,Galaha,8
+2026,28,Kandy,Gampola,64
+2026,28,Kandy,Gangawata Korale,36
+2026,28,Kandy,Hatharaliyadda,16
+2026,28,Kandy,MC Kandy,104
+2026,28,Kandy,Kundasale,16
+2026,28,Kandy,Kurunduwatta,33
+2026,28,Kandy,Medadumbara,12
+2026,28,Kandy,Menikhinna,26
+2026,28,Kandy,Pasbage,29
+2026,28,Kandy,Poojapitiya,18
+2026,28,Kandy,Talathuoya,17
+2026,28,Kandy,Udunuwara,32
+2026,28,Kandy,Wattegama,25
+2026,28,Kandy,Werellagama,56
+2026,28,Kandy,Yatinuwara,78
+2026,28,Kandy,Hasalaka,11
+2026,28,Matale,Matale,7
+2026,28,Matale,Rattota,8
+2026,28,Matale,Ukuwela,11
+2026,28,Matale,Yatawatta,4
+2026,28,Nuwara Eliya,Ambagamuwa,12
+2026,28,Nuwara Eliya,Maskeliya,1
+2026,28,Nuwara Eliya,Nawathispane,12
+2026,28,Nuwara Eliya,Rikillagaskada,18
+2026,28,Ratnapura,Eheliyagoda,25
+2026,28,Ratnapura,Embilipitiya,10
+2026,28,Ratnapura,Godakawela,9
+2026,28,Ratnapura,Kahawatta,8
+2026,28,Ratnapura,Kalawana,24
+2026,28,Ratnapura,Kiriella,23
+2026,28,Ratnapura,Kolonna,13
+2026,28,Ratnapura,Kuruvita,36
+2026,28,Ratnapura,Nivithigala,30
+2026,28,Ratnapura,Pelmadulla,28
+2026,28,Ratnapura,MC Ratnapura,46
+2026,28,Ratnapura,Ratnapura PS,42
+2026,28,Ratnapura,Udawalawa,3
+2026,28,Ratnapura,Ayagama,16
+2026,28,Ratnapura,Balangoda,11
+2026,28,Ratnapura,Elapatha,17
+2026,28,Ratnapura,Imbulpe,15
+2026,28,Kegalle,Aranayaka,10
+2026,28,Kegalle,Bulathkohupitiya,7
+2026,28,Kegalle,Dehiovita,30
+2026,28,Kegalle,Deraniyagala,5
+2026,28,Kegalle,Galigamuwa,2
+2026,28,Kegalle,Kegalle,7
+2026,28,Kegalle,Mawanella,52
+2026,28,Kegalle,Rambukkana,12
+2026,28,Kegalle,Ruwanwella,14
+2026,28,Kegalle,Warakapola,25
+2026,28,Kegalle,Yatiyantota,21
+2026,28,Ampara,Ampara,14
+2026,28,Ampara,Dehiattakandiya,9
+2026,28,Ampara,Uhana,15
+2026,28,Ampara,Damana,10
+2026,28,Batticaloa,Batticaloa,16
+2026,28,Batticaloa,Eravur,14
+2026,28,Kalmunai,Akkaraipattu,9
+2026,28,Kalmunai,Kalmunai North,11
+2026,28,Trincomalee,Kanthale,7
+2026,28,Anuradhapura,Ipalogama,3
+2026,28,Anuradhapura,Nuwaragam-Palatha,3
+2026,28,Polonnaruwa,Hingurakoda,12
+2026,28,Polonnaruwa,Thamankaduwa,17
+2026,28,Polonnaruwa,Medirigiriya,18
+2026,28,Kurunegala,Alawwa,10
+2026,28,Kurunegala,Ambanpola,6
+2026,28,Kurunegala,Galgamuwa,16
+2026,28,Kurunegala,Kobeigane,7
+2026,28,Kurunegala,Kuliyapitiya,7
+2026,28,Kurunegala,Kurunegala,10
+2026,28,Kurunegala,Mallawapitiya,4
+2026,28,Kurunegala,Mawathagama,3
+2026,28,Kurunegala,Pannala,25
+2026,28,Kurunegala,Polpithigama,21
+2026,28,Kurunegala,MC Kurunegala,13
+2026,28,Puttalam,Chilaw,16
+2026,28,Puttalam,Dankotuwa,19
+2026,28,Puttalam,Kalpitiya,8
+2026,28,Puttalam,Madampe,27
+2026,28,Puttalam,Mahawewa,5
+2026,28,Puttalam,Nattandiya,26
+2026,28,Puttalam,Puttalam,3
+2026,28,Puttalam,Wennappuwa,65
+2026,28,Badulla,Badulla,48
+2026,28,Badulla,Hali Ela,16
+2026,28,Badulla,Uva Paranagama,29
+2026,28,Badulla,Welimada,21
+2026,28,Badulla,Rideemaliyadda,12
+2026,28,Monaragala,Sevanagala,3
+2026,28,Monaragala,Siyambalanduwa,27
+2026,28,Monaragala,Thanamalwila,9
+2026,28,Monaragala,Wellawaya,10
+2026,28,Monaragala,Monaragala,16
+2026,28,Vavuniya,Vavuniya,17
+2026,28,Jaffna,Tellippalai,10
+2026,29,Colombo,Battaramulla,79
+2026,29,Colombo,Boralesgamuwa,76
+2026,29,Colombo,Dehiwala,73
+2026,29,Colombo,Egoda Uyana,42
+2026,29,Colombo,Gothatuwa,108
+2026,29,Colombo,Hanwella,59
+2026,29,Colombo,Homagama,74
+2026,29,Colombo,Kaduwela,133
+2026,29,Colombo,Kahathuduwa,44
+2026,29,Colombo,Kesbewa,24
+2026,29,Colombo,Kolonnawa,27
+2026,29,Colombo,Maharagama,163
+2026,29,Colombo,Moratuwa,70
+2026,29,Colombo,Nugegoda,75
+2026,29,Colombo,Padukka,26
+2026,29,Colombo,Piliyandala,97
+2026,29,Colombo,Pitakotte,40
+2026,29,Colombo,Ratmalana,52
+2026,29,Colombo,CMC-D1,53
+2026,29,Colombo,CMC-D2A,63
+2026,29,Colombo,CMC-D2B,21
+2026,29,Colombo,CMC-D3,62
+2026,29,Colombo,CMC-D4,50
+2026,29,Colombo,CMC-D5,23
+2026,29,Gampaha,Attanagalla,56
+2026,29,Gampaha,Biyagama,205
+2026,29,Gampaha,Divulapitiya,31
+2026,29,Gampaha,Gampaha,94
+2026,29,Gampaha,Ja-Ela,178
+2026,29,Gampaha,Katana,90
+2026,29,Gampaha,Kelaniya,224
+2026,29,Gampaha,Mahara,201
+2026,29,Gampaha,Mirigama,40
+2026,29,Gampaha,Minuwangoda,91
+2026,29,Gampaha,Negombo,142
+2026,29,Gampaha,Pugoda,81
+2026,29,Gampaha,Ragama,73
+2026,29,Gampaha,Seeduwa,107
+2026,29,Gampaha,Wattala,193
+2026,29,Kalutara,Bandaragama,35
+2026,29,Kalutara,Bulathsinhala,15
+2026,29,Kalutara,Dodangoda PS,15
+2026,29,Kalutara,Horana,54
+2026,29,Kalutara,Ingiriya,21
+2026,29,Kalutara,Mathugama,21
+2026,29,Kalutara,Millaniya,15
+2026,29,Kalutara,Panadura,153
+2026,29,Kalutara,Wadduwa,44
+2026,29,Kalutara,Kalutara (NIHS),51
+2026,29,Kalutara,Payagala,44
+2026,29,Kalutara,Walallawita,18
+2026,29,Kalutara,Aluthgama,18
+2026,29,Matara,Akuressa,15
+2026,29,Matara,Kotapola,29
+2026,29,Matara,Devinuwara,21
+2026,29,Matara,Dickwella,40
+2026,29,Matara,Kamburupitiya,12
+2026,29,Matara,Malimbada,13
+2026,29,Matara,MC Matara,133
+2026,29,Matara,Matara PS,32
+2026,29,Matara,Morawaka,17
+2026,29,Matara,Mulatiyana,8
+2026,29,Matara,Thihagoda,10
+2026,29,Matara,Weligama,57
+2026,29,Matara,Welipitiya,34
+2026,29,Matara,Athuraliya,11
+2026,29,Galle,Akmeemana,12
+2026,29,Galle,Ambalangoda,9
+2026,29,Galle,Baddegama,27
+2026,29,Galle,Balapitiya,28
+2026,29,Galle,Elpitiya,24
+2026,29,Galle,Habaraduwa,9
+2026,29,Galle,Imaduwa,21
+2026,29,Galle,Karandeniya,21
+2026,29,Galle,MC Galle,71
+2026,29,Galle,Rathgama,11
+2026,29,Galle,Yakkalamulla,12
+2026,29,Galle,Bope (Poddala),20
+2026,29,Galle,Hikkaduwa,15
+2026,29,Hambantota,Ambalantota,15
+2026,29,Hambantota,Katuwana,27
+2026,29,Hambantota,Tangalle,51
+2026,29,Hambantota,Walasmulla,11
+2026,29,Hambantota,Angunukolapelassa,10
+2026,29,Hambantota,Beliatta,17
+2026,29,Hambantota,Tissamaharama,12
+2026,29,Hambantota,Weeraketiya,13
+2026,29,Kandy,Akurana,15
+2026,29,Kandy,Bambaradeniya,14
+2026,29,Kandy,Doluwa,12
+2026,29,Kandy,Galaha,11
+2026,29,Kandy,Gampola,68
+2026,29,Kandy,Gangawata Korale,53
+2026,29,Kandy,MC Kandy,101
+2026,29,Kandy,Kundasale,25
+2026,29,Kandy,Kurunduwatta,29
+2026,29,Kandy,Medadumbara,13
+2026,29,Kandy,Menikhinna,28
+2026,29,Kandy,Pasbage,37
+2026,29,Kandy,Talathuoya,24
+2026,29,Kandy,Udunuwara,39
+2026,29,Kandy,Wattegama,29
+2026,29,Kandy,Werellagama,52
+2026,29,Kandy,Yatinuwara,54
+2026,29,Kandy,Galagedara,13
+2026,29,Kandy,Hatharaliyadda,10
+2026,29,Kandy,Poojapitiya,12
+2026,29,Nuwara Eliya,Ambagamuwa,12
+2026,29,Nuwara Eliya,Maskeliya,13
+2026,29,Nuwara Eliya,Rikillagaskada,26
+2026,29,Nuwara Eliya,Nawathispane,12
+2026,29,Ratnapura,Eheliyagoda,33
+2026,29,Ratnapura,Godakawela,26
+2026,29,Ratnapura,Kahawatta,21
+2026,29,Ratnapura,Kalawana,24
+2026,29,Ratnapura,Kiriella,23
+2026,29,Ratnapura,Kuruvita,26
+2026,29,Ratnapura,Nivithigala,23
+2026,29,Ratnapura,Pelmadulla,26
+2026,29,Ratnapura,MC Ratnapura,31
+2026,29,Ratnapura,Ratnapura PS,23
+2026,29,Ratnapura,Embilipitiya,27
+2026,29,Ratnapura,Kolonna,15
+2026,29,Ratnapura,Udawalawa,16
+2026,29,Kegalle,Dehiovita,20
+2026,29,Kegalle,Kegalle,17
+2026,29,Kegalle,Mawanella,51
+2026,29,Kegalle,Rambukkana,21
+2026,29,Kegalle,Ruwanwella,21
+2026,29,Kegalle,Warakapola,22
+2026,29,Kegalle,Yatiyantota,15
+2026,29,Kegalle,Aranayaka,11
+2026,29,Kegalle,Bulathkohupitiya,12
+2026,29,Kegalle,Deraniyagala,11
+2026,29,Kegalle,Galigamuwa,23
+2026,29,Batticaloa,Batticaloa,21
+2026,29,Kalmunai,Kalmunai North,8
+2026,29,Kalmunai,Akkaraipattu,17
+2026,29,Polonnaruwa,Medirigiriya,1
+2026,29,Polonnaruwa,Hingurakoda,10
+2026,29,Polonnaruwa,Thamankaduwa,11
+2026,29,Kurunegala,Alawwa,18
+2026,29,Kurunegala,Kobeigane,15
+2026,29,Kurunegala,Kuliyapitiya,12
+2026,29,Kurunegala,Pannala,29
+2026,29,Kurunegala,Polgahawela,6
+2026,29,Kurunegala,Polpithigama,18
+2026,29,Kurunegala,Udubaddawa,10
+2026,29,Kurunegala,Ambanpola,10
+2026,29,Kurunegala,Galgamuwa,10
+2026,29,Kurunegala,Kurunegala,11
+2026,29,Kurunegala,Mallawapitiya,13
+2026,29,Kurunegala,Mawathagama,10
+2026,29,Puttalam,Chilaw,19
+2026,29,Puttalam,Dankotuwa,25
+2026,29,Puttalam,Madampe,14
+2026,29,Puttalam,Nattandiya,43
+2026,29,Puttalam,Wennappuwa,72
+2026,29,Puttalam,Kalpitiya,12
+2026,29,Puttalam,Mahawewa,10
+2026,29,Puttalam,Puttalam,10
+2026,29,Badulla,Badulla,33
+2026,29,Badulla,Hali Ela,14
+2026,29,Badulla,Mahiyanganaya,6
+2026,29,Badulla,Rideemaliyadda,4
+2026,29,Badulla,Uva Paranagama,12
+2026,29,Badulla,Welimada,14
+2026,29,Monaragala,Monaragala,8
+2026,29,Monaragala,Thanamalwila,12
+2026,29,Monaragala,Sevanagala,13
+2026,29,Monaragala,Siyambalanduwa,14
+2026,29,Monaragala,Wellawaya,13
+2026,29,Matale,Matale,10
+2026,29,Matale,Rattota,16
+2026,29,Matale,Ukuwela,15
+2026,29,Matale,Yatawatta,11
+2026,29,Ampara,Ampara,14
+2026,29,Ampara,Dehiattakandiya,17
+2026,29,Ampara,Uhana,17
+2026,29,Trincomalee,Kanthale,15
+2026,29,Anuradhapura,Ipalogama,26
+2026,29,Anuradhapura,Nuwaragam-Palatha,31
+2026,29,Vavuniya,Vavuniya,11
+2026,30,Colombo,Battaramulla,65
+2026,30,Colombo,Boralesgamuwa,65
+2026,30,Colombo,Dehiwala,49
+2026,30,Colombo,Egoda Uyana,49
+2026,30,Colombo,Gothatuwa,81
+2026,30,Colombo,Hanwella,43
+2026,30,Colombo,Homagama,76
+2026,30,Colombo,Kaduwela,105
+2026,30,Colombo,Kahathuduwa,51
+2026,30,Colombo,Kolonnawa,18
+2026,30,Colombo,Maharagama,183
+2026,30,Colombo,Moratuwa,49
+2026,30,Colombo,Nugegoda,71
+2026,30,Colombo,Padukka,37
+2026,30,Colombo,Piliyandala,110
+2026,30,Colombo,Pitakotte,55
+2026,30,Colombo,Ratmalana,73
+2026,30,Colombo,CMC-D1,49
+2026,30,Colombo,CMC-D2A,54
+2026,30,Colombo,CMC-D2B,27
+2026,30,Colombo,CMC-D3,42
+2026,30,Colombo,CMC-D4,46
+2026,30,Colombo,CMC-D5,27
+2026,30,Colombo,Kesbewa,17
+2026,30,Gampaha,Attanagalla,58
+2026,30,Gampaha,Biyagama,164
+2026,30,Gampaha,Divulapitiya,32
+2026,30,Gampaha,Gampaha,91
+2026,30,Gampaha,Ja-Ela,137
+2026,30,Gampaha,Katana,83
+2026,30,Gampaha,Kelaniya,168
+2026,30,Gampaha,Mahara,211
+2026,30,Gampaha,Mirigama,34
+2026,30,Gampaha,Minuwangoda,86
+2026,30,Gampaha,Negombo,88
+2026,30,Gampaha,Pugoda,59
+2026,30,Gampaha,Ragama,62
+2026,30,Gampaha,Seeduwa,94
+2026,30,Gampaha,Wattala,133
+2026,30,Kalutara,Bandaragama,43
+2026,30,Kalutara,Bulathsinhala,10
+2026,30,Kalutara,Dodangoda PS,18
+2026,30,Kalutara,Horana,36
+2026,30,Kalutara,Ingiriya,11
+2026,30,Kalutara,Madurawala,5
+2026,30,Kalutara,Mathugama,19
+2026,30,Kalutara,Panadura,145
+2026,30,Kalutara,Wadduwa,21
+2026,30,Kalutara,Aluthgama,9
+2026,30,Kalutara,Kalutara (NIHS),42
+2026,30,Kalutara,Payagala,47
+2026,30,Kalutara,Millaniya,15
+2026,30,Matara,Akuressa,17
+2026,30,Matara,Dickwella,26
+2026,30,Matara,MC Matara,62
+2026,30,Matara,Matara PS,30
+2026,30,Matara,Morawaka,13
+2026,30,Matara,Mulatiyana,10
+2026,30,Matara,Weligama,48
+2026,30,Matara,Welipitiya,25
+2026,30,Matara,Kotapola,15
+2026,30,Matara,Devinuwara,12
+2026,30,Matara,Kamburupitiya,11
+2026,30,Matara,Malimbada,13
+2026,30,Matara,Thihagoda,10
+2026,30,Galle,Akmeemana,29
+2026,30,Galle,Baddegama,21
+2026,30,Galle,Balapitiya,21
+2026,30,Galle,Bope (Poddala),8
+2026,30,Galle,Elpitiya,15
+2026,30,Galle,Habaraduwa,15
+2026,30,Galle,Imaduwa,17
+2026,30,Galle,Karandeniya,23
+2026,30,Galle,MC Galle,43
+2026,30,Galle,Rathgama,11
+2026,30,Galle,Yakkalamulla,19
+2026,30,Galle,Ambalangoda,10
+2026,30,Hambantota,Ambalantota,11
+2026,30,Hambantota,Angunukolapelassa,9
+2026,30,Hambantota,Katuwana,23
+2026,30,Hambantota,Tangalle,33
+2026,30,Hambantota,Weeraketiya,6
+2026,30,Hambantota,Walasmulla,12
+2026,30,Kandy,Akurana,13
+2026,30,Kandy,Bambaradeniya,17
+2026,30,Kandy,Gampola,32
+2026,30,Kandy,Gangawata Korale,38
+2026,30,Kandy,Hasalaka,9
+2026,30,Kandy,Hatharaliyadda,8
+2026,30,Kandy,MC Kandy,89
+2026,30,Kandy,Kundasale,24
+2026,30,Kandy,Menikhinna,26
+2026,30,Kandy,Pasbage,47
+2026,30,Kandy,Poojapitiya,10
+2026,30,Kandy,Talathuoya,14
+2026,30,Kandy,Udunuwara,24
+2026,30,Kandy,Werellagama,49
+2026,30,Kandy,Yatinuwara,44
+2026,30,Kandy,Doluwa,10
+2026,30,Kandy,Galaha,11
+2026,30,Kandy,Kurunduwatta,17
+2026,30,Kandy,Medadumbara,11
+2026,30,Kandy,Wattegama,16
+2026,30,Matale,Galewela,4
+2026,30,Nuwara Eliya,Rikillagaskada,14
+2026,30,Nuwara Eliya,Ambagamuwa,11
+2026,30,Nuwara Eliya,Maskeliya,12
+2026,30,Ratnapura,Eheliyagoda,21
+2026,30,Ratnapura,Kiriella,20
+2026,30,Ratnapura,Kuruvita,26
+2026,30,Ratnapura,Pelmadulla,20
+2026,30,Ratnapura,MC Ratnapura,34
+2026,30,Ratnapura,Ratnapura PS,18
+2026,30,Ratnapura,Godakawela,13
+2026,30,Ratnapura,Kahawatta,11
+2026,30,Ratnapura,Kalawana,28
+2026,30,Ratnapura,Nivithigala,20
+2026,30,Kegalle,Dehiovita,20
+2026,30,Kegalle,Deraniyagala,6
+2026,30,Kegalle,Kegalle,13
+2026,30,Kegalle,Mawanella,39
+2026,30,Kegalle,Rambukkana,15
+2026,30,Kegalle,Ruwanwella,20
+2026,30,Kegalle,Warakapola,29
+2026,30,Kegalle,Yatiyantota,11
+2026,30,Batticaloa,Batticaloa,14
+2026,30,Kalmunai,Kalmunai North,21
+2026,30,Anuradhapura,Ipalogama,5
+2026,30,Kurunegala,Galgamuwa,9
+2026,30,Kurunegala,Pannala,30
+2026,30,Kurunegala,Alawwa,13
+2026,30,Kurunegala,Kobeigane,12
+2026,30,Kurunegala,Kuliyapitiya,16
+2026,30,Kurunegala,Polgahawela,11
+2026,30,Kurunegala,Polpithigama,13
+2026,30,Kurunegala,Udubaddawa,13
+2026,30,Puttalam,Chilaw,11
+2026,30,Puttalam,Dankotuwa,33
+2026,30,Puttalam,Nattandiya,20
+2026,30,Puttalam,Wennappuwa,44
+2026,30,Puttalam,Madampe,13
+2026,30,Badulla,Badulla,48
+2026,30,Badulla,Hali Ela,12
+2026,30,Badulla,Mahiyanganaya,12
+2026,30,Badulla,Rideemaliyadda,16
+2026,30,Badulla,Uva Paranagama,13
+2026,30,Monaragala,Siyambalanduwa,6
+2026,30,Monaragala,Monaragala,10
+2026,30,Monaragala,Thanamalwila,13
+2026,30,Polonnaruwa,Medirigiriya,12
+2026,31,Colombo,Battaramulla,48
+2026,31,Colombo,Boralesgamuwa,35
+2026,31,Colombo,Dehiwala,33
+2026,31,Colombo,Egoda Uyana,27
+2026,31,Colombo,Gothatuwa,77
+2026,31,Colombo,Hanwella,37
+2026,31,Colombo,Homagama,56
+2026,31,Colombo,Kaduwela,74
+2026,31,Colombo,Kahathuduwa,30
+2026,31,Colombo,Kesbewa,10
+2026,31,Colombo,Kolonnawa,19
+2026,31,Colombo,Maharagama,137
+2026,31,Colombo,Moratuwa,39
+2026,31,Colombo,Nugegoda,49
+2026,31,Colombo,Padukka,28
+2026,31,Colombo,Piliyandala,66
+2026,31,Colombo,Pitakotte,44
+2026,31,Colombo,Ratmalana,34
+2026,31,Colombo,CMC-D1,33
+2026,31,Colombo,CMC-D2A,30
+2026,31,Colombo,CMC-D2B,20
+2026,31,Colombo,CMC-D3,34
+2026,31,Colombo,CMC-D4,31
+2026,31,Colombo,CMC-D5,15
+2026,31,Gampaha,Attanagalla,50
+2026,31,Gampaha,Biyagama,112
+2026,31,Gampaha,Divulapitiya,19
+2026,31,Gampaha,Gampaha,56
+2026,31,Gampaha,Ja-Ela,72
+2026,31,Gampaha,Katana,56
+2026,31,Gampaha,Kelaniya,108
+2026,31,Gampaha,Mahara,109
+2026,31,Gampaha,Mirigama,27
+2026,31,Gampaha,Minuwangoda,41
+2026,31,Gampaha,Negombo,52
+2026,31,Gampaha,Pugoda,62
+2026,31,Gampaha,Ragama,41
+2026,31,Gampaha,Seeduwa,60
+2026,31,Gampaha,Wattala,65
+2026,31,Kalutara,Bandaragama,25
+2026,31,Kalutara,Horana,34
+2026,31,Kalutara,Mathugama,14
+2026,31,Kalutara,Millaniya,9
+2026,31,Kalutara,Panadura,94
+2026,31,Kalutara,Wadduwa,33
+2026,31,Kalutara,Walallawita,7
+2026,31,Kalutara,Aluthgama,23
+2026,31,Kalutara,Kalutara (NIHS),31
+2026,31,Kalutara,Payagala,34
+2026,31,Kalutara,Bulathsinhala,12
+2026,31,Kalutara,Dodangoda PS,18
+2026,31,Kalutara,Ingiriya,14
+2026,31,Kalutara,Madurawala,18
+2026,31,Matara,MC Matara,31
+2026,31,Matara,Weligama,28
+2026,31,Matara,Akuressa,13
+2026,31,Matara,Dickwella,17
+2026,31,Matara,Matara PS,13
+2026,31,Matara,Morawaka,13
+2026,31,Matara,Mulatiyana,10
+2026,31,Matara,Welipitiya,19
+2026,31,Galle,Akmeemana,17
+2026,31,Galle,Balapitiya,20
+2026,31,Galle,Imaduwa,14
+2026,31,Galle,MC Galle,40
+2026,31,Galle,Yakkalamulla,18
+2026,31,Galle,Baddegama,16
+2026,31,Galle,Bope (Poddala),11
+2026,31,Galle,Elpitiya,18
+2026,31,Galle,Habaraduwa,14
+2026,31,Galle,Karandeniya,17
+2026,31,Galle,Rathgama,10
+2026,31,Hambantota,Katuwana,12
+2026,31,Hambantota,Tangalle,30
+2026,31,Hambantota,Walasmulla,8
+2026,31,Hambantota,Ambalantota,10
+2026,31,Hambantota,Angunukolapelassa,13
+2026,31,Hambantota,Weeraketiya,11
+2026,31,Kandy,Akurana,11
+2026,31,Kandy,Bambaradeniya,9
+2026,31,Kandy,Gampola,39
+2026,31,Kandy,Gangawata Korale,21
+2026,31,Kandy,MC Kandy,66
+2026,31,Kandy,Kundasale,22
+2026,31,Kandy,Kurunduwatta,8
+2026,31,Kandy,Menikhinna,18
+2026,31,Kandy,Pasbage,18
+2026,31,Kandy,Poojapitiya,14
+2026,31,Kandy,Talathuoya,12
+2026,31,Kandy,Udunuwara,21
+2026,31,Kandy,Wattegama,8
+2026,31,Kandy,Werellagama,30
+2026,31,Kandy,Yatinuwara,38
+2026,31,Kandy,Hasalaka,10
+2026,31,Kandy,Hatharaliyadda,12
+2026,31,Matale,Ukuwela,3
+2026,31,Matale,Galewela,19
+2026,31,Nuwara Eliya,Rikillagaskada,13
+2026,31,Ratnapura,Kahawatta,8
+2026,31,Ratnapura,Kiriella,11
+2026,31,Ratnapura,Kuruvita,13
+2026,31,Ratnapura,Nivithigala,7
+2026,31,Ratnapura,Pelmadulla,18
+2026,31,Ratnapura,MC Ratnapura,21
+2026,31,Ratnapura,Ratnapura PS,22
+2026,31,Ratnapura,Eheliyagoda,23
+2026,31,Kegalle,Dehiovita,20
+2026,31,Kegalle,Mawanella,41
+2026,31,Kegalle,Ruwanwella,25
+2026,31,Kegalle,Warakapola,11
+2026,31,Kegalle,Deraniyagala,10
+2026,31,Kegalle,Kegalle,10
+2026,31,Kegalle,Rambukkana,10
+2026,31,Kegalle,Yatiyantota,19
+2026,31,Batticaloa,Kaluwanchikudy,1
+2026,31,Batticaloa,Batticaloa,18
+2026,31,Kalmunai,Kalmunai North,13
+2026,31,Jaffna,Tellippalai,1
+2026,31,Mullaitivu,Oddusudan,0
+2026,31,Kurunegala,Pannala,29
+2026,31,Kurunegala,Galgamuwa,11
+2026,31,Puttalam,Dankotuwa,14
+2026,31,Puttalam,Nattandiya,15
+2026,31,Puttalam,Wennappuwa,40
+2026,31,Puttalam,Chilaw,11
+2026,31,Badulla,Badulla,23
+2026,31,Badulla,Hali Ela,14
+2026,31,Badulla,Mahiyanganaya,10
+2026,31,Badulla,Rideemaliyadda,19
+2026,31,Anuradhapura,Ipalogama,10
+2026,31,Monaragala,Siyambalanduwa,13
+2026,32,Colombo,Battaramulla,50
+2026,32,Colombo,Boralesgamuwa,21
+2026,32,Colombo,Dehiwala,26
+2026,32,Colombo,Egoda Uyana,16
+2026,32,Colombo,Gothatuwa,44
+2026,32,Colombo,Hanwella,31
+2026,32,Colombo,Homagama,39
+2026,32,Colombo,Kaduwela,72
+2026,32,Colombo,Kahathuduwa,14
+2026,32,Colombo,Kesbewa,17
+2026,32,Colombo,Kolonnawa,21
+2026,32,Colombo,Maharagama,80
+2026,32,Colombo,Moratuwa,29
+2026,32,Colombo,Nugegoda,39
+2026,32,Colombo,Padukka,9
+2026,32,Colombo,Piliyandala,45
+2026,32,Colombo,Pitakotte,22
+2026,32,Colombo,Ratmalana,25
+2026,32,Colombo,CMC-D1,26
+2026,32,Colombo,CMC-D2A,25
+2026,32,Colombo,CMC-D2B,18
+2026,32,Colombo,CMC-D3,30
+2026,32,Colombo,CMC-D4,21
+2026,32,Colombo,CMC-D5,16
+2026,32,Gampaha,Attanagalla,33
+2026,32,Gampaha,Biyagama,79
+2026,32,Gampaha,Divulapitiya,22
+2026,32,Gampaha,Gampaha,46
+2026,32,Gampaha,Ja-Ela,77
+2026,32,Gampaha,Katana,47
+2026,32,Gampaha,Kelaniya,81
+2026,32,Gampaha,Mahara,88
+2026,32,Gampaha,Mirigama,25
+2026,32,Gampaha,Minuwangoda,36
+2026,32,Gampaha,Negombo,43
+2026,32,Gampaha,Pugoda,56
+2026,32,Gampaha,Ragama,30
+2026,32,Gampaha,Seeduwa,43
+2026,32,Gampaha,Wattala,53
+2026,32,Kalutara,Bandaragama,20
+2026,32,Kalutara,Horana,26
+2026,32,Kalutara,Panadura,74
+2026,32,Kalutara,Wadduwa,24
+2026,32,Kalutara,Kalutara (NIHS),20
+2026,32,Kalutara,Payagala,22
+2026,32,Kalutara,Mathugama,12
+2026,32,Kalutara,Millaniya,10
+2026,32,Kalutara,Walallawita,14
+2026,32,Kalutara,Aluthgama,16
+2026,32,Matara,MC Matara,16
+2026,32,Matara,Weligama,12
+2026,32,Galle,Baddegama,8
+2026,32,Galle,Imaduwa,14
+2026,32,Galle,MC Galle,26
+2026,32,Galle,Akmeemana,15
+2026,32,Galle,Balapitiya,14
+2026,32,Galle,Yakkalamulla,14
+2026,32,Hambantota,Katuwana,11
+2026,32,Hambantota,Tangalle,15
+2026,32,Hambantota,Walasmulla,11
+2026,32,Kandy,Gampola,19
+2026,32,Kandy,Gangawata Korale,13
+2026,32,Kandy,MC Kandy,37
+2026,32,Kandy,Kundasale,16
+2026,32,Kandy,Kurunduwatta,23
+2026,32,Kandy,Menikhinna,13
+2026,32,Kandy,Pasbage,30
+2026,32,Kandy,Talathuoya,13
+2026,32,Kandy,Udunuwara,15
+2026,32,Kandy,Wattegama,12
+2026,32,Kandy,Werellagama,26
+2026,32,Kandy,Yatinuwara,36
+2026,32,Kandy,Akurana,11
+2026,32,Kandy,Bambaradeniya,14
+2026,32,Kandy,Poojapitiya,12
+2026,32,Kegalle,Mawanella,20
+2026,32,Kegalle,Ruwanwella,19
+2026,32,Kegalle,Warakapola,17
+2026,32,Kegalle,Yatiyantota,9
+2026,32,Kegalle,Dehiovita,17
+2026,32,Trincomalee,Padavisripura,0
+2026,32,Kalmunai,Kalmunai North,12
+2026,32,Kurunegala,Pannala,13
+2026,32,Puttalam,Dankotuwa,19
+2026,32,Puttalam,Nattandiya,11
+2026,32,Puttalam,Wennappuwa,34
+2026,32,Badulla,Badulla,16
+2026,32,Badulla,Bandarawela,1
+2026,32,Badulla,Welimada,5
+2026,32,Matale,Ukuwela,10
+2026,32,Nuwara Eliya,Rikillagaskada,10
+2026,32,Ratnapura,Kahawatta,13
+2026,32,Ratnapura,Kiriella,10
+2026,32,Ratnapura,Kuruvita,12
+2026,32,Ratnapura,Nivithigala,16
+2026,32,Ratnapura,Pelmadulla,14
+2026,32,Ratnapura,MC Ratnapura,17
+2026,32,Ratnapura,Ratnapura PS,13
+2026,32,Batticaloa,Kaluwanchikudy,15
+2026,32,Jaffna,Tellippalai,14
+2026,32,Mullaitivu,Oddusudan,12
+2026,33,Colombo,Battaramulla,29
+2026,33,Colombo,Boralesgamuwa,21
+2026,33,Colombo,Dehiwala,23
+2026,33,Colombo,Gothatuwa,30
+2026,33,Colombo,Hanwella,29
+2026,33,Colombo,Homagama,135
+2026,33,Colombo,Kaduwela,40
+2026,33,Colombo,Kahathuduwa,14
+2026,33,Colombo,Maharagama,58
+2026,33,Colombo,Moratuwa,26
+2026,33,Colombo,Nugegoda,13
+2026,33,Colombo,Piliyandala,32
+2026,33,Colombo,Pitakotte,26
+2026,33,Colombo,CMC-D2A,15
+2026,33,Colombo,CMC-D3,19
+2026,33,Colombo,CMC-D4,13
+2026,33,Colombo,CMC-D5,9
+2026,33,Colombo,Egoda Uyana,12
+2026,33,Colombo,Kesbewa,16
+2026,33,Colombo,Kolonnawa,13
+2026,33,Colombo,Padukka,16
+2026,33,Colombo,Ratmalana,16
+2026,33,Colombo,CMC-D1,11
+2026,33,Colombo,CMC-D2B,11
+2026,33,Gampaha,Attanagalla,34
+2026,33,Gampaha,Biyagama,40
+2026,33,Gampaha,Gampaha,58
+2026,33,Gampaha,Ja-Ela,51
+2026,33,Gampaha,Katana,51
+2026,33,Gampaha,Kelaniya,43
+2026,33,Gampaha,Mahara,58
+2026,33,Gampaha,Mirigama,27
+2026,33,Gampaha,Minuwangoda,36
+2026,33,Gampaha,Negombo,37
+2026,33,Gampaha,Pugoda,51
+2026,33,Gampaha,Ragama,26
+2026,33,Gampaha,Seeduwa,32
+2026,33,Gampaha,Wattala,47
+2026,33,Gampaha,Divulapitiya,14
+2026,33,Kalutara,Bandaragama,15
+2026,33,Kalutara,Horana,10
+2026,33,Kalutara,Panadura,40
+2026,33,Kalutara,Kalutara (NIHS),12
+2026,33,Kalutara,Wadduwa,17
+2026,33,Kalutara,Payagala,20
+2026,33,Galle,MC Galle,26
+2026,33,Galle,Baddegama,10
+2026,33,Galle,Imaduwa,12
+2026,33,Hambantota,Katuwana,13
+2026,33,Hambantota,Tangalle,6
+2026,33,Kandy,Bambaradeniya,8
+2026,33,Kandy,MC Kandy,39
+2026,33,Kandy,Kundasale,11
+2026,33,Kandy,Pasbage,30
+2026,33,Kandy,Udunuwara,10
+2026,33,Kandy,Wattegama,10
+2026,33,Kandy,Werellagama,25
+2026,33,Kandy,Yatinuwara,21
+2026,33,Kandy,Gampola,15
+2026,33,Kandy,Gangawata Korale,10
+2026,33,Kandy,Kurunduwatta,12
+2026,33,Kandy,Menikhinna,12
+2026,33,Kandy,Talathuoya,10
+2026,33,Ratnapura,Kuruvita,2
+2026,33,Kegalle,Ruwanwella,22
+2026,33,Kegalle,Yatiyantota,10
+2026,33,Kegalle,Mawanella,22
+2026,33,Kegalle,Warakapola,13
+2026,33,Kalmunai,Kalmunai North,16
+2026,33,Matara,MC Matara,13
+2026,33,Matara,Weligama,14
+2026,33,Trincomalee,Padavisripura,10
+2026,33,Kurunegala,Pannala,11
+2026,33,Puttalam,Dankotuwa,16
+2026,33,Puttalam,Nattandiya,10
+2026,33,Puttalam,Wennappuwa,17
+2026,33,Badulla,Badulla,14
+2026,33,Badulla,Bandarawela,18
+2026,33,Badulla,Welimada,15
+2026,34,Colombo,Battaramulla,46
+2026,34,Colombo,Boralesgamuwa,10
+2026,34,Colombo,Gothatuwa,21
+2026,34,Colombo,Hanwella,22
+2026,34,Colombo,Homagama,26
+2026,34,Colombo,Kaduwela,39
+2026,34,Colombo,Maharagama,55
+2026,34,Colombo,Nugegoda,14
+2026,34,Colombo,Padukka,7
+2026,34,Colombo,Piliyandala,40
+2026,34,Colombo,Pitakotte,16
+2026,34,Colombo,CMC-D3,16
+2026,34,Colombo,Dehiwala,19
+2026,34,Colombo,Kahathuduwa,10
+2026,34,Colombo,Moratuwa,15
+2026,34,Colombo,CMC-D2A,11
+2026,34,Colombo,CMC-D4,13
+2026,34,Colombo,CMC-D5,11
+2026,34,Gampaha,Attanagalla,21
+2026,34,Gampaha,Biyagama,34
+2026,34,Gampaha,Gampaha,23
+2026,34,Gampaha,Ja-Ela,20
+2026,34,Gampaha,Katana,17
+2026,34,Gampaha,Kelaniya,20
+2026,34,Gampaha,Mahara,44
+2026,34,Gampaha,Minuwangoda,26
+2026,34,Gampaha,Pugoda,68
+2026,34,Gampaha,Ragama,11
+2026,34,Gampaha,Wattala,29
+2026,34,Gampaha,Mirigama,10
+2026,34,Gampaha,Negombo,16
+2026,34,Gampaha,Seeduwa,22
+2026,34,Kalutara,Horana,13
+2026,34,Kalutara,Panadura,43
+2026,34,Kalutara,Wadduwa,9
+2026,34,Kalutara,Aluthgama,3
+2026,34,Kalutara,Payagala,11
+2026,34,Kalutara,Bandaragama,11
+2026,34,Kalutara,Kalutara (NIHS),15
+2026,34,Galle,MC Galle,12
+2026,34,Kandy,Gampola,4
+2026,34,Kandy,MC Kandy,31
+2026,34,Kandy,Kundasale,13
+2026,34,Kandy,Pasbage,18
+2026,34,Kandy,Werellagama,16
+2026,34,Kandy,Yatinuwara,19
+2026,34,Kandy,Bambaradeniya,12
+2026,34,Kandy,Udunuwara,11
+2026,34,Kandy,Wattegama,10
+2026,34,Ratnapura,Kuruvita,11
+2026,34,Kegalle,Ruwanwella,15
+2026,34,Kegalle,Yatiyantota,25
+2026,34,Puttalam,Wennappuwa,8
+2026,34,Kalmunai,Kalmunai North,12
+2026,34,Hambantota,Katuwana,10
+2026,34,Hambantota,Tangalle,11
+2026,35,Colombo,Battaramulla,22
+2026,35,Colombo,Gothatuwa,13
+2026,35,Colombo,Hanwella,17
+2026,35,Colombo,Homagama,25
+2026,35,Colombo,Kaduwela,32
+2026,35,Colombo,Kolonnawa,3
+2026,35,Colombo,Maharagama,39
+2026,35,Colombo,Piliyandala,21
+2026,35,Colombo,Pitakotte,11
+2026,35,Colombo,CMC-D3,16
+2026,35,Colombo,Boralesgamuwa,14
+2026,35,Colombo,Nugegoda,18
+2026,35,Colombo,Padukka,12
+2026,35,Gampaha,Attanagalla,35
+2026,35,Gampaha,Biyagama,34
+2026,35,Gampaha,Divulapitiya,8
+2026,35,Gampaha,Gampaha,15
+2026,35,Gampaha,Ja-Ela,23
+2026,35,Gampaha,Katana,10
+2026,35,Gampaha,Kelaniya,24
+2026,35,Gampaha,Mahara,29
+2026,35,Gampaha,Minuwangoda,11
+2026,35,Gampaha,Pugoda,33
+2026,35,Gampaha,Ragama,10
+2026,35,Gampaha,Wattala,21
+2026,35,Kalutara,Bandaragama,3
+2026,35,Kalutara,Panadura,14
+2026,35,Kalutara,Payagala,13
+2026,35,Kalutara,Horana,13
+2026,35,Kalutara,Wadduwa,16
+2026,35,Kalutara,Aluthgama,11
+2026,35,Matara,Weligama,7
+2026,35,Galle,MC Galle,15
+2026,35,Kandy,MC Kandy,29
+2026,35,Kandy,Kundasale,10
+2026,35,Kandy,Pasbage,11
+2026,35,Kandy,Udunuwara,9
+2026,35,Kandy,Wattegama,8
+2026,35,Kandy,Yatinuwara,14
+2026,35,Kandy,Gampola,11
+2026,35,Kandy,Werellagama,10
+2026,35,Kegalle,Yatiyantota,15
+2026,35,Kegalle,Ruwanwella,18
+2026,35,Anuradhapura,Thalawa,1
+2026,35,Puttalam,Wennappuwa,13
+2026,35,Kalmunai,Thirukkovil,5
+2026,35,Kalmunai,Kalmunai North,12
+2026,35,Ratnapura,Kuruvita,11
+2026,36,Colombo,Battaramulla,15
+2026,36,Colombo,Dehiwala,4
+2026,36,Colombo,Gothatuwa,12
+2026,36,Colombo,Hanwella,13
+2026,36,Colombo,Kaduwela,21
+2026,36,Colombo,Maharagama,18
+2026,36,Colombo,Piliyandala,21
+2026,36,Colombo,Pitakotte,13
+2026,36,Colombo,CMC-D3,10
+2026,36,Colombo,Homagama,23
+2026,36,Colombo,Kolonnawa,11
+2026,36,Gampaha,Attanagalla,23
+2026,36,Gampaha,Biyagama,29
+2026,36,Gampaha,Divulapitiya,13
+2026,36,Gampaha,Ja-Ela,15
+2026,36,Gampaha,Kelaniya,11
+2026,36,Gampaha,Mahara,18
+2026,36,Gampaha,Mirigama,10
+2026,36,Gampaha,Minuwangoda,18
+2026,36,Gampaha,Negombo,5
+2026,36,Gampaha,Pugoda,37
+2026,36,Gampaha,Ragama,6
+2026,36,Gampaha,Wattala,7
+2026,36,Gampaha,Gampaha,13
+2026,36,Gampaha,Katana,15
+2026,36,Kalutara,Panadura,12
+2026,36,Kalutara,Bandaragama,10
+2026,36,Kalutara,Payagala,10
+2026,36,Galle,MC Galle,10
+2026,36,Kandy,MC Kandy,31
+2026,36,Kandy,Kundasale,11
+2026,36,Kandy,Pasbage,20
+2026,36,Kandy,Udunuwara,10
+2026,36,Kandy,Wattegama,16
+2026,36,Kandy,Werellagama,7
+2026,36,Kandy,Yatinuwara,18
+2026,36,Kegalle,Mawanella,8
+2026,36,Kegalle,Ruwanwella,6
+2026,36,Kegalle,Warakapola,9
+2026,36,Kegalle,Yatiyantota,11
+2026,36,Puttalam,Wennappuwa,10
+2026,36,Matara,Weligama,11
+2026,36,Anuradhapura,Thalawa,14
+2026,36,Kalmunai,Thirukkovil,10
+2026,37,Colombo,Battaramulla,14
+2026,37,Colombo,Dehiwala,10
+2026,37,Colombo,Gothatuwa,11
+2026,37,Colombo,Hanwella,14
+2026,37,Colombo,Kaduwela,18
+2026,37,Colombo,Maharagama,24
+2026,37,Colombo,Piliyandala,19
+2026,37,Colombo,Pitakotte,13
+2026,37,Colombo,CMC-D3,10
+2026,37,Gampaha,Attanagalla,12
+2026,37,Gampaha,Biyagama,26
+2026,37,Gampaha,Divulapitiya,10
+2026,37,Gampaha,Ja-Ela,16
+2026,37,Gampaha,Kelaniya,11
+2026,37,Gampaha,Mahara,19
+2026,37,Gampaha,Mirigama,14
+2026,37,Gampaha,Minuwangoda,12
+2026,37,Gampaha,Negombo,10
+2026,37,Gampaha,Pugoda,38
+2026,37,Gampaha,Ragama,16
+2026,37,Gampaha,Wattala,10
+2026,37,Kalutara,Panadura,13
+2026,37,Galle,MC Galle,16
+2026,37,Kandy,MC Kandy,25
+2026,37,Kandy,Kundasale,13
+2026,37,Kandy,Pasbage,14
+2026,37,Kandy,Udunuwara,14
+2026,37,Kandy,Wattegama,15
+2026,37,Kandy,Werellagama,15
+2026,37,Kandy,Yatinuwara,16
+2026,37,Kegalle,Mawanella,12
+2026,37,Kegalle,Ruwanwella,11
+2026,37,Kegalle,Warakapola,12
+2026,37,Puttalam,Wennappuwa,11
+2026,38,Colombo,Battaramulla,17
+2026,38,Colombo,Dehiwala,18
+2026,38,Colombo,Gothatuwa,23
+2026,38,Colombo,Hanwella,17
+2026,38,Colombo,Homagama,24
+2026,38,Colombo,Kaduwela,23
+2026,38,Colombo,Maharagama,20
+2026,38,Colombo,Piliyandala,18
+2026,38,Colombo,CMC-D1,7
+2026,38,Colombo,CMC-D2A,5
+2026,38,Colombo,CMC-D3,10
+2026,38,Gampaha,Attanagalla,16
+2026,38,Gampaha,Biyagama,46
+2026,38,Gampaha,Ja-Ela,18
+2026,38,Gampaha,Katana,11
+2026,38,Gampaha,Kelaniya,15
+2026,38,Gampaha,Mahara,15
+2026,38,Gampaha,Mirigama,4
+2026,38,Gampaha,Minuwangoda,12
+2026,38,Gampaha,Pugoda,43
+2026,38,Kalutara,Bandaragama,7
+2026,38,Kalutara,Panadura,16
+2026,38,Galle,Akmeemana,6
+2026,38,Galle,MC Galle,13
+2026,38,Matara,Weligama,7
+2026,38,Kandy,Hatharaliyadda,13
+2026,38,Kandy,MC Kandy,18
+2026,38,Kandy,Kundasale,15
+2026,38,Kandy,Udunuwara,6
+2026,38,Kandy,Yatinuwara,16
+2026,38,Kegalle,Mawanella,27
+2026,38,Anuradhapura,Kekirawa,1
+2026,38,Kalmunai,Kalmunai North,16
+2026,39,Colombo,Dehiwala,11
+2026,39,Colombo,Gothatuwa,15
+2026,39,Colombo,Hanwella,19
+2026,39,Colombo,Homagama,14
+2026,39,Colombo,Kaduwela,39
+2026,39,Colombo,Kolonnawa,6
+2026,39,Colombo,Maharagama,13
+2026,39,Colombo,Piliyandala,12
+2026,39,Colombo,CMC-D1,10
+2026,39,Colombo,CMC-D2B,4
+2026,39,Colombo,CMC-D3,10
+2026,39,Colombo,Battaramulla,11
+2026,39,Colombo,CMC-D2A,14
+2026,39,Gampaha,Attanagalla,20
+2026,39,Gampaha,Biyagama,36
+2026,39,Gampaha,Gampaha,12
+2026,39,Gampaha,Ja-Ela,30
+2026,39,Gampaha,Katana,14
+2026,39,Gampaha,Kelaniya,18
+2026,39,Gampaha,Mahara,15
+2026,39,Gampaha,Mirigama,18
+2026,39,Gampaha,Pugoda,50
+2026,39,Gampaha,Wattala,9
+2026,39,Gampaha,Minuwangoda,12
+2026,39,Kalutara,Panadura,16
+2026,39,Kalutara,Bandaragama,19
+2026,39,Galle,MC Galle,10
+2026,39,Galle,Akmeemana,10
+2026,39,Matara,Weligama,15
+2026,39,Kandy,MC Kandy,22
+2026,39,Kandy,Kundasale,14
+2026,39,Kandy,Menikhinna,8
+2026,39,Kandy,Wattegama,6
+2026,39,Kandy,Werellagama,7
+2026,39,Kandy,Yatinuwara,28
+2026,39,Kandy,Hatharaliyadda,18
+2026,39,Kandy,Udunuwara,14
+2026,39,Matale,Ukuwela,10
+2026,39,Nuwara Eliya,Rikillagaskada,8
+2026,39,Kurunegala,Ambanpola,0
+2026,39,Kalmunai,Kalmunai North,11
+2026,39,Kalmunai,Thirukkovil,4
+2026,39,Kegalle,Mawanella,25
+2026,39,Anuradhapura,Kekirawa,21
+2026,40,Colombo,Battaramulla,4
+2026,40,Colombo,Dehiwala,15
+2026,40,Colombo,Gothatuwa,18
+2026,40,Colombo,Homagama,19
+2026,40,Colombo,Kaduwela,29
+2026,40,Colombo,Kolonnawa,8
+2026,40,Colombo,Maharagama,16
+2026,40,Colombo,Nugegoda,2
+2026,40,Colombo,Piliyandala,12
+2026,40,Colombo,CMC-D1,13
+2026,40,Colombo,CMC-D3,17
+2026,40,Colombo,Hanwella,16
+2026,40,Colombo,CMC-D2B,13
+2026,40,Gampaha,Attanagalla,16
+2026,40,Gampaha,Biyagama,30
+2026,40,Gampaha,Ja-Ela,24
+2026,40,Gampaha,Katana,10
+2026,40,Gampaha,Kelaniya,12
+2026,40,Gampaha,Mahara,24
+2026,40,Gampaha,Minuwangoda,9
+2026,40,Gampaha,Negombo,7
+2026,40,Gampaha,Pugoda,29
+2026,40,Gampaha,Seeduwa,7
+2026,40,Gampaha,Gampaha,17
+2026,40,Gampaha,Mirigama,10
+2026,40,Gampaha,Wattala,11
+2026,40,Kalutara,Wadduwa,10
+2026,40,Kalutara,Panadura,14
+2026,40,Kandy,Gangawata Korale,4
+2026,40,Kandy,MC Kandy,17
+2026,40,Kandy,Kundasale,17
+2026,40,Kandy,Menikhinna,8
+2026,40,Kandy,Udunuwara,10
+2026,40,Kandy,Wattegama,16
+2026,40,Kandy,Yatinuwara,23
+2026,40,Kandy,Werellagama,16
+2026,40,Nuwara Eliya,Rikillagaskada,10
+2026,40,Ratnapura,Embilipitiya,6
+2026,40,Kalmunai,Kalmunai North,12
+2026,40,Kalmunai,Thirukkovil,13
+2026,40,Galle,MC Galle,12
+2026,40,Matara,Weligama,16
+2026,40,Matale,Ukuwela,16
+2026,40,Kurunegala,Ambanpola,20
+2026,41,Colombo,Battaramulla,10
+2026,41,Colombo,Dehiwala,13
+2026,41,Colombo,Gothatuwa,17
+2026,41,Colombo,Hanwella,9
+2026,41,Colombo,Homagama,17
+2026,41,Colombo,Kaduwela,26
+2026,41,Colombo,Maharagama,24
+2026,41,Colombo,Nugegoda,7
+2026,41,Colombo,Pitakotte,10
+2026,41,Colombo,CMC-D1,20
+2026,41,Colombo,CMC-D2A,9
+2026,41,Colombo,Kolonnawa,11
+2026,41,Colombo,Piliyandala,15
+2026,41,Colombo,CMC-D3,11
+2026,41,Gampaha,Biyagama,42
+2026,41,Gampaha,Gampaha,9
+2026,41,Gampaha,Ja-Ela,23
+2026,41,Gampaha,Kelaniya,27
+2026,41,Gampaha,Mahara,19
+2026,41,Gampaha,Mirigama,8
+2026,41,Gampaha,Pugoda,19
+2026,41,Gampaha,Attanagalla,14
+2026,41,Gampaha,Katana,10
+2026,41,Gampaha,Minuwangoda,16
+2026,41,Gampaha,Negombo,10
+2026,41,Gampaha,Seeduwa,10
+2026,41,Kalutara,Panadura,8
+2026,41,Kalutara,Wadduwa,11
+2026,41,Kandy,MC Kandy,30
+2026,41,Kandy,Kundasale,17
+2026,41,Kandy,Menikhinna,14
+2026,41,Kandy,Udunuwara,15
+2026,41,Kandy,Wattegama,13
+2026,41,Kandy,Werellagama,9
+2026,41,Kandy,Yatinuwara,21
+2026,41,Kandy,Gangawata Korale,12
+2026,41,Galle,Akmeemana,7
+2026,41,Kalmunai,Thirukkovil,6
+2026,41,Kalmunai,Kalmunai North,13
+2026,41,Nuwara Eliya,Rikillagaskada,11
+2026,41,Ratnapura,Embilipitiya,11
+2026,42,Colombo,Boralesgamuwa,5
+2026,42,Colombo,Dehiwala,11
+2026,42,Colombo,Gothatuwa,24
+2026,42,Colombo,Hanwella,11
+2026,42,Colombo,Homagama,15
+2026,42,Colombo,Kaduwela,21
+2026,42,Colombo,Maharagama,27
+2026,42,Colombo,Moratuwa,8
+2026,42,Colombo,Pitakotte,13
+2026,42,Colombo,Ratmalana,7
+2026,42,Colombo,CMC-D1,11
+2026,42,Colombo,CMC-D2A,7
+2026,42,Colombo,CMC-D2B,3
+2026,42,Colombo,CMC-D3,10
+2026,42,Colombo,CMC-D4,9
+2026,42,Colombo,Battaramulla,10
+2026,42,Colombo,Nugegoda,10
+2026,42,Gampaha,Attanagalla,9
+2026,42,Gampaha,Biyagama,35
+2026,42,Gampaha,Ja-Ela,21
+2026,42,Gampaha,Katana,3
+2026,42,Gampaha,Mahara,12
+2026,42,Gampaha,Negombo,9
+2026,42,Gampaha,Pugoda,21
+2026,42,Gampaha,Wattala,7
+2026,42,Gampaha,Gampaha,10
+2026,42,Gampaha,Kelaniya,17
+2026,42,Gampaha,Mirigama,10
+2026,42,Kalutara,Panadura,13
+2026,42,Kalutara,Wadduwa,5
+2026,42,Kandy,Gampola,4
+2026,42,Kandy,MC Kandy,24
+2026,42,Kandy,Kundasale,20
+2026,42,Kandy,Menikhinna,11
+2026,42,Kandy,Udunuwara,12
+2026,42,Kandy,Wattegama,11
+2026,42,Kandy,Werellagama,15
+2026,42,Kandy,Yatinuwara,28
+2026,42,Matale,MC Matale,8
+2026,42,Matale,Ukuwela,4
+2026,42,Nuwara Eliya,Rikillagaskada,4
+2026,42,Galle,Akmeemana,19
+2026,42,Galle,MC Galle,9
+2026,42,Hambantota,Tangalle,9
+2026,42,Kegalle,Mawanella,3
+2026,42,Ratnapura,Pelmadulla,4
+2026,42,Kalmunai,Kalmunai North,9
+2026,42,Kalmunai,Thirukkovil,25
+2026,42,Badulla,Badulla,3
+2026,43,Colombo,Boralesgamuwa,11
+2026,43,Colombo,Dehiwala,10
+2026,43,Colombo,Gothatuwa,35
+2026,43,Colombo,Hanwella,12
+2026,43,Colombo,Homagama,17
+2026,43,Colombo,Kaduwela,23
+2026,43,Colombo,Maharagama,29
+2026,43,Colombo,Moratuwa,13
+2026,43,Colombo,Pitakotte,13
+2026,43,Colombo,Ratmalana,12
+2026,43,Colombo,CMC-D1,19
+2026,43,Colombo,CMC-D2A,14
+2026,43,Colombo,CMC-D2B,14
+2026,43,Colombo,CMC-D3,20
+2026,43,Colombo,CMC-D4,11
+2026,43,Gampaha,Attanagalla,19
+2026,43,Gampaha,Biyagama,21
+2026,43,Gampaha,Ja-Ela,27
+2026,43,Gampaha,Katana,14
+2026,43,Gampaha,Mahara,16
+2026,43,Gampaha,Negombo,13
+2026,43,Gampaha,Pugoda,32
+2026,43,Gampaha,Wattala,17
+2026,43,Kalutara,Panadura,13
+2026,43,Kalutara,Wadduwa,11
+2026,43,Kandy,Gampola,13
+2026,43,Kandy,MC Kandy,30
+2026,43,Kandy,Kundasale,25
+2026,43,Kandy,Menikhinna,14
+2026,43,Kandy,Udunuwara,15
+2026,43,Kandy,Wattegama,20
+2026,43,Kandy,Werellagama,15
+2026,43,Kandy,Yatinuwara,23
+2026,43,Matale,MC Matale,13
+2026,43,Matale,Ukuwela,14
+2026,43,Nuwara Eliya,Rikillagaskada,11
+2026,43,Galle,Akmeemana,10
+2026,43,Galle,MC Galle,10
+2026,43,Hambantota,Tangalle,10
+2026,43,Kegalle,Mawanella,14
+2026,43,Ratnapura,Pelmadulla,11
+2026,43,Kalmunai,Kalmunai North,11
+2026,43,Kalmunai,Thirukkovil,23
+2026,43,Badulla,Badulla,11
