@@ -113,9 +113,8 @@ district_pal <- colorNumeric("YlOrRd", district_sf$annual_cases,
                              na.color = "white")
 
 map_height <- 800   # increase/decrease to resize both maps
-map_width <- 1000
 
-map1 <- leaflet(district_sf, height = map_height, width = map_width) |>
+map1 <- leaflet(district_sf, height = map_height) |>
   addTiles() |>
   addControl(
     htmltools::tags$div("(a)", style = "font-size:24px; font-weight:bold;
@@ -128,16 +127,11 @@ map1 <- leaflet(district_sf, height = map_height, width = map_width) |>
     color       = "white",
     weight      = 1,
     highlightOptions = highlightOptions(weight = 3, color = "blue",
-                                        bringToFront = TRUE)
-  ) |>
-  # Permanent labels: district name + count
-  addLabelOnlyMarkers(
-    lng = ~lab_lng, lat = ~lab_lat,
+                                        bringToFront = TRUE),
+    # District name + count shown only on mouse hover
     label = ~paste0(district, ": ", format(annual_cases, big.mark = ",")),
     labelOptions = labelOptions(
-      noHide = TRUE, direction = "center", textOnly = TRUE,
-      style = list("font-size" = "10px", "font-weight" = "bold",
-                   "color" = "black", "text-shadow" = "0 0 3px white")
+      style = list("font-size" = "13px", "font-weight" = "bold")
     )
   ) |>
   addLegend(
@@ -162,9 +156,10 @@ moh2026 <- MOH |>
 # ------------------------------------------------------------
 # 5. MAP (b): HIGH-RISK MOH AREAS
 # ------------------------------------------------------------
-moh_pal <- colorNumeric("YlGnBu", moh2026$Cases, na.color = "grey")
+# Red-magenta palette. Other options: "PuRd", "RdPu", "Reds", "magma"
+moh_pal <- colorNumeric("RdPu", moh2026$Cases, na.color = "grey")
 
-map2 <- leaflet(moh2026, height = map_height, width = map_width) |>
+map2 <- leaflet(moh2026, height = map_height) |>
   addTiles() |>
   addControl(
     htmltools::tags$div("(b)", style = "font-size:24px; font-weight:bold;
@@ -198,7 +193,7 @@ map2 <- leaflet(moh2026, height = map_height, width = map_width) |>
 # 6. SHOW SIDE BY SIDE (zoom/pan linked) AND SAVE
 # ------------------------------------------------------------
 sri_lanka_view <- function(m) {
-  m |> setView(lng = 80.7, lat = 7.8, zoom = 10)
+  m |> setView(lng = 80.7, lat = 7.8, zoom = 8)
 }
 map1 <- sri_lanka_view(map1)
 map2 <- sri_lanka_view(map2)
