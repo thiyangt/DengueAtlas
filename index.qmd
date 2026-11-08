@@ -28,8 +28,185 @@ library(htmlwidgets)
 library(jsonlite)
 library(leafsync)
 
+# District counts 2026 43
+district <- read_excel("dataraw/District.xlsx", sheet=1)
+# MOH Counts
+MOH <- read_csv("dataraw/MOH.csv")
+# MOH longitude and latitude
+sri_lanka_areas_coordinates <- read_csv("dataraw/sri_lanka_areas_coordinates.csv")
 
+###########################################################
+# ============================================================
+# Dengue maps for Sri Lanka, 2026
+#   Map (a): district counts (district name + count shown)
+#   Map (b): high-risk MOH areas (points coloured by total
+#            cases, name shown)
+# ============================================================
 
+library(dplyr)
+library(sf)
+library(leaflet)
+library(readxl)
+library(readr)
+library(stringdist)
+library(htmlwidgets)
+library(leafsync)
+library(ceylon)
 
+# ------------------------------------------------------------
+# 1. READ DATA
+# ------------------------------------------------------------
+district <- read_excel("dataraw/District.xlsx", sheet = 1)
+MOH      <- read_csv("dataraw/MOH.csv", show_col_types = FALSE)
+coords   <- read_csv("dataraw/sri_lanka_areas_coordinates.csv",
+                     show_col_types = FALSE)
+
+district2026 <- district |>
+  filter(year == 2026) |>
+  select(district, annual_cases) |>
+  mutate(district_clean = toupper(trimws(district)))
+
+week_up_to <- district |>
+  filter(year == 2026) |>
+  pull(`Up to week`) |>
+  max(na.rm = TRUE)
+
+# ------------------------------------------------------------
+# 2. DISTRICT POLYGONS
+# ------------------------------------------------------------
+# District boundaries from the ceylon package.
+# If your boundary object has a different name, change it here.
+polys <- ceylon::district |> st_as_sf() |> st_transform(4326)
+
+# Find the column that holds the district names automatically:
+# the character column that best overlaps with our district names
+char_cols <- names(polys)[sapply(polys, is.character)]
+overlap <- sapply(char_cols, function(cl) {
+  sum(toupper(trimws(polys[[cl]])) %in% district2026$district_clean)
+})
+name_col <- char_cols[which.max(overlap)]
+message("Using polygon name column: ", name_col)
+
+polys <- polys |>
+  mutate(DISTRICT_clean = toupper(trimws(.data[[name_col]])))
+
+# Fuzzy match the Excel district names to the polygon names
+district2026 <- district2026 |>
+  mutate(
+    DISTRICT_match = polys$DISTRICT_clean[
+      amatch(district_clean, polys$DISTRICT_clean, maxDist = 3)
+    ]
+  )
+
+cat("Districts without a polygon match (should be none):\n")
+print(district2026$district[is.na(district2026$DISTRICT_match)])
+
+district_sf <- polys |>
+  left_join(district2026, by = c("DISTRICT_clean" = "DISTRICT_match")) |>
+  filter(!is.na(annual_cases))
+
+# Label points inside each polygon
+district_pts <- st_point_on_surface(district_sf)
+district_sf$lab_lng <- st_coordinates(district_pts)[, 1]
+district_sf$lab_lat <- st_coordinates(district_pts)[, 2]
+
+# ------------------------------------------------------------
+# 3. MAP (a): DISTRICT COUNTS
+# ------------------------------------------------------------
+district_pal <- colorNumeric("YlOrRd", district_sf$annual_cases,
+                             na.color = "white")
+
+map1 <- leaflet(district_sf) |>
+  addTiles() |>
+  addPolygons(
+    fillColor   = ~district_pal(annual_cases),
+    fillOpacity = 0.75,
+    color       = "white",
+    weight      = 1,
+    highlightOptions = highlightOptions(weight = 3, color = "blue",
+                                        bringToFront = TRUE)
+  ) |>
+  # Permanent labels: district name + count
+  addLabelOnlyMarkers(
+    lng = ~lab_lng, lat = ~lab_lat,
+    label = ~paste0(district, ": ", format(annual_cases, big.mark = ",")),
+    labelOptions = labelOptions(
+      noHide = TRUE, direction = "center", textOnly = TRUE,
+      style = list("font-size" = "10px", "font-weight" = "bold",
+                   "color" = "black", "text-shadow" = "0 0 3px white")
+    )
+  ) |>
+  addLegend(
+    position = "bottomright", pal = district_pal,
+    values = ~annual_cases,
+    title = paste0("Dengue cases<br>2026 (up to wk ", week_up_to, ")"),
+    opacity = 1
+  )
+
+# ------------------------------------------------------------
+# 4. MOH AREAS
+# ------------------------------------------------------------
+coords <- coords |> rename(HighRiskMOHAreas = area)
+
+moh2026 <- MOH |>
+  filter(Year == 2026) |>
+  left_join(coords, by = "HighRiskMOHAreas") |>
+  filter(is.finite(longitude), is.finite(latitude), !is.na(Cases)) |>
+  group_by(HighRiskMOHAreas, District, longitude, latitude) |>
+  summarise(Cases = sum(as.numeric(Cases), na.rm = TRUE), .groups = "drop")
+
+# MOH areas that had no coordinates (so they are missing on the map)
+missing_coords <- MOH |>
+  filter(Year == 2026) |>
+  anti_join(coords, by = "HighRiskMOHAreas") |>
+  distinct(HighRiskMOHAreas)
+cat("MOH areas without coordinates (not drawn):\n")
+print(missing_coords$HighRiskMOHAreas)
+
+# ------------------------------------------------------------
+# 5. MAP (b): HIGH-RISK MOH AREAS
+# ------------------------------------------------------------
+moh_pal <- colorNumeric("YlGnBu", moh2026$Cases, na.color = "grey")
+
+map2 <- leaflet(moh2026) |>
+  addTiles() |>
+  addCircleMarkers(
+    lng = ~longitude, lat = ~latitude,
+    radius      = 7,
+    color       = "white",
+    weight      = 1.5,
+    fillColor   = ~moh_pal(Cases),
+    fillOpacity = 0.9,
+    # Permanent label: name only
+    label = ~HighRiskMOHAreas,
+    labelOptions = labelOptions(
+      noHide = TRUE, direction = "right", textOnly = TRUE,
+      style = list("font-size" = "9px", "color" = "black",
+                   "text-shadow" = "0 0 3px white")
+    ),
+    popup = ~paste0("<b>MOH area:</b> ", HighRiskMOHAreas,
+                    "<br><b>District:</b> ", District,
+                    "<br><b>Total cases (2026):</b> ",
+                    format(Cases, big.mark = ","))
+  ) |>
+  addLegend(
+    position = "bottomright", pal = moh_pal, values = ~Cases,
+    title = paste0("High-risk MOH<br>total cases 2026"),
+    opacity = 1
+  )
+
+# ------------------------------------------------------------
+# 6. SHOW SIDE BY SIDE (zoom/pan linked) AND SAVE
+# ------------------------------------------------------------
+sri_lanka_view <- function(m) {
+  m |> setView(lng = 80.7, lat = 7.8, zoom = 8)
+}
+map1 <- sri_lanka_view(map1)
+map2 <- sri_lanka_view(map2)
+
+both <- leafsync::sync(map1, map2, ncol = 2)
+#both
+
+htmltools::save_html(both, "dengue_maps_2026.html")
 ```
 
