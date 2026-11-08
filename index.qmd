@@ -9,7 +9,7 @@ editor: "source"
 #| echo: false
 #| message: false
 #| warning: false
-#| out-width: 100%
+#| out-width: 150%
 #| out-height: 1500px
 
 # LIBRARIES
@@ -85,7 +85,6 @@ overlap <- sapply(char_cols, function(cl) {
   sum(toupper(trimws(polys[[cl]])) %in% district2026$district_clean)
 })
 name_col <- char_cols[which.max(overlap)]
-message("Using polygon name column: ", name_col)
 
 polys <- polys |>
   mutate(DISTRICT_clean = toupper(trimws(.data[[name_col]])))
@@ -97,9 +96,6 @@ district2026 <- district2026 |>
       amatch(district_clean, polys$DISTRICT_clean, maxDist = 3)
     ]
   )
-
-cat("Districts without a polygon match (should be none):\n")
-print(district2026$district[is.na(district2026$DISTRICT_match)])
 
 district_sf <- polys |>
   left_join(district2026, by = c("DISTRICT_clean" = "DISTRICT_match")) |>
@@ -116,8 +112,16 @@ district_sf$lab_lat <- st_coordinates(district_pts)[, 2]
 district_pal <- colorNumeric("YlOrRd", district_sf$annual_cases,
                              na.color = "white")
 
-map1 <- leaflet(district_sf) |>
+map_height <- 800   # increase/decrease to resize both maps
+map_width <- 1000
+
+map1 <- leaflet(district_sf, height = map_height, width = map_width) |>
   addTiles() |>
+  addControl(
+    htmltools::tags$div("(a)", style = "font-size:24px; font-weight:bold;
+      background:white; padding:2px 10px; border-radius:4px;"),
+    position = "topleft"
+  ) |>
   addPolygons(
     fillColor   = ~district_pal(annual_cases),
     fillOpacity = 0.75,
@@ -155,21 +159,18 @@ moh2026 <- MOH |>
   group_by(HighRiskMOHAreas, District, longitude, latitude) |>
   summarise(Cases = sum(as.numeric(Cases), na.rm = TRUE), .groups = "drop")
 
-# MOH areas that had no coordinates (so they are missing on the map)
-missing_coords <- MOH |>
-  filter(Year == 2026) |>
-  anti_join(coords, by = "HighRiskMOHAreas") |>
-  distinct(HighRiskMOHAreas)
-cat("MOH areas without coordinates (not drawn):\n")
-print(missing_coords$HighRiskMOHAreas)
-
 # ------------------------------------------------------------
 # 5. MAP (b): HIGH-RISK MOH AREAS
 # ------------------------------------------------------------
 moh_pal <- colorNumeric("YlGnBu", moh2026$Cases, na.color = "grey")
 
-map2 <- leaflet(moh2026) |>
+map2 <- leaflet(moh2026, height = map_height, width = map_width) |>
   addTiles() |>
+  addControl(
+    htmltools::tags$div("(b)", style = "font-size:24px; font-weight:bold;
+      background:white; padding:2px 10px; border-radius:4px;"),
+    position = "topleft"
+  ) |>
   addCircleMarkers(
     lng = ~longitude, lat = ~latitude,
     radius      = 7,
@@ -177,12 +178,10 @@ map2 <- leaflet(moh2026) |>
     weight      = 1.5,
     fillColor   = ~moh_pal(Cases),
     fillOpacity = 0.9,
-    # Permanent label: name only
+    # Name shown only on mouse hover
     label = ~HighRiskMOHAreas,
     labelOptions = labelOptions(
-      noHide = TRUE, direction = "right", textOnly = TRUE,
-      style = list("font-size" = "9px", "color" = "black",
-                   "text-shadow" = "0 0 3px white")
+      style = list("font-size" = "13px", "font-weight" = "bold")
     ),
     popup = ~paste0("<b>MOH area:</b> ", HighRiskMOHAreas,
                     "<br><b>District:</b> ", District,
@@ -199,14 +198,15 @@ map2 <- leaflet(moh2026) |>
 # 6. SHOW SIDE BY SIDE (zoom/pan linked) AND SAVE
 # ------------------------------------------------------------
 sri_lanka_view <- function(m) {
-  m |> setView(lng = 80.7, lat = 7.8, zoom = 8)
+  m |> setView(lng = 80.7, lat = 7.8, zoom = 10)
 }
 map1 <- sri_lanka_view(map1)
 map2 <- sri_lanka_view(map2)
 
 both <- leafsync::sync(map1, map2, ncol = 2)
-#both
+both
 
 htmltools::save_html(both, "dengue_maps_2026.html")
+
 ```
 
