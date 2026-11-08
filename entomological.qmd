@@ -1,0 +1,176 @@
+---
+title: "Entomological status"
+editor: "source"
+---
+
+## Introduction
+
+“Entomological status” describes how much Aedes mosquito breeding was found in an area, which tells you the risk of dengue transmission. In your table it comes from larval surveys: teams visit premises (houses, schools, institutions and so on) and check for Aedes larvae in water-holding containers.
+
+## Premises inspected and premises found positive for Aedes larvae, by area and province, from January to June 2026 Across 4018 Divisions
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Figure 7.1: Premises inspected and premises found positive for Aedes larvae, by area and province, from January to June 2026 (Source: returns of entomological surveys received by the NDCU).Schools (42.5%) and factories (38.4%) end up at the top "
+library(tidyverse)
+library(readxl)
+premises_positivity_2026 <- read_excel("dataraw/premises_positivity_2026.xlsx")
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(patchwork)
+library(plotly)
+
+plot_dat <- premises_positivity_2026 %>%
+  filter(`Premise type` != "Total") %>%
+  transmute(
+    Premise  = `Premise type`,
+    Positive = `Number with Aedes larvae`,
+    Negative = `Number inspected` - `Number with Aedes larvae`,
+    pct_pos  = Positive / (Positive + Negative)
+  ) %>%
+  mutate(Premise = forcats::fct_reorder(Premise, pct_pos)) %>%   # order by % positive
+  pivot_longer(c(Positive, Negative), names_to = "Result", values_to = "Count") %>%
+  mutate(Result = factor(Result,
+                         levels = c("Negative", "Positive"),
+                         labels = c("No larvae", "Aedes larvae present")))
+
+cols <- c("No larvae" = "#a6cee3", "Aedes larvae present" = "#e31a1c")
+
+# (a) stacked counts
+p_a <- ggplot(plot_dat, aes(x = Premise, y = Count, fill = Result)) +
+  geom_col(width = 0.75) +
+  coord_flip() +
+  scale_fill_manual(values = cols) +
+  scale_y_continuous(labels = scales::comma, expand = expansion(mult = c(0, 0.05))) +
+  labs(x = NULL, y = "Number of premises inspected", fill = NULL) +
+  theme_minimal() +
+  theme(legend.position = "top")
+
+# (b) stacked percentages
+p_b <- ggplot(plot_dat, aes(x = Premise, y = Count, fill = Result)) +
+  geom_col(position = "fill", width = 0.75) +
+  coord_flip() +
+  scale_fill_manual(values = cols) +
+  scale_y_continuous(labels = scales::percent, expand = expansion(mult = c(0, 0.02))) +
+  labs(x = NULL, y = "Percentage of premises inspected", fill = NULL) +
+  theme_minimal() +
+  theme(legend.position = "top", axis.text.y = element_blank())
+
+p_ab <- (p_a | p_b) +
+  plot_layout(guides = "collect") +
+  plot_annotation(tag_levels = "a", tag_prefix = "(", tag_suffix = ")") &
+  theme(legend.position = "top")
+
+p_ab
+
+
+```
+
+## Premises inspected and premises found positive for Aedes larvae, by area and province, June 2026
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-cap: "Figure 7.2: Premises inspected and premises found positive for Aedes larvae, by area and province, June 2026 (Monthly Dengue Summary, source: returns of entomological surveys received by the NDCU). Blue bars show the number of premises inspected and red bars the number positive, with counts printed above each bar. Each panel has its own y-axis, so bar heights can be compared within a province but not between provinces. Survey effort differed widely between areas. It was greatest in the Western Province, where Gampaha (3,489 premises), Kalutara (2,339) and Colombo (1,902) were the most heavily inspected, and smallest in Mullaithivu (130). Gampaha also had the largest number of positive premises (460). Counts alone depend on how many premises were inspected, so the proportion positive is more useful for comparing risk. Breeding was highest in NIHS (21.9% of premises positive), followed by Galle (15.2%), Hambantota (14.4%) and Matara (13.5%), and most other Western Province areas were close to 12-13%. Positivity was lowest in the Northern Province, at 1.5% in Mullaithivu, 2.4% in Mannar and 3.3% in Vavuniya, and in Batticaloa (4.6%) and Ampara (5.0%) in the Eastern Province. Because these areas inspected fewer premises, their percentages are less stable. The high NIHS value probably reflects surveys directed at known hotspots rather than the whole district. These data describe vector breeding, not dengue cases, so they should be read alongside case data when judging transmission risk.  "
+library(readxl)
+library(tidyverse)
+mds <- read_excel("dataraw/MDS_entomology_June2026.xlsx")
+
+
+plot_dat <- mds %>%
+  rename(Area = District) %>%
+  select(Province, Area, `Premises inspected`, `Premises positive`) %>%
+  pivot_longer(
+    cols      = c(`Premises inspected`, `Premises positive`),
+    names_to  = "Measure",
+    values_to = "Count"
+  ) %>%
+  mutate(
+    Province = factor(Province, levels = unique(mds$Province)),
+    Area     = factor(Area, levels = unique(mds$District)),   # keep original order
+    Measure  = factor(Measure, levels = c("Premises inspected", "Premises positive"))
+  )
+
+p_bar <- ggplot(plot_dat, aes(x = Area, y = Count, fill = Measure)) +
+  geom_col(position = position_dodge(width = 0.9), width = 0.85) +
+  geom_text(
+    aes(label = scales::comma(Count)),
+    position = position_dodge(width = 0.9),
+    vjust = -0.4, size = 2.8
+  ) +
+  facet_wrap(vars(Province), scales = "free", ncol = 3) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.12))) +   # room for labels
+  scale_fill_manual(values = c("Premises inspected" = "#1f78b4",
+                               "Premises positive"  = "#e31a1c")) +
+  labs(x = "Area", y = "Number of premises", fill = NULL) +
+  theme_minimal() +
+  theme(
+    axis.text.x     = element_text(angle = 45, hjust = 1),
+    strip.text      = element_text(size = 10, face = "bold"),
+    legend.position = "top"
+  )
+
+p_bar
+
+```
+
+## Main type of containers positive for larvae and percentage: June 2026 Data
+
+```{r, fig.cap="Figure 7.3: Main type of containers positive for larvae and percentage. This is based on June 2026 data.Temporary removable items and and discarded non-degradable items were the leading container type. This points to poorly managed household and solid waste as an important source of breeding."}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-width: 25
+#| fig-height: 20
+#| out-width: "100%"
+#mds2 <- mds |> select(-c(3, 4, 5)) 
+tile_dat <- mds %>%
+  rename(Area = District) %>%
+  pivot_longer(
+    cols      = starts_with("Container:"),
+    names_to  = "Container",
+    values_to = "Share"
+  ) %>%
+  mutate(
+    Share     = Share * 100,                                   # 0.223 -> 22.3
+    Container = str_remove(Container, "^Container: "),
+    Container = str_remove(Container, " \\(%\\)$"),
+    Province  = factor(Province, levels = unique(mds$Province)),
+    Area      = factor(Area, levels = rev(unique(mds$District)))
+  ) %>%
+  mutate(Container = forcats::fct_reorder(Container, Share,
+                                          .fun = function(x) sum(!is.na(x)),
+                                          .desc = TRUE))
+
+p_tile <- ggplot(tile_dat, aes(x = Container, y = Area, fill = Share)) +
+  geom_tile(colour = "white", linewidth = 0.6) +
+  geom_text(aes(label = ifelse(is.na(Share), "", sprintf("%.1f", Share))),
+            size = 10) +
+  facet_grid(rows = vars(Province), scales = "free_y", space = "free_y", switch = "y") +
+  scale_fill_gradient(
+    low = "#fee8c8", high = "#b30000",
+    na.value = "grey93",
+    name = "% of positive\ncontainers"
+  ) +
+  scale_x_discrete(position = "top", labels = function(x) str_wrap(x, 10)) +
+  labs(x = NULL, y = "Area") +
+  theme_minimal() +
+  theme(
+    panel.grid        = element_blank(),
+    axis.text.x       = element_text(size = 20),
+    axis.text.y      = element_text(size = 20),
+    strip.placement   = "outside",
+    strip.text.y.left = element_text(angle = 0, face = "bold", hjust = 1,
+                                     size = 20)
+  )
+
+p_tile
+```
+
+## Data Source
+
+Entomology Update June 2026 Published by the National Dengue Control Unit. Link: [https://www.dengue.health.gov.lk/wp-content/uploads/2026/07/entomology_update_June-2026.pdf](https://www.dengue.health.gov.lk/wp-content/uploads/2026/07/entomology_update_June-2026.pdf)

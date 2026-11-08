@@ -15,7 +15,7 @@ library(denguedatahub)
 library(tidyverse)
 ```
 
-```{r, fig.cap="Figure 4.1: Seasonal time series plots of weekly dengue cases by districts"}
+```{r, fig.cap="Figure 4.1: Seasonal time series plots of weekly dengue cases by districts. Dengue incidence in 2026 was notably higher than in previous years in several districts. This increase may be linked to Cyclone Ditwah in late 2025, whose flooding and storm debris created abundant stagnant water and potential Aedes breeding sites.  Note that 2026 data are incomplete, covering only weeks up to [last reported week]"}
 #| echo: false
 #| warning: false
 #| message: false
