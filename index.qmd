@@ -215,7 +215,7 @@ htmltools::save_html(both, "dengue_maps_2026.html")
 
 ```
 
-## Sri Lanka Dengue Situation in 2025 
+## Sri Lanka Dengue Situation in 2025
 
 ```{r, fig.cap="Figure 1.2: Dengue burden in Sri Lanka in 2025. (a) Cumulative dengue cases by district up to epidemiological week 53, with darker shades of orange to red indicating higher case counts. (b) High-risk Medical Officer of Health (MOH) areas, with each point coloured by the total number of cases reported for that area in 2025 upto week 25 (light pink to dark purple-red indicates increasing totals). The district name and case count (a) and the MOH area name (b) are shown when the cursor is placed over the corresponding feature. Data source: Weekly Epidemiological Reports, Epidemiology Unit, Ministry of Health, Sri Lanka; Weekly Dengue Update, National Dengue Control Unit, Ministry of Health, Sri Lanka."}
 #| echo: false
@@ -419,4 +419,3 @@ both
 htmltools::save_html(both, "dengue_maps_2025.html")
 
 ```
-

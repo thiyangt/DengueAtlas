@@ -3,7 +3,7 @@
 
 /* Left sidebar width */
 .sidebar {
-  width: 400px;   /* increase or decrease */
+  width: 200px;   /* increase or decrease */
 }
 
 /* Main content adjusts automatically in most themes */
@@ -12,4 +12,23 @@
   position: sticky;
   top: 0;
   z-index: 9999;
+}
+
+/* Reduce the main content margins */
+#quarto-content {
+  max-width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Increase the width of the main content area */
+main.content {
+  max-width: 98% !important;
+  width: 98% !important;
+}
+
+/* Reduce left and right padding */
+#quarto-content .content {
+  padding-left: 5px;
+  padding-right: 15px;
 }
