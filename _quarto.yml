@@ -20,14 +20,20 @@ website:
         href: https://github.com/thiyangt/DengueAtlas
       - icon: twitter
         href: https://twitter.com/thiyangt
+        
 
 format:
   html:
-    page-layout: full
     theme:
       - cosmo
       - brand
     css: styles.css
+    page-layout: full
+    grid:
+      sidebar-width: 200px
+      body-width: 1400px
+      margin-width: 150px
+      gutter-width: 1rem
     number-sections: true
     fig-caption: true
     toc: true

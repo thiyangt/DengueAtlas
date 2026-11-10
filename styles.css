@@ -1,34 +1,28 @@
-
-/* styles.css */
-
 /* Left sidebar width */
-.sidebar {
-  width: 200px;   /* increase or decrease */
+#quarto-sidebar {
+  width: 200px;
 }
 
-/* Main content adjusts automatically in most themes */
-
-.navbar.navbar-expand-lg {
+/* Sticky navbar */
+.navbar {
   position: sticky;
   top: 0;
   z-index: 9999;
 }
 
-/* Reduce the main content margins */
+/* Wider main content */
 #quarto-content {
-  max-width: 98%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
-/* Increase the width of the main content area */
 main.content {
-  max-width: 98% !important;
-  width: 98% !important;
+  max-width: 100% !important;
 }
 
-/* Reduce left and right padding */
+/* Smaller left/right padding */
 #quarto-content .content {
-  padding-left: 5px;
-  padding-right: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
