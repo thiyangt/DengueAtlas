@@ -118,7 +118,8 @@ district_sf$lab_lat <- st_coordinates(district_pts)[, 2]
 # ------------------------------------------------------------
 # 3. MAP (a): DISTRICT COUNTS
 # ------------------------------------------------------------
-district_pal <- colorNumeric("YlOrRd", district_sf$annual_cases,
+#district_pal <- colorNumeric("YlOrRd", district_sf$annual_cases, na.color = "white")
+district_pal <- colorNumeric("viridis", district_sf$annual_cases,
                              na.color = "white")
 
 map_height <- 1000   # increase/decrease to resize both maps
@@ -167,7 +168,8 @@ moh2026 <- MOH |>
 # 5. MAP (b): HIGH-RISK MOH AREAS
 # ------------------------------------------------------------
 # Red-magenta palette. Other options: "PuRd", "RdPu", "Reds", "magma"
-moh_pal <- colorNumeric("RdPu", moh2026$Cases, na.color = "grey")
+#moh_pal <- colorNumeric("RdPu", moh2026$Cases, na.color = "grey")
+moh_pal <- colorNumeric("magma", moh2026$Cases, na.color = "grey")
 
 map2 <- leaflet(moh2026, height = map_height, width = map_width) |>
   addTiles() |>
