@@ -22,7 +22,7 @@ annual_df <- srilanka_weekly_data %>%
   )
 
 ggplot(annual_df, aes(y = factor(year), x = annual_cases)) +
-  geom_col(fill = "#d73027") +
+  geom_col(fill = "#41b6c4") +
   facet_wrap(~ district, ncol = 6, scales = "free_x") +
   labs(
     x = "Year",

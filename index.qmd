@@ -5,7 +5,7 @@ editor: "source"
 
 ## Sri Lanka Dengue Situation in 2026 (up to Week 43, 2026)
 
-```{r, fig.cap="Figure 1.1: Dengue burden in Sri Lanka in 2026. (a) Cumulative dengue cases by district up to epidemiological week 43, with darker shades of orange to red indicating higher case counts. (b) High-risk Medical Officer of Health (MOH) areas, with each point coloured by the total number of cases reported for that area in 2026 (light pink to dark purple-red indicates increasing totals). The district name and case count (a) and the MOH area name (b) are shown when the cursor is placed over the corresponding feature. Data source: Weekly Epidemiological Reports, Epidemiology Unit, Ministry of Health, Sri Lanka; Weekly Dengue Update, National Dengue Control Unit, Ministry of Health, Sri Lanka."}
+```{r, fig.cap="Figure 1.1: Dengue burden in Sri Lanka in 2026. (a) Cumulative dengue cases by district up to epidemiological week 43. (b) High-risk MOH areas, with each point coloured by the total number of cases reported for that area in 2026. The district name and case count (a) and the MOH area name (b) are shown when the cursor is placed over the corresponding feature. Data source: Weekly Epidemiological Reports, Epidemiology Unit, Ministry of Health, Sri Lanka; Weekly Dengue Update, National Dengue Control Unit, Ministry of Health, Sri Lanka."}
 #| echo: false
 #| message: false
 #| warning: false
@@ -219,7 +219,7 @@ htmltools::save_html(both, "dengue_maps_2026.html")
 
 ## Sri Lanka Dengue Situation in 2025
 
-```{r, fig.cap="Figure 1.2: Dengue burden in Sri Lanka in 2025. (a) Cumulative dengue cases by district up to epidemiological week 53, with darker shades of orange to red indicating higher case counts. (b) High-risk Medical Officer of Health (MOH) areas, with each point coloured by the total number of cases reported for that area in 2025 upto week 25 (light pink to dark purple-red indicates increasing totals). The district name and case count (a) and the MOH area name (b) are shown when the cursor is placed over the corresponding feature. Data source: Weekly Epidemiological Reports, Epidemiology Unit, Ministry of Health, Sri Lanka; Weekly Dengue Update, National Dengue Control Unit, Ministry of Health, Sri Lanka."}
+```{r, fig.cap="Figure 1.2: Dengue burden in Sri Lanka in 2025. (a) Cumulative dengue cases by district up to epidemiological week 53. (b) High-risk MOH areas, with each point coloured by the total number of cases reported for that area in 2025 upto week 25 (data are only available up to week 25). The district name and case count (a) and the MOH area name (b) are shown when the cursor is placed over the corresponding feature. Data source: Weekly Epidemiological Reports, Epidemiology Unit, Ministry of Health, Sri Lanka; Weekly Dengue Update, National Dengue Control Unit, Ministry of Health, Sri Lanka."}
 #| echo: false
 #| message: false
 #| warning: false
@@ -325,8 +325,7 @@ district_sf$lab_lat <- st_coordinates(district_pts)[, 2]
 # ------------------------------------------------------------
 # 3. MAP (a): DISTRICT COUNTS
 # ------------------------------------------------------------
-district_pal <- colorNumeric("YlOrRd", district_sf$annual_cases,
-                             na.color = "white")
+#district_pal <- colorNumeric("YlOrRd", district_sf$annual_cases, na.color = "white")
 
 map_height <- 1000   # increase/decrease to resize both maps
 map_width <- 900   # increase/decrease to resize both maps
@@ -374,7 +373,7 @@ moh2025 <- MOH |>
 # 5. MAP (b): HIGH-RISK MOH AREAS
 # ------------------------------------------------------------
 # Red-magenta palette. Other options: "PuRd", "RdPu", "Reds", "magma"
-moh_pal <- colorNumeric("RdPu", moh2025$Cases, na.color = "grey")
+#moh_pal <- colorNumeric("RdPu", moh2025$Cases, na.color = "grey")
 
 map2 <- leaflet(moh2025, height = map_height, width = map_width) |>
   addTiles() |>
