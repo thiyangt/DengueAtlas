@@ -143,6 +143,8 @@ p_bar
 
 ```
 
+Note: Number of premises inspected and premises found positive for Aedes larvae, by reporting area and province, June 2026. In Sri Lanka, entomological surveillance for Aedes dengue vectors is conducted at the district and Medical Officer of Health (MOH) levels, with returns submitted to the National Dengue Control Unit (NDCU) and regional reporting units, including the Entomology Unit at the National Institute of Health Sciences (NIHS), Kalutara. The reporting areas represent the geographical areas covered by the respective surveillance reporting units, rather than the physical locations of the institutions receiving the reports. .
+
 ## Main type of containers positive for larvae and percentage: June 2026 Data
 
 ```{r, fig.cap="Figure 7.3: Main type of containers positive for larvae and percentage. This is based on June 2026 data.Temporary removable items and and discarded non-degradable items were the leading container type. This points to poorly managed household and solid waste as an important source of breeding."}
@@ -198,4 +200,4 @@ p_tile
 
 ## Data Source
 
-Entomology Update June 2026 Published by the National Dengue Control Unit. Link: [https://www.dengue.health.gov.lk/wp-content/uploads/2026/07/entomology_update_June-2026.pdf](https://www.dengue.health.gov.lk/wp-content/uploads/2026/07/entomology_update_June-2026.pdf)
+Entomology Update June 2026 Published by the National Dengue Control Unit. Link: <https://www.dengue.health.gov.lk/wp-content/uploads/2026/07/entomology_update_June-2026.pdf>

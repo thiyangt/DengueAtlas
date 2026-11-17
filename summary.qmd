@@ -25,8 +25,8 @@ ggplot(annual_df, aes(y = factor(year), x = annual_cases)) +
   geom_col(fill = "#41b6c4") +
   facet_wrap(~ district, ncol = 6, scales = "free_x") +
   labs(
-    x = "Year",
-    y = "Dengue Cases",
+    y = "Year",
+    x = "Dengue Cases",
     title = "Year-wise Dengue Cases by District"
   ) +
   theme_minimal() +
