@@ -53,7 +53,7 @@ plot_dat <- premises_positivity_2026 %>%
   ) %>%
   ungroup()
 
-cols <- c("No larvae" = "#a6cee3", "Aedes larvae present" = "#e31a1c")
+cols <- c("No larvae" = "#1b9e77", "Aedes larvae present" = "#d95f02")
 
 # (a) stacked counts
 p_a <- ggplot(plot_dat, aes(x = Premise, y = Count, fill = Result, text = tip)) +
@@ -129,8 +129,8 @@ p_bar <- ggplot(plot_dat, aes(x = Area, y = Count, fill = Measure)) +
   ) +
   facet_wrap(vars(Province), scales = "free", ncol = 3) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.12))) +   # room for labels
-  scale_fill_manual(values = c("Premises inspected" = "#1f78b4",
-                               "Premises positive"  = "#e31a1c")) +
+  scale_fill_manual(values = c("Premises inspected" = "#1b9e77",
+                               "Premises positive"  = "#d95f02")) +
   labs(x = "Area", y = "Number of premises", fill = NULL) +
   theme_minimal() +
   theme(
